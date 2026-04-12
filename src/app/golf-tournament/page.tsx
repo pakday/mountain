@@ -30,14 +30,6 @@ export default function Page() {
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/70 to-teal-dark/60" />
-          {/* Bottom white diagonal */}
-          <div
-            className="absolute bottom-0 left-0 right-0 h-20"
-            style={{
-              background:
-                "linear-gradient(to top right, #fff 50%, transparent 50%)",
-            }}
-          />
         </div>
 
         <div className="relative z-10 section-container max-w-7xl pb-28 pt-36">
