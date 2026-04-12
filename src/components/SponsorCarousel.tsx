@@ -1,9 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Autoplay, FreeMode } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 
 const sponsorSlides = [
   {
@@ -48,69 +45,38 @@ const sponsorSlides = [
   },
 ];
 
+/* Duplicate the list so the CSS animation loops seamlessly:
+   animate translateX(0 → -50%) scrolls exactly one full copy,
+   at which point the track resets invisibly to position 0. */
+const track = [...sponsorSlides, ...sponsorSlides];
+
 export default function SponsorCarousel() {
   return (
-    <div className="relative overflow-visible">
-      <Swiper
-        modules={[Autoplay, FreeMode]}
-        loop
-        autoplay={{
-          delay: 1,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: false,
-          waitForTransition: false,
-        }}
-        freeMode={{
-          enabled: true,
-          momentum: false,
-        }}
-        speed={3000}
-        grabCursor
-        slideToClickedSlide
-        slidesPerView={2}
-        spaceBetween={24}
-        wrapperClass="overflow-visible"
-        className="overflow-visible"
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 24,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 28,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 32,
-          },
-        }}
-        aria-live="polite"
-      >
-        {sponsorSlides.concat(sponsorSlides).map((logo, index) => (
-          <SwiperSlide
+    <div
+      className="overflow-hidden"
+      aria-label="Sustaining partner sponsor logos"
+    >
+      <div className="marquee-track">
+        {track.map((logo, index) => (
+          <a
             key={`${logo.alt}-${index}`}
-            className="overflow-visible"
+            href={logo.href}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="shrink-0 block w-40 rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <a
-              href={logo.href}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="block rounded-3xl bg-white/90 p-4 shadow-sm transition-shadow duration-300 hover:shadow-lg h-full overflow-visible"
-            >
-              <div className="relative h-28 sm:h-32 md:h-36 flex items-center justify-center overflow-visible">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 22vw, 18vw"
-                />
-              </div>
-            </a>
-          </SwiperSlide>
+            <div className="relative h-28 flex items-center justify-center">
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                fill
+                className="object-contain"
+                sizes="160px"
+              />
+            </div>
+          </a>
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 }

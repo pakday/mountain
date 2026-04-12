@@ -93,7 +93,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════
           HERO
       ═══════════════════════════════════════ */}
-      <section className="relative min-h-screen py-28  flex items-center overflow-hidden">
+      <section className="relative min-h-[85vh] py-28  flex items-center overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -827,11 +827,11 @@ export default function HomePage() {
         {/* Sponsor carousel slider */}
         <div className="section-container">
           <div
-            className="relative"
+            className="relative overflow-hidden"
             aria-label="Sustaining partner sponsor logos"
           >
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-white to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-white to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-linear-to-r from-white to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-linear-to-l from-white to-transparent" />
             <SponsorCarousel />
           </div>
         </div>

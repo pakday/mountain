@@ -291,10 +291,10 @@
   /* ——— Continuous partner marquee ——— */
   .marquee-track {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
     width: max-content;
-    animation: marquee-scroll 10s linear infinite;
+    animation: marquee-scroll 32s linear infinite;
   }
   .marquee-track:hover {
     animation-play-state: paused;
