@@ -92,7 +92,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════
           HERO
       ═══════════════════════════════════════ */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-screen py-28  flex items-center overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -108,7 +108,7 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        <div className="section-container relative z-10 py-28 text-left">
+        <div className="section-container max-w-7xl relative z-10 text-left flex-1">
           <div className="max-w-3xl lg:max-w-2xl">
             <p className="eyebrow text-teal mb-5">
               Riverton · Herriman · Bluffdale, Utah
@@ -824,47 +824,16 @@ export default function HomePage() {
           </div>
         </div>
         {/* Continuous marquee slider */}
-        <div
-          className="relative overflow-hidden"
-          aria-label="Sustaining partner sponsor logos"
-        >
-          <div className="marquee-track flex items-center gap-16">
-            {/* Set 1 */}
-            {[
-              {
-                src: "/Structure/Sustaining%20Partner%20Sponsors/BluffdaleLogo.jpg",
-                alt: "City of Bluffdale",
-              },
-              {
-                src: "/Structure/Sustaining%20Partner%20Sponsors/EXPAND-Logo.jpg",
-                alt: "Expand",
-              },
-              {
-                src: "/Structure/Sustaining%20Partner%20Sponsors/Herriman-Logo.jpg",
-                alt: "City of Herriman",
-              },
-              {
-                src: "/Structure/Sustaining%20Partner%20Sponsors/FatCatsSqLogoSized.jpg",
-                alt: "Fat Cats",
-              },
-              {
-                src: "/Structure/Sustaining%20Partner%20Sponsors/City+Journals.jpg",
-                alt: "City Journals",
-              },
-              {
-                src: "/Structure/Sustaining%20Partner%20Sponsors/Intermountain_Healthcare_Riverton_Logo.jpg",
-                alt: "Intermountain Healthcare",
-              },
-              {
-                src: "/Structure/Sustaining%20Partner%20Sponsors/MACU+SQ+Logo+2024.jpg",
-                alt: "Mountain America Credit Union",
-              },
-              {
-                src: "/Structure/Sustaining%20Partner%20Sponsors/HCJ_Square_Logo_Black.jpg",
-                alt: "HCJ",
-              },
-            ]
-              .concat([
+        <div className="section-container">
+          <div
+            className="relative overflow-hidden"
+            aria-label="Sustaining partner sponsor logos"
+          >
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-linear-to-r from-white to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-linear-to-l from-white to-transparent" />
+            <div className="marquee-track relative z-0 flex items-center gap-16">
+              {/* Set 1 */}
+              {[
                 {
                   src: "/Structure/Sustaining%20Partner%20Sponsors/BluffdaleLogo.jpg",
                   alt: "City of Bluffdale",
@@ -897,18 +866,56 @@ export default function HomePage() {
                   src: "/Structure/Sustaining%20Partner%20Sponsors/HCJ_Square_Logo_Black.jpg",
                   alt: "HCJ",
                 },
-              ])
-              .map((logo, i) => (
-                <div key={i} className="flex-shrink-0 w-36 h-20 relative">
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    fill
-                    className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                    sizes="144px"
-                  />
-                </div>
-              ))}
+              ]
+                .concat([
+                  {
+                    src: "/Structure/Sustaining%20Partner%20Sponsors/BluffdaleLogo.jpg",
+                    alt: "City of Bluffdale",
+                  },
+                  {
+                    src: "/Structure/Sustaining%20Partner%20Sponsors/EXPAND-Logo.jpg",
+                    alt: "Expand",
+                  },
+                  {
+                    src: "/Structure/Sustaining%20Partner%20Sponsors/Herriman-Logo.jpg",
+                    alt: "City of Herriman",
+                  },
+                  {
+                    src: "/Structure/Sustaining%20Partner%20Sponsors/FatCatsSqLogoSized.jpg",
+                    alt: "Fat Cats",
+                  },
+                  {
+                    src: "/Structure/Sustaining%20Partner%20Sponsors/City+Journals.jpg",
+                    alt: "City Journals",
+                  },
+                  {
+                    src: "/Structure/Sustaining%20Partner%20Sponsors/Intermountain_Healthcare_Riverton_Logo.jpg",
+                    alt: "Intermountain Healthcare",
+                  },
+                  {
+                    src: "/Structure/Sustaining%20Partner%20Sponsors/MACU+SQ+Logo+2024.jpg",
+                    alt: "Mountain America Credit Union",
+                  },
+                  {
+                    src: "/Structure/Sustaining%20Partner%20Sponsors/HCJ_Square_Logo_Black.jpg",
+                    alt: "HCJ",
+                  },
+                ])
+                .map((logo, i) => (
+                  <div
+                    key={i}
+                    className="shrink-0 w-44 h-28 sm:w-48 sm:h-32 md:w-56 md:h-36 relative"
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      fill
+                      className="object-contain transition-all duration-300"
+                      sizes="192px"
+                    />
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
         <div className="section-container">

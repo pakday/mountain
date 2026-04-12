@@ -12,16 +12,18 @@ export default function Page() {
     <>
       {/* ── Hero ── */}
       <section className="bg-primary py-24">
-        <div className="section-container max-w-3xl text-left">
-          <p className="eyebrow text-teal mb-4">
-            Mountain West Chamber of Commerce
-          </p>
-          <h1 className="heading-2xl text-white mb-4">Let&rsquo;s Chat</h1>
-          <div className="section-divider bg-teal mb-6" />
-          <p className="font-body text-lg text-white/80 leading-relaxed">
-            Our general response time is one business day. We look forward to
-            hearing from you.
-          </p>
+        <div className="section-container max-w-7xl text-left">
+          <div className="max-w-3xl">
+            <p className="eyebrow text-teal mb-4">
+              Mountain West Chamber of Commerce
+            </p>
+            <h1 className="heading-2xl text-white mb-4">Let&rsquo;s Chat</h1>
+            <div className="section-divider bg-teal mb-6" />
+            <p className="font-body text-lg text-white/80 leading-relaxed">
+              Our general response time is one business day. We look forward to
+              hearing from you.
+            </p>
+          </div>
         </div>
       </section>
 

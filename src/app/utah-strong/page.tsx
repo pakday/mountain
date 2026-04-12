@@ -127,14 +127,16 @@ export default function Page() {
     <>
       {/* ── Hero ── */}
       <section className="bg-primary py-24">
-        <div className="section-container max-w-3xl text-left">
-          <p className="eyebrow text-teal mb-4">#UtahStrong #ChamberStrong</p>
-          <h1 className="heading-2xl text-white mb-4">Utah Strong</h1>
-          <div className="section-divider bg-teal mb-6" />
-          <p className="font-body text-lg text-white/80 leading-relaxed">
-            Together we are stronger. Here are resources to help your business
-            and community thrive in Utah.
-          </p>
+        <div className="section-container max-w-7xl text-left">
+          <div className="max-w-3xl">
+            <p className="eyebrow text-teal mb-4">#UtahStrong #ChamberStrong</p>
+            <h1 className="heading-2xl text-white mb-4">Utah Strong</h1>
+            <div className="section-divider bg-teal mb-6" />
+            <p className="font-body text-lg text-white/80 leading-relaxed">
+              Together we are stronger. Here are resources to help your business
+              and community thrive in Utah.
+            </p>
+          </div>
         </div>
       </section>
 

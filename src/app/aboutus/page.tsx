@@ -23,7 +23,7 @@ export default function Page() {
             sizes="100vw"
           />
         </div>
-        <div className="section-container relative z-10 py-28 text-left">
+        <div className="section-container max-w-7xl relative z-10 text-left">
           <div className="max-w-3xl lg:max-w-2xl">
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce
