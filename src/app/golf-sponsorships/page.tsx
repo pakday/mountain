@@ -283,14 +283,7 @@ export default function Page() {
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-linear-to-r from-primary/92 via-primary/75 to-slate-blue/50" />
-          {/* Diagonal accent */}
-          <div
-            className="absolute bottom-0 left-0 right-0 h-24"
-            style={{
-              background:
-                "linear-gradient(to top right, #fff 50%, transparent 50%)",
-            }}
-          />
+          <div className="absolute bottom-0 left-0 right-0 h-40 hero-bottom-fade" />
         </div>
         <div className="relative z-10 section-container max-w-7xl pb-24 pt-32">
           <p className="eyebrow text-teal mb-4">
