@@ -145,6 +145,7 @@ export default function PhotoGallerySlider() {
           pauseOnMouseEnter: true,
         }}
         loop
+        centeredSlides
         spaceBetween={16}
         slidesPerView={1}
         breakpoints={{
@@ -161,7 +162,7 @@ export default function PhotoGallerySlider() {
                 src={photo.src}
                 alt={photo.alt}
                 fill
-                className="object-cover transition-transform duration-500 hover:scale-105"
+                className="object-cover object-top transition-transform duration-500 hover:scale-105"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>

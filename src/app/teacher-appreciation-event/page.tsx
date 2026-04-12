@@ -156,7 +156,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="relative z-10 section-container max-w-7xl pb-32 pt-40 flex justify-start">
+        <div className="relative z-10 section-container max-w-7xl pb-32 pt-40 flex justify-start flex-1">
           <div className="max-w-3xl">
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce
@@ -458,7 +458,7 @@ export default function Page() {
                     />
                   </svg>
                 </div>
-                <h3 className="heading-lg font-heading mb-3">
+                <h3 className="heading-lg font-heading text-white mb-3">
                   Register to Sponsor
                 </h3>
                 <p className="font-body text-off-white/90 mb-8 leading-relaxed">
@@ -504,7 +504,7 @@ export default function Page() {
                 <p className="text-yellow font-heading text-xs font-bold uppercase tracking-widest mb-2">
                   Top Tier
                 </p>
-                <h3 className="heading-lg font-heading mb-4">
+                <h3 className="heading-lg font-heading text-white mb-4">
                   Wonder Woman Sponsor
                 </h3>
                 <p className="font-body text-white/85 leading-relaxed mb-6">
