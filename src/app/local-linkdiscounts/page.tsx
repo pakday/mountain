@@ -184,10 +184,9 @@ export default function Page() {
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-linear-to-br from-primary/95 via-primary/80 to-teal-dark/70" />
-
         </div>
 
-        <div className="relative z-10 section-container max-w-7xl pb-32 pt-40">
+        <div className="relative z-10 section-container w-full max-w-7xl pb-32 pt-40">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10">
             <div className="max-w-2xl">
               {/* NEW ARRIVAL badge */}

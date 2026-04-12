@@ -1,33 +1,119 @@
-import Link from "next/link";
 import type { Metadata } from "next";
+import Image from "next/image";
+import CalendarClient from "@/components/CalendarClient";
+import FeaturedEventsCarousel from "@/components/FeaturedEventsCarousel";
 
 export const metadata: Metadata = {
   title: "Calendar & Events",
-  description: "Find upcoming Chamber events, luncheons, and community programs.",
+  description:
+    "Find upcoming Chamber events, luncheons, and community programs.",
 };
 
 export default function Page() {
   return (
     <>
-      {/* Page Hero */}
-      <section className="bg-primary py-20">
-        <div className="section-container">
-          <p className="eyebrow text-bright-teal mb-4">Mountain West Chamber of Commerce</p>
-          <h1 className="heading-2xl text-white">Calendar & Events</h1>
+      {/* Page Hero with Background Image */}
+      <section className="relative bg-primary py-32 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop"
+          alt="Professional networking event"
+          fill
+          className="object-cover -z-10 opacity-20"
+          priority
+        />
+        <div className="section-container relative z-10">
+          <p className="eyebrow text-teal mb-4">
+            Mountain West Chamber of Commerce
+          </p>
+          <h1 className="heading-2xl text-white">Calendar &amp; Events</h1>
+          <p className="font-body text-white/80 mt-3 max-w-xl">
+            Stay connected with Chamber events, city council meetings,
+            luncheons, and community programs.
+          </p>
         </div>
       </section>
 
-      {/* Placeholder content */}
-      <section className="py-20 bg-white">
-        <div className="section-container max-w-3xl">
-          <div className="text-center py-20 text-slate-400">
-            <svg className="w-16 h-16 mx-auto mb-6 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-            </svg>
-            <p className="font-accent text-lg font-semibold mb-2">Content Coming Soon</p>
-            <p className="font-body text-sm mb-8">This page is being built. Check back soon!</p>
-            <Link href="/" className="btn btn-primary">Back to Home</Link>
+      {/* Event & Sponsorship + Featured Events Section */}
+      <section className="py-16 bg-off-white">
+        <div className="section-container">
+          {/* Section Header */}
+          <div className="max-w-3xl mb-12">
+            <h2 className="heading-lg text-primary mb-2">
+              Event &amp; Sponsorship Opportunities
+            </h2>
+            <p className="font-body text-slate-600">
+              Review our calendared events and let us know if you'd like to be a
+              sponsor. We'll take it from there!
+            </p>
           </div>
+
+          {/* Featured Events Carousel */}
+          <FeaturedEventsCarousel />
+        </div>
+      </section>
+
+      {/* Legend */}
+      <section className="bg-light-gray border-b border-slate-200">
+        <div className="section-container py-4 flex flex-wrap gap-4 items-center">
+          <span className="font-accent text-xs font-bold tracking-widest uppercase text-slate-blue">
+            Event Types:
+          </span>
+          <span className="flex items-center gap-1.5 font-body text-xs">
+            <span
+              className="inline-block w-3 h-3 rounded-sm"
+              style={{ backgroundColor: "#0D3B66" }}
+            ></span>
+            Chamber Events
+          </span>
+          <span className="flex items-center gap-1.5 font-body text-xs">
+            <span
+              className="inline-block w-3 h-3 rounded-sm"
+              style={{ backgroundColor: "#5DCAD1" }}
+            ></span>
+            Workshops &amp; Networking
+          </span>
+          <span className="flex items-center gap-1.5 font-body text-xs">
+            <span
+              className="inline-block w-3 h-3 rounded-sm"
+              style={{ backgroundColor: "#3F6183" }}
+            ></span>
+            City Council
+          </span>
+          <span className="flex items-center gap-1.5 font-body text-xs">
+            <span
+              className="inline-block w-3 h-3 rounded-sm"
+              style={{ backgroundColor: "#F7DE32" }}
+            ></span>
+            Special Events
+          </span>
+          <span className="flex items-center gap-1.5 font-body text-xs">
+            <span
+              className="inline-block w-3 h-3 rounded-sm"
+              style={{ backgroundColor: "#FFA384" }}
+            ></span>
+            Board Meetings
+          </span>
+        </div>
+      </section>
+
+      {/* Calendar */}
+      <section className="py-20 bg-white">
+        <div className="section-container">
+          <CalendarClient />
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-off-white">
+        <div className="section-container text-center max-w-2xl">
+          <h2 className="heading-lg text-primary mb-3">Attend an Event</h2>
+          <p className="font-body text-slate-600 mb-6">
+            Come experience the Chamber — build relationships, grow your
+            business, and strengthen our community.
+          </p>
+          <a href="/contactus" className="btn btn-primary">
+            Get in Touch
+          </a>
         </div>
       </section>
     </>

@@ -148,7 +148,7 @@ export default function Page() {
           <div className="absolute inset-0 bg-linear-to-br from-primary/92 via-primary/75 to-slate-blue/80" />
         </div>
 
-        <div className="relative z-10 section-container max-w-7xl pb-32 pt-40 flex justify-start flex-1">
+        <div className="relative z-10 section-container w-full max-w-7xl pb-32 pt-40 flex justify-start flex-1">
           <div className="max-w-3xl">
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce

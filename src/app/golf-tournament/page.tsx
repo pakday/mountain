@@ -32,7 +32,7 @@ export default function Page() {
           <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/70 to-teal-dark/60" />
         </div>
 
-        <div className="relative z-10 section-container max-w-7xl pb-28 pt-36">
+        <div className="relative z-10 section-container w-full max-w-7xl pb-28 pt-36">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
             <div className="max-w-2xl">
               <p className="eyebrow text-teal mb-4">

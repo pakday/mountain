@@ -180,7 +180,7 @@ export default function Page() {
         </div>
 
         {/* Hero content */}
-        <div className="section-container relative z-10 max-w-7xl py-28 lg:py-36">
+        <div className="section-container relative z-10 w-full max-w-7xl py-28 lg:py-36">
           <div className="grid lg:grid-cols-[1fr_auto] gap-14 items-center">
             {/* ── Left column: event info ── */}
             <div className="max-w-2xl">

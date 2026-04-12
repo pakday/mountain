@@ -252,7 +252,7 @@ export default function Page() {
           <div className="absolute inset-0 bg-linear-to-br from-primary/93 via-primary/78 to-teal-dark/65" />
         </div>
 
-        <div className="relative z-10 section-container max-w-7xl pb-36 pt-36">
+        <div className="relative z-10 section-container w-full max-w-7xl pb-36 pt-36">
           <p className="eyebrow text-teal mb-4">
             Mountain West Chamber of Commerce
           </p>
