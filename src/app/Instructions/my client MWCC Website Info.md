@@ -28,12 +28,6 @@
 - Small local startups through larger corporations
 - Community leaders, non-profits, and professionals enhancing visibility and credibility
 
-## Competitors' websites
-
-- Salt Lake Chamber of Commerce: https://slchamber.com/
-- South Salt Lake Chamber of Commerce: https://www.sslchamber.com/
-- South Valley Chamber of Commerce: https://www.southvalleychamber.com/
-
 ## Lead generation form fields
 
 - First Name
