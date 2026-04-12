@@ -1,0 +1,136 @@
+[
+  {
+    "title": "About Us",
+    "page_exist": false,
+    "children": [
+      {
+        "title": "About Us",
+        "slug": "aboutus",
+        "page_exist": true
+      },
+      {
+        "title": "Board of Directors",
+        "slug": "boardofdirectors",
+        "page_exist": true
+      },
+      {
+        "title": "Utah Strong",
+        "slug": "utah-strong",
+        "page_exist": true
+      }
+    ]
+  },
+  {
+    "title": "BECOME A MEMBER",
+    "slug": "becomeamember",
+    "page_exist": true
+  },
+  {
+    "title": "Calendar & Events",
+    "page_exist": false,
+    "children": [
+      {
+        "title": "BLOG",
+        "slug": "blogarticles",
+        "page_exist": true
+      },
+      {
+        "title": "Calendars",
+        "slug": "calendar",
+        "page_exist": true
+      }
+    ]
+  },
+  {
+    "title": "Contact Us",
+    "slug": "contactus",
+    "page_exist": true
+  },
+  {
+    "title": "Home",
+    "page_exist": true
+  },
+  {
+    "title": "Member Resources",
+    "page_exist": false,
+    "children": [
+      {
+        "title": "Member Discounts",
+        "slug": "for-members",
+        "page_exist": true
+      },
+      {
+        "title": "Member Resources",
+        "slug": "join-us",
+        "page_exist": true
+      }
+    ]
+  },
+  {
+    "title": "Membership",
+    "page_exist": false,
+    "children": [
+      {
+        "title": "Member Directory",
+        "slug": "members",
+        "page_exist": true
+      },
+      {
+        "title": "Renewals",
+        "slug": "renew",
+        "page_exist": true
+      },
+      {
+        "title": "Sponsorship Opportunities",
+        "slug": "sponsorship",
+        "page_exist": true
+      },
+      {
+        "title": "Why Become a Member?",
+        "slug": "why-become-a-member",
+        "page_exist": true
+      }
+    ]
+  },
+  {
+    "title": "Programs",
+    "page_exist": false,
+    "children": [
+      {
+        "title": "Golf Sponsorships",
+        "slug": "golf-sponsorships",
+        "page_exist": true
+      },
+      {
+        "title": "Golf Tournament",
+        "slug": "golf-tournament",
+        "page_exist": true
+      },
+      {
+        "title": "Knight of Heroes Event",
+        "slug": "knight-of-heroes-event",
+        "page_exist": true
+      },
+      {
+        "title": "Local Link Discount",
+        "slug": "local-linkdiscounts",
+        "page_exist": true
+      },
+      {
+        "title": "Scholarship Recipients",
+        "slug": "scholarship-recipients",
+        "page_exist": true
+      },
+      {
+        "title": "Sponsorship Opportunities",
+        "slug": "sponsorshipopps",
+        "page_exist": true
+      },
+      {
+        "title": "Teacher Appreciation Event",
+        "slug": "teacher-appreciation-event",
+        "page_exist": true
+      }
+    ]
+  }
+]
