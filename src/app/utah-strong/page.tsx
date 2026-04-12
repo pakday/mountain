@@ -376,7 +376,9 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-10">
             <p className="eyebrow mb-2">Resources</p>
-            <h2 className="heading-lg text-primary font-bold">Small Business Resources</h2>
+            <h2 className="heading-lg text-primary font-bold">
+              Small Business Resources
+            </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {smallBusiness.map((r) => (
@@ -407,7 +409,9 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-10">
             <p className="eyebrow mb-2">Resources</p>
-            <h2 className="heading-lg text-primary font-bold">Health Resources</h2>
+            <h2 className="heading-lg text-primary font-bold">
+              Health Resources
+            </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {health.map((r) => (
@@ -438,7 +442,9 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-5">
             <p className="eyebrow mb-2">Chamber Members</p>
-            <h2 className="heading-lg text-primary font-bold">Restaurant Takeout, Curbside &amp; Delivery</h2>
+            <h2 className="heading-lg text-primary font-bold">
+              Restaurant Takeout, Curbside &amp; Delivery
+            </h2>
           </div>
           <p className="font-body text-sm text-slate-500 mb-10">
             Chamber member restaurants offering takeout and delivery.{" "}
@@ -478,7 +484,9 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-10">
             <p className="eyebrow mb-2">Tips &amp; Guides</p>
-            <h2 className="heading-lg text-primary font-bold">Remote Working</h2>
+            <h2 className="heading-lg text-primary font-bold">
+              Remote Working
+            </h2>
           </div>
           <div className="grid sm:grid-cols-3 gap-6 max-w-4xl">
             {remoteWork.map((r) => (
@@ -509,7 +517,9 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-10">
             <p className="eyebrow mb-2">Tools &amp; Platforms</p>
-            <h2 className="heading-lg text-primary font-bold">Online Business Resources</h2>
+            <h2 className="heading-lg text-primary font-bold">
+              Online Business Resources
+            </h2>
           </div>
 
           <div className="space-y-12">

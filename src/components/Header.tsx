@@ -15,12 +15,8 @@ const navItems: NavItem[] = [
     label: "About Us",
     children: [
       { label: "Our Story", href: "/aboutus" },
-      { label: "Meet the Staff", href: "/aboutus" },
       { label: "Board of Directors", href: "/boardofdirectors" },
       { label: "Utah Strong", href: "/utah-strong" },
-      { label: "Get Involved", href: "/contactus" },
-      { label: "Visitor & Relocation Info", href: "/contactus" },
-      { label: "Supporting Chambers", href: "/contactus" },
       { label: "Contact Us", href: "/contactus" },
     ],
   },
@@ -33,14 +29,7 @@ const navItems: NavItem[] = [
       { label: "Renewals", href: "/renew" },
     ],
   },
-  {
-    label: "Member Resources",
-    children: [
-      { label: "Member Discounts", href: "/for-members" },
-      { label: "Member Resources", href: "/join-us" },
-      { label: "Renew", href: "/renew" },
-    ],
-  },
+
   {
     label: "Programs",
     children: [
@@ -61,6 +50,14 @@ const navItems: NavItem[] = [
     children: [
       { label: "Calendar", href: "/calendar" },
       { label: "Blog", href: "/blogarticles" },
+    ],
+  },
+  {
+    label: "Member Resources",
+    children: [
+      { label: "Member Discounts", href: "/for-members" },
+      { label: "Member Resources", href: "/join-us" },
+      { label: "Renew", href: "/renew" },
     ],
   },
 ];

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SponsorCarousel from "../components/SponsorCarousel";
 
 /* ── Stat item ── */
 function Stat({ value, label }: { value: string; label: string }) {
@@ -823,99 +824,15 @@ export default function HomePage() {
             </h2>
           </div>
         </div>
-        {/* Continuous marquee slider */}
+        {/* Sponsor carousel slider */}
         <div className="section-container">
           <div
-            className="relative overflow-hidden"
+            className="relative"
             aria-label="Sustaining partner sponsor logos"
           >
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-linear-to-r from-white to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-linear-to-l from-white to-transparent" />
-            <div className="marquee-track relative z-0 flex items-center gap-16">
-              {/* Set 1 */}
-              {[
-                {
-                  src: "/Structure/Sustaining%20Partner%20Sponsors/BluffdaleLogo.jpg",
-                  alt: "City of Bluffdale",
-                },
-                {
-                  src: "/Structure/Sustaining%20Partner%20Sponsors/EXPAND-Logo.jpg",
-                  alt: "Expand",
-                },
-                {
-                  src: "/Structure/Sustaining%20Partner%20Sponsors/Herriman-Logo.jpg",
-                  alt: "City of Herriman",
-                },
-                {
-                  src: "/Structure/Sustaining%20Partner%20Sponsors/FatCatsSqLogoSized.jpg",
-                  alt: "Fat Cats",
-                },
-                {
-                  src: "/Structure/Sustaining%20Partner%20Sponsors/City+Journals.jpg",
-                  alt: "City Journals",
-                },
-                {
-                  src: "/Structure/Sustaining%20Partner%20Sponsors/Intermountain_Healthcare_Riverton_Logo.jpg",
-                  alt: "Intermountain Healthcare",
-                },
-                {
-                  src: "/Structure/Sustaining%20Partner%20Sponsors/MACU+SQ+Logo+2024.jpg",
-                  alt: "Mountain America Credit Union",
-                },
-                {
-                  src: "/Structure/Sustaining%20Partner%20Sponsors/HCJ_Square_Logo_Black.jpg",
-                  alt: "HCJ",
-                },
-              ]
-                .concat([
-                  {
-                    src: "/Structure/Sustaining%20Partner%20Sponsors/BluffdaleLogo.jpg",
-                    alt: "City of Bluffdale",
-                  },
-                  {
-                    src: "/Structure/Sustaining%20Partner%20Sponsors/EXPAND-Logo.jpg",
-                    alt: "Expand",
-                  },
-                  {
-                    src: "/Structure/Sustaining%20Partner%20Sponsors/Herriman-Logo.jpg",
-                    alt: "City of Herriman",
-                  },
-                  {
-                    src: "/Structure/Sustaining%20Partner%20Sponsors/FatCatsSqLogoSized.jpg",
-                    alt: "Fat Cats",
-                  },
-                  {
-                    src: "/Structure/Sustaining%20Partner%20Sponsors/City+Journals.jpg",
-                    alt: "City Journals",
-                  },
-                  {
-                    src: "/Structure/Sustaining%20Partner%20Sponsors/Intermountain_Healthcare_Riverton_Logo.jpg",
-                    alt: "Intermountain Healthcare",
-                  },
-                  {
-                    src: "/Structure/Sustaining%20Partner%20Sponsors/MACU+SQ+Logo+2024.jpg",
-                    alt: "Mountain America Credit Union",
-                  },
-                  {
-                    src: "/Structure/Sustaining%20Partner%20Sponsors/HCJ_Square_Logo_Black.jpg",
-                    alt: "HCJ",
-                  },
-                ])
-                .map((logo, i) => (
-                  <div
-                    key={i}
-                    className="shrink-0 w-44 h-28 sm:w-48 sm:h-32 md:w-56 md:h-36 relative"
-                  >
-                    <Image
-                      src={logo.src}
-                      alt={logo.alt}
-                      fill
-                      className="object-contain transition-all duration-300"
-                      sizes="192px"
-                    />
-                  </div>
-                ))}
-            </div>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-white to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-white to-transparent" />
+            <SponsorCarousel />
           </div>
         </div>
         <div className="section-container">
