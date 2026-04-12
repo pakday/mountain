@@ -65,7 +65,7 @@ function ProgramCard({
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-primary/70 to-transparent" />
         <span className="absolute top-4 left-4 eyebrow bg-yellow text-primary px-3 py-1 rounded-full text-xs">
           {eyebrow}
         </span>
@@ -104,7 +104,7 @@ export default function HomePage() {
             sizes="100vw"
           />
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-slate-blue/50" />
+          <div className="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/75 to-slate-blue/50" />
         </div>
 
         {/* Content */}
@@ -141,7 +141,7 @@ export default function HomePage() {
           <span className="font-accent text-xs tracking-widest uppercase">
             Scroll
           </span>
-          <div className="w-px h-12 bg-gradient-to-b from-white/50 to-transparent animate-pulse" />
+          <div className="w-px h-12 bg-linear-to-b from-white/50 to-transparent animate-pulse" />
         </div>
       </section>
 
@@ -639,7 +639,7 @@ export default function HomePage() {
               {/* Contact details */}
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/12 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-lg bg-primary/12 flex items-center justify-center shrink-0 mt-0.5">
                     <svg
                       className="w-5 h-5 text-primary"
                       fill="none"
@@ -674,7 +674,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/12 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-primary/12 flex items-center justify-center shrink-0">
                     <svg
                       className="w-5 h-5 text-primary"
                       fill="currentColor"
@@ -696,7 +696,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/12 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-primary/12 flex items-center justify-center shrink-0">
                     <svg
                       className="w-5 h-5 text-primary"
                       fill="currentColor"

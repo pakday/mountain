@@ -123,7 +123,7 @@ export default function Footer() {
                 className="flex items-start gap-3 text-sm text-white/70 hover:text-white transition-colors"
               >
                 <svg
-                  className="w-4 h-4 flex-shrink-0 mt-0.5"
+                  className="w-4 h-4 shrink-0 mt-0.5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -137,7 +137,7 @@ export default function Footer() {
                 className="flex items-center gap-3 text-sm text-white/70 hover:text-white transition-colors"
               >
                 <svg
-                  className="w-4 h-4 flex-shrink-0"
+                  className="w-4 h-4 shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -147,7 +147,7 @@ export default function Footer() {
               </a>
               <address className="not-italic flex items-start gap-3 text-sm text-white/70">
                 <svg
-                  className="w-4 h-4 flex-shrink-0 mt-0.5"
+                  className="w-4 h-4 shrink-0 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

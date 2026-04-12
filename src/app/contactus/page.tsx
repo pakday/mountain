@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -11,8 +12,16 @@ export default function Page() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="bg-primary py-24">
-        <div className="section-container max-w-7xl text-left">
+      <section className="relative py-32 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+          alt="Modern office building"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-primary/80" />
+        <div className="relative z-10 section-container max-w-7xl text-left">
           <div className="max-w-3xl">
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce
@@ -95,7 +104,7 @@ export default function Page() {
                   },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                       <svg
                         className="w-5 h-5 text-primary"
                         fill={item.isFill ? "currentColor" : "none"}
@@ -124,7 +133,7 @@ export default function Page() {
 
               {/* Staff card */}
               <div className="card p-6 flex items-center gap-5">
-                <div className="w-16 h-16 rounded-full bg-teal/15 flex items-center justify-center flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-teal/15 flex items-center justify-center shrink-0">
                   <svg
                     className="w-8 h-8 text-teal-dark/60"
                     fill="currentColor"

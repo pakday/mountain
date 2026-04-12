@@ -15,8 +15,12 @@ const navItems: NavItem[] = [
     label: "About Us",
     children: [
       { label: "Our Story", href: "/aboutus" },
+      { label: "Meet the Staff", href: "/aboutus" },
       { label: "Board of Directors", href: "/boardofdirectors" },
       { label: "Utah Strong", href: "/utah-strong" },
+      { label: "Get Involved", href: "/contactus" },
+      { label: "Visitor & Relocation Info", href: "/contactus" },
+      { label: "Supporting Chambers", href: "/contactus" },
       { label: "Contact Us", href: "/contactus" },
     ],
   },
@@ -73,9 +77,9 @@ function DropdownMenu({ items }: { items: { label: string; href: string }[] }) {
         transition-all duration-200 ease-out
       "
     >
-      {items.map((item) => (
+      {items.map((item, idx) => (
         <Link
-          key={item.href}
+          key={`${item.href}-${item.label}-${idx}`}
           href={item.href}
           className="
             block px-5 py-2.5
@@ -228,7 +232,7 @@ export default function Header() {
       <div className="section-container">
         <div className="flex items-center justify-between h-24 gap-6">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="shrink-0">
             <Image
               src="/mountainwestchamber-logo.webp"
               alt="Mountain West Chamber of Commerce"
