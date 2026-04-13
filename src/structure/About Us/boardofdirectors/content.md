@@ -16,7 +16,7 @@ Eternal Estate Planning
 
 BOARD MEMBER
 
-Stephanie Isiko Co-Owns CMIT Solutions of Sandy with her husband Jackson. Stephanie is responsible for the day to day operations of the business while Jackson handles the technical aspect. She enjoys the marketing aspect as it has allowed her to meet so many new people. Stephanie has a Bachelors from Weber State and enjoys traveling and camping with her family.
+Crystal co-owns Eternal Estate Planning with her husband Jackson. She handles day-to-day operations while Jackson manages the technical side. She enjoys the marketing aspect because it allows her to meet many new people. Crystal has a bachelor’s degree from Weber State and enjoys traveling and camping with her family.
 
 Megan Bennett
 Edward Jones Investments
@@ -53,9 +53,9 @@ Shea Quintana
 America First Credit Union
 
 BOARD MEMBER
-Laura actively pursues community partnerships, serves on the Women in Business Committee of the South Valley Chamber of Commerce, and is President of the Public Relations Society of America’s Utah Chapter. She was selected as “Business Woman of the Year” in 2015 by the Southwest Valley Chamber. She earned her accreditation in public relations (APR) from PRSA in 2016 and graduated in 2020 with her Masters at WGU in Business Management and Leadership. She was the recipient of the Women in Leadership scholarship.
+Shea actively pursues community partnerships, serves on the Women in Business Committee of the South Valley Chamber of Commerce, and is President of the Public Relations Society of America’s Utah Chapter. She was selected as “Business Woman of the Year” in 2015 by the Southwest Valley Chamber. She earned her accreditation in public relations (APR) from PRSA in 2016 and graduated in 2020 with her Masters at WGU in Business Management and Leadership. She was the recipient of the Women in Leadership scholarship.
 
-Laura is married to her prince, Doug, and has four children. She loves salsa dancing, reading, traveling, and spending time with her family. She’s passionate about women’s and children’s health and volunteers with her church. And she’s still drawing on her experience of mopping floors every day — which makes her life a true Cinderella story!
+Shea is married to her prince, Doug, and has four children. She loves salsa dancing, reading, traveling, and spending time with her family. She’s passionate about women’s and children’s health and volunteers with her church. And she’s still drawing on her experience of mopping floors every day — which makes her life a true Cinderella story!
 
 Heidi Patzold
 City Publications SLC South
