@@ -58,7 +58,7 @@ const navItems: NavItem[] = [
       { label: "Member Discounts", href: "/for-members" },
       { label: "Member Resources", href: "/join-us" },
       { label: "Renew", href: "/renew" },
-      { label: "Design System Reference", href: "/design" },
+      { label: "Design", href: "/design" },
     ],
   },
 ];

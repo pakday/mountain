@@ -169,7 +169,7 @@ export default function HomePage() {
             {/* Text */}
             <div>
               <p className="eyebrow mb-4">About the Chamber</p>
-              <h2 className="heading-2xl text-primary mb-6">
+              <h2 className="heading-xl text-primary mb-6">
                 Building Stronger Businesses.{" "}
                 <span className="text-teal-dark">
                   Building Stronger Communities.

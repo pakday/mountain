@@ -1,5 +1,6 @@
 "use client";
 
+import { DesignNav } from "./DesignNav";
 import { ColorPalette } from "./components/ColorPalette";
 import { TypographySystem } from "./components/TypographySystem";
 import { ButtonsAndBadges } from "./components/ButtonsAndBadges";
@@ -8,20 +9,7 @@ import { SpacingSystem } from "./components/SpacingSystem";
 export default function DesignSystemPage() {
   return (
     <div className="bg-white min-h-screen">
-      {/* Header */}
-      <div className="bg-[#0D3B66] px-8 py-8 flex items-center justify-between sticky top-0 z-10 shadow-md">
-        <div>
-          <div className="text-xs tracking-widest uppercase text-[#5DCAD1] mb-1">
-            Design System
-          </div>
-          <div className="font-serif text-2xl text-[#FFFAF9]">
-            Mountain West Chamber — Global Design Tokens
-          </div>
-        </div>
-        <div className="text-xs text-[rgba(255,250,249,0.4)]">
-          All tokens in one page · April 2026
-        </div>
-      </div>
+      <DesignNav currentPage="overview" />
 
       <div className="max-w-6xl mx-auto p-8 flex flex-col gap-12">
         {/* Overview Section */}
