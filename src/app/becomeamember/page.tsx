@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { MembershipTierCard, StatCard } from "@/components/Cards";
 
 export const metadata: Metadata = {
   title: "Become a Member | Mountain West Chamber of Commerce",
@@ -123,56 +124,18 @@ export default function Page() {
           {/* tier grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
             {memberships.map((m) => (
-              <div
+              <MembershipTierCard
                 key={m.label}
-                className={`card flex flex-col relative${m.highlight ? " ring-2 ring-teal shadow-xl" : ""}`}
-              >
-                {/* badge accent bar */}
-                <div className={`h-2 w-full ${m.accent} rounded-t-xl`} />
-
-                {/* tag pill */}
-                {m.tag && (
-                  <div className="absolute top-5 right-4">
-                    <span className="eyebrow bg-yellow text-primary text-[0.6rem] px-2 py-1 rounded-full">
-                      {m.tag}
-                    </span>
-                  </div>
-                )}
-
-                <div className="p-8 flex flex-col flex-1 gap-5">
-                  {/* price */}
-                  <div>
-                    <div className="flex items-baseline gap-1 mb-1">
-                      <span
-                        className="heading-xl text-primary"
-                        style={{ fontFamily: "var(--font-heading)" }}
-                      >
-                        {m.price}
-                      </span>
-                      <span className="font-body text-sm text-slate-400">
-                        {m.period}
-                      </span>
-                    </div>
-                    <h3 className="heading-sm text-primary">{m.label}</h3>
-                  </div>
-
-                  {/* divider */}
-                  <div className="section-divider" />
-
-                  {/* description */}
-                  <p className="font-body text-sm text-slate-500 leading-relaxed flex-1">
-                    {m.description}
-                  </p>
-
-                  {/* CTA */}
-                  <Link
-                    href={m.href}
-                    className={`btn w-full text-center mt-auto ${m.highlight ? "btn-secondary" : "btn-outline"}`}
-                  >
-                    {m.cta}
-                  </Link>
-                </div>
-              </div>
+                title={m.label}
+                price={m.price}
+                period={m.period}
+                description={m.description}
+                highlight={m.highlight}
+                tag={m.tag}
+                ctaLabel={m.cta}
+                href={m.href}
+                accentClass={m.accent}
+              />
             ))}
           </div>
         </div>
@@ -222,20 +185,12 @@ export default function Page() {
             {/* stats grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {stats.map((s) => (
-                <div
+                <StatCard
                   key={s.pct}
-                  className="card p-8 text-center group hover:shadow-lg transition-shadow duration-300"
-                >
-                  <div
-                    className="heading-2xl text-teal mb-3"
-                    style={{ fontFamily: "var(--font-heading)" }}
-                  >
-                    {s.pct}
-                  </div>
-                  <p className="font-body text-sm text-slate-500 leading-snug">
-                    {s.label}
-                  </p>
-                </div>
+                  variant="card"
+                  value={s.pct}
+                  label={s.label}
+                />
               ))}
             </div>
           </div>

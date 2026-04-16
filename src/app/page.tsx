@@ -1,91 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import SponsorCarousel from "../components/SponsorCarousel";
-
-/* ── Stat item ── */
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="text-center px-6">
-      <div
-        className="heading-2xl text-yellow font-800"
-        style={{ fontFamily: "var(--font-heading)" }}
-      >
-        {value}
-      </div>
-      <div className="font-accent text-sm font-600 uppercase tracking-widest text-white/80 mt-1">
-        {label}
-      </div>
-    </div>
-  );
-}
-
-/* ── Benefit card ── */
-function BenefitCard({
-  icon,
-  title,
-  description,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}) {
-  return (
-    <div className="card p-8 flex flex-col gap-4 group hover:shadow-lg transition-shadow duration-300">
-      <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-teal/15 text-teal-dark group-hover:bg-teal group-hover:text-white transition-all duration-300">
-        {icon}
-      </div>
-      <h3 className="heading-sm text-primary">{title}</h3>
-      <p className="font-body text-base text-slate-500 leading-relaxed">
-        {description}
-      </p>
-    </div>
-  );
-}
-
-/* ── Program card ── */
-function ProgramCard({
-  imageSrc,
-  eyebrow,
-  title,
-  description,
-  href,
-}: {
-  imageSrc: string;
-  eyebrow: string;
-  title: string;
-  description: string;
-  href: string;
-}) {
-  return (
-    <div className="card overflow-hidden group">
-      <div className="relative h-56 overflow-hidden">
-        <Image
-          src={imageSrc}
-          alt={title}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-        />
-        <div className="absolute inset-0 bg-linear-to-t from-primary/70 to-transparent" />
-        <span className="absolute top-4 left-4 eyebrow bg-yellow text-primary px-3 py-1 rounded-full text-xs">
-          {eyebrow}
-        </span>
-      </div>
-      <div className="p-6 flex flex-col gap-3">
-        <h3 className="heading-sm text-primary">{title}</h3>
-        <p className="font-body text-sm text-slate-500 leading-relaxed">
-          {description}
-        </p>
-        <Link
-          href={href}
-          className="btn btn-ghost btn-sm self-start mt-2 pl-0 text-teal font-700"
-        >
-          Learn More →
-        </Link>
-      </div>
-    </div>
-  );
-}
+import {
+  IconFeatureCard,
+  ProgramCard,
+  StatCard,
+  StepCard,
+} from "@/components/Cards";
 
 export default function HomePage() {
   return (
@@ -152,10 +73,10 @@ export default function HomePage() {
       <section className="bg-primary py-12">
         <div className="section-container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 divide-y-0 md:divide-x md:divide-white/15">
-            <Stat value="27+" label="Years Serving Utah" />
-            <Stat value="300+" label="Member Businesses" />
-            <Stat value="20+" label="Annual Events" />
-            <Stat value="3" label="Cities Represented" />
+            <StatCard value="27+" label="Years Serving Utah" />
+            <StatCard value="300+" label="Member Businesses" />
+            <StatCard value="20+" label="Annual Events" />
+            <StatCard value="3" label="Cities Represented" />
           </div>
         </div>
       </section>
@@ -277,7 +198,8 @@ export default function HomePage() {
 
           {/* Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <BenefitCard
+            <IconFeatureCard
+              iconAnimated
               icon={
                 <svg
                   className="w-7 h-7"
@@ -296,7 +218,8 @@ export default function HomePage() {
               title="Build Relationships"
               description="Connect with local businesses through regular networking events, our ambassador program, ribbon cuttings, and our Women in Business program — double the opportunities."
             />
-            <BenefitCard
+            <IconFeatureCard
+              iconAnimated
               icon={
                 <svg
                   className="w-7 h-7"
@@ -315,7 +238,8 @@ export default function HomePage() {
               title="Up-level Your Skills"
               description="Learn finance, cybersecurity, HR, marketing and more in our monthly Connect & Learn and Women in Business lunch events — practical education for real growth."
             />
-            <BenefitCard
+            <IconFeatureCard
+              iconAnimated
               icon={
                 <svg
                   className="w-7 h-7"
@@ -340,7 +264,8 @@ export default function HomePage() {
               title="Gain Visibility"
               description="Drive foot traffic via ribbon cuttings, get promoted on our website and social accounts, and let us amplify your events to the entire chamber community."
             />
-            <BenefitCard
+            <IconFeatureCard
+              iconAnimated
               icon={
                 <svg
                   className="w-7 h-7"
@@ -359,7 +284,8 @@ export default function HomePage() {
               title="Influence Policy"
               description="As part of the Western Growth Coalition, attend monthly meetings with city officials and local chambers. Participate in our Legislative Roundup to speak with legislators directly."
             />
-            <BenefitCard
+            <IconFeatureCard
+              iconAnimated
               icon={
                 <svg
                   className="w-7 h-7"
@@ -378,7 +304,8 @@ export default function HomePage() {
               title="Give Back"
               description="Participate in our three annual give-back events: Teacher Appreciation Luncheon, Scholarship Golf Tournament, and Knight of Heroes — honoring our community every year."
             />
-            <BenefitCard
+            <IconFeatureCard
+              iconAnimated
               icon={
                 <svg
                   className="w-7 h-7"
@@ -506,59 +433,27 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {(
-              [
-                {
-                  step: "01",
-                  title: "Attend an Event",
-                  description:
-                    "Experience the resources available to help you grow. See the connections, energy, and community that MWCC brings together.",
-                  href: "/calendar",
-                  cta: "See Calendar",
-                },
-                {
-                  step: "02",
-                  title: "Become a Member",
-                  description:
-                    "Join a community committed to helping you succeed. Unlock networking, education, visibility, and advocacy for your business.",
-                  href: "/becomeamember",
-                  cta: "Join Today",
-                },
-                {
-                  step: "03",
-                  title: "Serve & Sponsor",
-                  description:
-                    "Strengthen your connections through sponsorship and committee involvement — the fastest path to deeper community leadership.",
-                  href: "/sponsorshipopps",
-                  cta: "Sponsor",
-                },
-              ] as const
-            ).map((item) => (
-              <div
-                key={item.step}
-                className="relative flex flex-col gap-5 p-8 rounded-2xl border-2 border-light-gray hover:border-teal/40 hover:shadow-lg transition-all duration-300"
-              >
-                <span
-                  className="font-heading font-800 text-light-gray absolute top-4 right-6"
-                  style={{
-                    fontSize: "5rem",
-                    lineHeight: 1,
-                    fontFamily: "var(--font-heading)",
-                  }}
-                >
-                  {item.step}
-                </span>
-                <div className="relative z-10">
-                  <h3 className="heading-md text-primary mb-3">{item.title}</h3>
-                  <p className="font-body text-sm text-slate-500 leading-relaxed mb-5">
-                    {item.description}
-                  </p>
-                  <Link href={item.href} className="btn btn-secondary btn-sm">
-                    {item.cta}
-                  </Link>
-                </div>
-              </div>
-            ))}
+            <StepCard
+              step="01"
+              title="Attend an Event"
+              description="Experience the resources available to help you grow. See the connections, energy, and community that MWCC brings together."
+              href="/calendar"
+              cta="See Calendar"
+            />
+            <StepCard
+              step="02"
+              title="Become a Member"
+              description="Join a community committed to helping you succeed. Unlock networking, education, visibility, and advocacy for your business."
+              href="/becomeamember"
+              cta="Join Today"
+            />
+            <StepCard
+              step="03"
+              title="Serve & Sponsor"
+              description="Strengthen your connections through sponsorship and committee involvement — the fastest path to deeper community leadership."
+              href="/sponsorshipopps"
+              cta="Sponsor"
+            />
           </div>
         </div>
       </section>

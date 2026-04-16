@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { MembershipTierCard } from "@/components/Cards";
 
 export const metadata: Metadata = {
   title: "Renew Your Membership",
@@ -182,87 +183,19 @@ export default function Page() {
 
           <div className="grid md:grid-cols-3 gap-8 items-stretch">
             {tiers.map((tier) => (
-              <div
+              <MembershipTierCard
                 key={tier.title}
-                className={`relative flex flex-col rounded-2xl overflow-hidden border transition-shadow hover:shadow-xl ${
-                  tier.highlight
-                    ? "border-teal shadow-lg ring-2 ring-teal/30"
-                    : "border-light-gray shadow"
-                }`}
-              >
-                {tier.highlight && (
-                  <div className="bg-teal text-primary text-center py-2">
-                    <span className="font-accent font-700 text-xs uppercase tracking-widest">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-
-                {/* Badge image */}
-                <div className="bg-primary flex items-center justify-center py-10 px-8">
-                  <div className="relative w-44 h-44">
-                    <Image
-                      src={tier.badge}
-                      alt={`${tier.title} badge`}
-                      fill
-                      className="object-contain drop-shadow-lg"
-                      sizes="176px"
-                      onError={undefined}
-                    />
-                  </div>
-                </div>
-
-                {/* Body */}
-                <div className="flex flex-col flex-1 p-7">
-                  <h3 className="heading-sm text-primary mb-1">{tier.title}</h3>
-                  <div className="flex items-end gap-1 mb-4">
-                    <span
-                      className="heading-xl text-primary"
-                      style={{ fontFamily: "var(--font-heading)" }}
-                    >
-                      {tier.price}
-                    </span>
-                    <span className="font-body text-slate-400 text-sm pb-1">
-                      {tier.period}
-                    </span>
-                  </div>
-                  <p className="font-body text-sm text-slate-500 leading-relaxed mb-6">
-                    {tier.description}
-                  </p>
-
-                  <ul className="flex flex-col gap-2 mb-8 flex-1">
-                    {tier.features.map((f) => (
-                      <li key={f} className="flex items-start gap-2">
-                        <svg
-                          className="w-4 h-4 text-teal shrink-0 mt-0.5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2.5}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        <span className="font-body text-sm text-slate-600 leading-snug">
-                          {f}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <a
-                    href={tier.ctaUrl}
-                    className={`btn w-full text-center ${
-                      tier.highlight ? "btn-secondary" : "btn-outline"
-                    }`}
-                  >
-                    {tier.ctaLabel}
-                  </a>
-                </div>
-              </div>
+                title={tier.title}
+                price={tier.price}
+                period={tier.period}
+                description={tier.description}
+                features={tier.features}
+                highlight={tier.highlight}
+                ctaLabel={tier.ctaLabel}
+                href={tier.ctaUrl}
+                badgeImage={tier.badge}
+                badgeAlt={`${tier.title} badge`}
+              />
             ))}
           </div>
         </div>

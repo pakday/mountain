@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { IconFeatureCard, StepCard } from "@/components/Cards";
 
 export const metadata: Metadata = {
   title: "Local Link Discounts — Mountain West Chamber",
@@ -435,19 +436,13 @@ export default function Page() {
               <div key={step.number} className="relative">
                 {/* Connector line (desktop) */}
                 <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-light-gray -z-10" />
-                <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300">
-                  <div
-                    className={`w-16 h-16 rounded-full ${step.color} flex items-center justify-center mx-auto mb-6 shadow-lg`}
-                  >
-                    <span className="font-heading text-white text-2xl font-700">
-                      {step.number}
-                    </span>
-                  </div>
-                  <h3 className="heading-sm text-primary mb-3">{step.title}</h3>
-                  <p className="font-body text-gray-500 text-sm leading-relaxed">
-                    {step.desc}
-                  </p>
-                </div>
+                <StepCard
+                  variant="circle"
+                  step={step.number}
+                  title={step.title}
+                  description={step.desc}
+                  colorClass={step.color}
+                />
               </div>
             ))}
           </div>
@@ -537,20 +532,14 @@ export default function Page() {
           {/* Benefits grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {passportBenefits.map((benefit) => (
-              <div
+              <IconFeatureCard
                 key={benefit.title}
-                className="card p-7 group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-teal/20"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center text-teal mb-5 group-hover:bg-teal group-hover:text-white transition-all duration-300">
-                  {benefit.icon}
-                </div>
-                <h3 className="heading-sm text-primary mb-3">
-                  {benefit.title}
-                </h3>
-                <p className="font-body text-gray-500 text-sm leading-relaxed">
-                  {benefit.desc}
-                </p>
-              </div>
+                icon={benefit.icon}
+                title={benefit.title}
+                description={benefit.desc}
+                iconAnimated
+                lift
+              />
             ))}
           </div>
         </div>

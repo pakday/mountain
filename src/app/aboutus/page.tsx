@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { IconFeatureCard, StatCard } from "@/components/Cards";
 
 export const metadata: Metadata = {
   title: "Our Story",
@@ -100,17 +101,7 @@ export default function Page() {
               { value: "20+", label: "Annual Events" },
               { value: "3", label: "Cities Represented" },
             ].map((s) => (
-              <div key={s.label} className="px-6">
-                <div
-                  className="heading-2xl text-yellow font-800"
-                  style={{ fontFamily: "var(--font-heading)" }}
-                >
-                  {s.value}
-                </div>
-                <div className="font-accent text-sm font-600 uppercase tracking-widest text-white/80 mt-1">
-                  {s.label}
-                </div>
-              </div>
+              <StatCard key={s.label} value={s.value} label={s.label} />
             ))}
           </div>
         </div>
@@ -139,69 +130,47 @@ export default function Page() {
                 description:
                   "Each spring we celebrate 25 outstanding local teachers with a luncheon recognizing their incredible dedication to our community's youth.",
                 href: "/teacher-appreciation-event",
-                icon: (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                  />
-                ),
+                iconPath:
+                  "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z",
               },
               {
                 title: "Scholarship Golf Tournament",
                 description:
                   "Our annual fall golf tournament at Stonebridge Golf Course raises funds for scholarships supporting local high school students.",
                 href: "/golf-tournament",
-                icon: (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
-                  />
-                ),
+                iconPath:
+                  "M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9",
               },
               {
                 title: "Knight of Heroes Gala",
                 description:
                   "We honor police, fire, healthcare, and business heroes who go above and beyond for the Southwest Valley community each year.",
                 href: "/knight-of-heroes-event",
-                icon: (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                ),
+                iconPath:
+                  "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
               },
             ].map((item) => (
-              <div
+              <IconFeatureCard
                 key={item.title}
-                className="card p-8 flex flex-col gap-4 hover:shadow-lg transition-shadow"
-              >
-                <div className="w-14 h-14 rounded-xl bg-teal/15 flex items-center justify-center">
+                icon={
                   <svg
-                    className="w-7 h-7 text-teal-dark"
+                    className="w-7 h-7"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    {item.icon}
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d={item.iconPath}
+                    />
                   </svg>
-                </div>
-                <h3 className="heading-sm text-primary">{item.title}</h3>
-                <p className="font-body text-sm text-slate-500 leading-relaxed flex-1">
-                  {item.description}
-                </p>
-                <Link
-                  href={item.href}
-                  className="btn btn-ghost btn-sm self-start pl-0 text-teal font-700"
-                >
-                  Learn More →
-                </Link>
-              </div>
+                }
+                title={item.title}
+                description={item.description}
+                href={item.href}
+              />
             ))}
           </div>
         </div>

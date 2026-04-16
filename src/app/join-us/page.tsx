@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import ChamberGallerySlider from "@/components/ChamberGallerySlider";
+import { ProgramCard } from "@/components/Cards";
 
 const BASE = "/Structure/Member%20Resources/join-us";
 
@@ -132,53 +133,6 @@ const activityPillars = [
 
 /* ── Sub-components ───────────────────────────── */
 
-function ResourceCard({
-  title,
-  date,
-  href,
-  image,
-  category,
-  excerpt,
-}: {
-  title: string;
-  date: string;
-  href: string;
-  image: string;
-  category: string;
-  excerpt: string;
-}) {
-  return (
-    <article className="card flex flex-col group">
-      <div className="relative h-52 overflow-hidden">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-        />
-        <div className="absolute inset-0 bg-linear-to-t from-primary/75 to-transparent" />
-        <span className="absolute left-4 top-4 rounded-full bg-yellow px-3 py-1 font-accent text-[0.65rem] font-bold uppercase tracking-widest text-primary">
-          {category}
-        </span>
-      </div>
-      <div className="flex flex-1 flex-col gap-3 p-6">
-        <p className="eyebrow text-slate-400">{date}</p>
-        <h3 className="heading-sm text-primary leading-snug">{title}</h3>
-        <p className="font-body text-sm leading-relaxed text-slate-500 flex-1">
-          {excerpt}
-        </p>
-        <Link
-          href={href}
-          className="btn btn-ghost btn-sm self-start mt-2 pl-0 text-teal-dark"
-        >
-          Read More →
-        </Link>
-      </div>
-    </article>
-  );
-}
-
 function PartnerLogo({
   name,
   href,
@@ -285,7 +239,16 @@ export default function Page() {
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {featuredResources.map((r) => (
-              <ResourceCard key={r.title} {...r} />
+              <ProgramCard
+                key={r.title}
+                imageSrc={r.image}
+                eyebrow={r.category}
+                title={r.title}
+                description={r.excerpt}
+                href={r.href}
+                date={r.date}
+                linkLabel="Read More →"
+              />
             ))}
           </div>
         </div>

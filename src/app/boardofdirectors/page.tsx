@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { PersonCard } from "@/components/Cards";
 
 export const metadata: Metadata = {
   title: "Board of Directors",
@@ -183,41 +184,16 @@ export default function Page() {
 
           <div className="grid sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {officers.map((m) => (
-              <div
+              <PersonCard
                 key={m.name}
-                className={`card border-t-4 ${m.accent} p-8 flex flex-col items-center text-center gap-5 hover:shadow-xl transition-shadow duration-300`}
-              >
-                <div className="relative w-28 h-28 rounded-full overflow-hidden ring-4 ring-teal/20 shrink-0">
-                  <Image
-                    src={m.image}
-                    alt={m.name}
-                    fill
-                    quality={95}
-                    priority
-                    className="object-cover object-top"
-                  />
-                </div>
-                <div>
-                  <span className="inline-block bg-teal/10 text-teal-dark text-[0.65rem] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
-                    {m.role}
-                  </span>
-                  <h3 className="heading-sm text-primary mb-1">{m.name}</h3>
-                  {"companyUrl" in m && m.companyUrl ? (
-                    <a
-                      href={m.companyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-body text-sm text-teal-dark hover:text-teal transition-colors"
-                    >
-                      {m.company}
-                    </a>
-                  ) : (
-                    <p className="font-body text-sm text-slate-500">
-                      {m.company}
-                    </p>
-                  )}
-                </div>
-              </div>
+                variant="officer"
+                name={m.name}
+                role={m.role}
+                company={m.company}
+                companyUrl={m.companyUrl}
+                image={m.image}
+                accentClass={m.accent}
+              />
             ))}
           </div>
         </div>
@@ -234,40 +210,15 @@ export default function Page() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {boardMembers.map((m) => (
-              <div key={m.name} className="card group overflow-hidden">
-                <div className="relative w-full aspect-square overflow-hidden">
-                  <Image
-                    src={m.image}
-                    alt={m.name}
-                    fill
-                    quality={90}
-                    className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-                <div className="p-4 text-center">
-                  <p className="font-body text-[0.6rem] font-bold uppercase tracking-wider text-teal-dark mb-1">
-                    {m.role}
-                  </p>
-                  <h3 className="heading-xs text-primary font-semibold mb-1">
-                    {m.name}
-                  </h3>
-                  {"companyUrl" in m && m.companyUrl ? (
-                    <a
-                      href={m.companyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-body text-xs text-teal-dark hover:text-teal transition-colors"
-                    >
-                      {m.company}
-                    </a>
-                  ) : (
-                    <p className="font-body text-xs text-slate-500">
-                      {m.company}
-                    </p>
-                  )}
-                </div>
-              </div>
+              <PersonCard
+                key={m.name}
+                variant="member"
+                name={m.name}
+                role={m.role}
+                company={m.company}
+                companyUrl={m.companyUrl}
+                image={m.image}
+              />
             ))}
           </div>
         </div>

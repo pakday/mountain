@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { IconFeatureCard } from "@/components/Cards";
 
 export const metadata: Metadata = {
   title: "Sponsorship Opportunities",
@@ -170,25 +171,21 @@ export default function Page() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {sponsorBenefits.map((item) => (
-              <div
+              <IconFeatureCard
                 key={item.title}
-                className="card p-8 flex flex-col gap-4 hover:shadow-lg transition-shadow"
-              >
-                <div className="w-14 h-14 rounded-xl bg-teal/15 flex items-center justify-center shrink-0">
+                icon={
                   <svg
-                    className="w-7 h-7 text-teal-dark"
+                    className="w-7 h-7"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
                     {item.icon}
                   </svg>
-                </div>
-                <h3 className="heading-sm text-primary">{item.title}</h3>
-                <p className="font-body text-sm text-slate-500 leading-relaxed flex-1">
-                  {item.description}
-                </p>
-              </div>
+                }
+                title={item.title}
+                description={item.description}
+              />
             ))}
           </div>
           <p className="font-body text-xs text-slate-400 text-center mt-6">
