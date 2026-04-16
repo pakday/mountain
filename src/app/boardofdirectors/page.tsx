@@ -141,7 +141,7 @@ export default function Page() {
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce
             </p>
-            <h1 className="heading-2xl text-white mb-5">Board of Directors</h1>
+            <h1 className="heading-xl text-white mb-5">Board of Directors</h1>
             <div className="h-1 w-14 bg-yellow rounded-full mb-7" />
             <p className="font-body text-lg text-white/80 leading-relaxed">
               Dedicated community leaders and business owners committed to
@@ -174,7 +174,7 @@ export default function Page() {
         <div className="section-container">
           <div className="text-center max-w-xl mx-auto mb-14">
             <p className="eyebrow mb-3">Our Officers</p>
-            <h2 className="heading-xl text-primary mb-4">Chamber Leadership</h2>
+            <h2 className="heading-l text-primary mb-4">Chamber Leadership</h2>
             <div className="section-divider mx-auto mb-5" />
             <p className="font-body text-base text-slate-600 leading-relaxed">
               Meet the officers who set the strategic direction for our chamber
@@ -204,7 +204,7 @@ export default function Page() {
         <div className="section-container">
           <div className="text-center max-w-xl mx-auto mb-14">
             <p className="eyebrow mb-3">Serving the Community</p>
-            <h2 className="heading-xl text-primary mb-4">Board Members</h2>
+            <h2 className="heading-l text-primary mb-4">Board Members</h2>
             <div className="section-divider mx-auto" />
           </div>
 
@@ -229,7 +229,7 @@ export default function Page() {
         <div className="section-container">
           <div className="text-center max-w-xl mx-auto mb-16">
             <p className="eyebrow text-teal mb-3">Member Spotlights</p>
-            <h2 className="heading-xl text-white mb-4">In Their Own Words</h2>
+            <h2 className="heading-l text-white mb-4">In Their Own Words</h2>
             <div className="section-divider bg-teal mx-auto" />
           </div>
 
@@ -288,7 +288,7 @@ export default function Page() {
       <section className="py-20 bg-light-gray">
         <div className="section-container text-center max-w-xl mx-auto">
           <p className="eyebrow mb-4">Get Involved</p>
-          <h2 className="heading-lg text-primary mb-4">
+          <h2 className="heading-m text-primary mb-4">
             Interested in Joining the Board?
           </h2>
           <div className="section-divider mx-auto mb-7" />

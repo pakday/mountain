@@ -26,7 +26,7 @@ export default function Page() {
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce
             </p>
-            <h1 className="heading-2xl text-white mb-4">Let&rsquo;s Chat</h1>
+            <h1 className="heading-xl text-white mb-4">Let&rsquo;s Chat</h1>
             <div className="section-divider bg-teal mb-6" />
             <p className="font-body text-lg text-white/80 leading-relaxed">
               Our general response time is one business day. We look forward to
@@ -44,7 +44,7 @@ export default function Page() {
             <div className="lg:col-span-2 space-y-8">
               <div>
                 <p className="eyebrow mb-4">How May We Assist You?</p>
-                <h2 className="heading-lg text-primary mb-5">
+                <h2 className="heading-m text-primary mb-5">
                   Join the Chamber
                 </h2>
                 <div className="section-divider mb-6" />
@@ -143,7 +143,7 @@ export default function Page() {
                   </svg>
                 </div>
                 <div>
-                  <p className="heading-xs text-primary font-700">
+                  <p className="heading-2xs text-primary font-700">
                     Susan Schilling
                   </p>
                   <p className="font-accent text-xs text-teal-dark uppercase tracking-wide font-600">
@@ -167,9 +167,7 @@ export default function Page() {
 
             {/* ── Right: contact form ── */}
             <div className="lg:col-span-3 card p-8 lg:p-10">
-              <h3 className="heading-md text-primary mb-2">
-                Send Us a Message
-              </h3>
+              <h3 className="heading-s text-primary mb-2">Send Us a Message</h3>
               <p className="font-body text-sm text-slate-500 mb-8">
                 Tell us what you&rsquo;d like to know more about.
               </p>

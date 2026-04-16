@@ -98,7 +98,7 @@ export default function Page() {
           <p className="eyebrow text-teal mb-4">
             Mountain West Chamber of Commerce
           </p>
-          <h1 className="heading-2xl text-white mb-5">
+          <h1 className="heading-xl text-white mb-5">
             Member to Member Benefits
           </h1>
           <p className="font-body text-white/80 max-w-2xl text-base leading-relaxed">
@@ -138,7 +138,7 @@ export default function Page() {
           {/* Section header */}
           <div className="text-center mb-14">
             <p className="eyebrow mb-3">Member Perks</p>
-            <h2 className="heading-xl text-primary mb-4">
+            <h2 className="heading-l text-primary mb-4">
               Deals from Your Fellow Members
             </h2>
             <p className="font-body text-slate-600 max-w-2xl mx-auto text-base leading-relaxed">
@@ -200,7 +200,7 @@ export default function Page() {
                 {/* Content */}
                 <div className="flex flex-col flex-1 p-6">
                   <p className="eyebrow text-teal mb-1.5">{b.company}</p>
-                  <h3 className="heading-sm text-primary mb-3 leading-snug">
+                  <h3 className="heading-xs text-primary mb-3 leading-snug">
                     {b.title}
                   </h3>
                   <p className="font-body text-slate-600 text-sm leading-relaxed flex-1">
@@ -262,7 +262,7 @@ export default function Page() {
       <section className="bg-primary py-20">
         <div className="section-container w-full text-center">
           <p className="eyebrow text-teal mb-4">Not a Member Yet?</p>
-          <h2 className="heading-xl text-white mb-5">
+          <h2 className="heading-l text-white mb-5">
             Join the Chamber &amp; Start Saving
           </h2>
           <p className="font-body text-white/80 max-w-xl mx-auto mb-10 text-base leading-relaxed">

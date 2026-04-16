@@ -342,7 +342,7 @@ export default function Page() {
             <p className="eyebrow text-yellow mb-4">
               #UtahStrong · #ChamberStrong
             </p>
-            <h1 className="heading-2xl text-white mb-4">Utah Strong</h1>
+            <h1 className="heading-xl text-white mb-4">Utah Strong</h1>
             <div className="section-divider bg-yellow mb-6" />
             <p className="font-body text-xl text-white/90 leading-relaxed font-semibold">
               Together We Are Stronger.
@@ -376,7 +376,7 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-10">
             <p className="eyebrow mb-2">Resources</p>
-            <h2 className="heading-lg text-primary font-bold">
+            <h2 className="heading-m text-primary font-bold">
               Small Business Resources
             </h2>
           </div>
@@ -409,7 +409,7 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-10">
             <p className="eyebrow mb-2">Resources</p>
-            <h2 className="heading-lg text-primary font-bold">
+            <h2 className="heading-m text-primary font-bold">
               Health Resources
             </h2>
           </div>
@@ -442,7 +442,7 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-5">
             <p className="eyebrow mb-2">Chamber Members</p>
-            <h2 className="heading-lg text-primary font-bold">
+            <h2 className="heading-m text-primary font-bold">
               Restaurant Takeout, Curbside &amp; Delivery
             </h2>
           </div>
@@ -461,7 +461,7 @@ export default function Page() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {restaurants.map((r) => (
               <div key={r.name} className="card p-5 flex flex-col gap-1">
-                <h3 className="heading-xs text-primary font-semibold">
+                <h3 className="heading-2xs text-primary font-semibold">
                   {r.name}
                 </h3>
                 <p className="font-body text-sm text-teal-dark font-semibold">
@@ -484,9 +484,7 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-10">
             <p className="eyebrow mb-2">Tips &amp; Guides</p>
-            <h2 className="heading-lg text-primary font-bold">
-              Remote Working
-            </h2>
+            <h2 className="heading-m text-primary font-bold">Remote Working</h2>
           </div>
           <div className="grid sm:grid-cols-3 gap-6 max-w-4xl">
             {remoteWork.map((r) => (
@@ -500,7 +498,7 @@ export default function Page() {
                 <span className="font-accent text-xs text-teal-dark uppercase tracking-wider font-semibold">
                   {r.source}
                 </span>
-                <h3 className="heading-xs text-primary font-semibold leading-snug flex-1">
+                <h3 className="heading-2xs text-primary font-semibold leading-snug flex-1">
                   {r.name}
                 </h3>
                 <span className="font-accent text-xs text-teal font-bold">
@@ -517,7 +515,7 @@ export default function Page() {
         <div className="section-container">
           <div className="mb-10">
             <p className="eyebrow mb-2">Tools &amp; Platforms</p>
-            <h2 className="heading-lg text-primary font-bold">
+            <h2 className="heading-m text-primary font-bold">
               Online Business Resources
             </h2>
           </div>
@@ -525,7 +523,7 @@ export default function Page() {
           <div className="space-y-12">
             {onlineTools.map((group) => (
               <div key={group.category}>
-                <h3 className="heading-sm text-primary mb-5 pb-3 border-b-2 border-teal/20 uppercase tracking-wider font-semibold">
+                <h3 className="heading-xs text-primary mb-5 pb-3 border-b-2 border-teal/20 uppercase tracking-wider font-semibold">
                   {group.category}
                 </h3>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -535,7 +533,7 @@ export default function Page() {
                       className="card p-5 flex flex-col gap-2 border border-light-gray"
                     >
                       <div className="flex items-start justify-between gap-2">
-                        <h4 className="heading-xs text-primary font-semibold leading-snug">
+                        <h4 className="heading-2xs text-primary font-semibold leading-snug">
                           {t.name}
                         </h4>
                         <span className="font-accent text-xs text-teal font-bold bg-teal/10 px-2 py-0.5 rounded whitespace-nowrap shrink-0">
@@ -572,7 +570,7 @@ export default function Page() {
           <p className="eyebrow text-teal mb-5">
             Together We&rsquo;re Stronger
           </p>
-          <h2 className="heading-lg text-white mb-5">
+          <h2 className="heading-m text-white mb-5">
             Join the Chamber Community
           </h2>
           <p className="font-body text-base text-white/80 mb-8 leading-relaxed">

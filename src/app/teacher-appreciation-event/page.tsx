@@ -203,7 +203,7 @@ export default function Page() {
             {/* Left: About the Event */}
             <div className="lg:col-span-3">
               <p className="eyebrow text-teal mb-3">About the Event</p>
-              <h2 className="heading-2xl font-heading text-primary mb-6">
+              <h2 className="heading-xl font-heading text-primary mb-6">
                 Celebrating Our
                 <br />
                 Community Heroes
@@ -382,7 +382,7 @@ export default function Page() {
         <div className="section-container max-w-7xl">
           <div className="text-center mb-14">
             <p className="eyebrow text-teal mb-3">Get Involved</p>
-            <h2 className="heading-2xl font-heading text-primary mb-4">
+            <h2 className="heading-xl font-heading text-primary mb-4">
               Register or Sponsor
             </h2>
             <p className="font-body text-lg text-slate-700 max-w-2xl mx-auto">
@@ -411,7 +411,7 @@ export default function Page() {
                     />
                   </svg>
                 </div>
-                <h3 className="heading-lg font-heading text-primary mb-3">
+                <h3 className="heading-m font-heading text-primary mb-3">
                   Register for Luncheon
                 </h3>
                 <p className="font-body text-slate-700 mb-8 leading-relaxed">
@@ -450,7 +450,7 @@ export default function Page() {
                     />
                   </svg>
                 </div>
-                <h3 className="heading-lg font-heading text-white mb-3">
+                <h3 className="heading-m font-heading text-white mb-3">
                   Register to Sponsor
                 </h3>
                 <p className="font-body text-off-white/90 mb-8 leading-relaxed">
@@ -475,7 +475,7 @@ export default function Page() {
         <div className="section-container max-w-7xl">
           <div className="text-center mb-14">
             <p className="eyebrow text-teal mb-3">Sponsorship Opportunities</p>
-            <h2 className="heading-2xl font-heading text-primary mb-4">
+            <h2 className="heading-xl font-heading text-primary mb-4">
               Sponsor This Celebration
             </h2>
             <p className="font-body text-lg text-slate-700 max-w-2xl mx-auto">
@@ -496,7 +496,7 @@ export default function Page() {
                 <p className="text-yellow font-heading text-xs font-bold uppercase tracking-widest mb-2">
                   Top Tier
                 </p>
-                <h3 className="heading-lg font-heading text-white mb-4">
+                <h3 className="heading-m font-heading text-white mb-4">
                   Wonder Woman Sponsor
                 </h3>
                 <p className="font-body text-white/85 leading-relaxed mb-6">
@@ -534,7 +534,7 @@ export default function Page() {
                 <p className="text-teal font-heading text-xs font-bold uppercase tracking-widest mb-2">
                   Supporting Tier
                 </p>
-                <h3 className="heading-lg font-heading text-primary mb-4">
+                <h3 className="heading-m font-heading text-primary mb-4">
                   Appreciation Lunch Sponsor
                 </h3>
                 <p className="font-body text-slate-700 leading-relaxed mb-6">
@@ -591,7 +591,7 @@ export default function Page() {
         <div className="section-container max-w-7xl mb-12">
           <div className="text-center">
             <p className="eyebrow text-teal mb-3">Past Events</p>
-            <h2 className="heading-2xl font-heading text-primary mb-4">
+            <h2 className="heading-xl font-heading text-primary mb-4">
               Teacher Appreciation —{" "}
               <span className="text-teal">An Amazing Celebration</span>
             </h2>
@@ -620,7 +620,7 @@ export default function Page() {
         <div className="section-container relative z-10 text-center max-w-3xl">
           <p className="eyebrow text-teal mb-4">Don't Miss This</p>
           <h2
-            className="heading-xl font-heading text-white mb-5"
+            className="heading-l font-heading text-white mb-5"
             style={{ lineHeight: 1.1 }}
           >
             Honor a Teacher.
@@ -664,7 +664,7 @@ export default function Page() {
                     sizes="128px"
                   />
                 </div>
-                <h3 className="heading-md font-heading text-white mb-1">
+                <h3 className="heading-s font-heading text-white mb-1">
                   Susan Schilling
                 </h3>
                 <p className="text-teal font-body font-semibold text-sm mb-1">
@@ -678,7 +678,7 @@ export default function Page() {
               {/* Contact details */}
               <div className="p-10 flex flex-col justify-center">
                 <p className="eyebrow text-teal mb-2">Questions?</p>
-                <h3 className="heading-lg font-heading text-primary mb-2">
+                <h3 className="heading-m font-heading text-primary mb-2">
                   Let Us Know
                 </h3>
                 <p className="font-body text-slate-600 text-sm mb-7 leading-relaxed">

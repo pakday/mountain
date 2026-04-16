@@ -1365,7 +1365,7 @@ export default function Page() {
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce
             </p>
-            <h1 className="heading-2xl text-white mb-4">Member Directory</h1>
+            <h1 className="heading-xl text-white mb-4">Member Directory</h1>
             <div className="section-divider bg-teal mb-6" />
             <p className="font-body text-lg text-white/80 leading-relaxed mb-8">
               Be an active member of your business community. Our directory

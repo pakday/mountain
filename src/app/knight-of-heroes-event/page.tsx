@@ -198,7 +198,7 @@ export default function Page() {
               </div>
 
               <h1
-                className="heading-2xl text-white mb-2"
+                className="heading-xl text-white mb-2"
                 style={{ lineHeight: "1.05" }}
               >
                 Knight of{" "}

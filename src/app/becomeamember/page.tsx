@@ -94,7 +94,7 @@ export default function Page() {
           <p className="eyebrow text-teal mb-4">
             Mountain West Chamber of Commerce
           </p>
-          <h1 className="heading-2xl text-white mb-4 max-w-2xl">
+          <h1 className="heading-xl text-white mb-4 max-w-2xl">
             Become a Member
           </h1>
           <div className="section-divider bg-yellow mb-6" />
@@ -146,7 +146,7 @@ export default function Page() {
         <div className="section-container max-w-7xl w-full">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <h2 className="heading-lg text-white mb-2">Already a Member?</h2>
+              <h2 className="heading-m text-white mb-2">Already a Member?</h2>
               <p className="font-body text-white/75 text-base leading-relaxed max-w-lg">
                 Keep your membership active and continue enjoying all the
                 benefits of being part of the Mountain West Chamber community.

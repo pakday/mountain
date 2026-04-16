@@ -86,7 +86,7 @@ export default function CardsPage() {
                   />
                 </svg>
               </div>
-              <h3 className="heading-sm text-primary">Build Relationships</h3>
+              <h3 className="heading-xs text-primary">Build Relationships</h3>
               <p className="font-body text-base text-slate-500 leading-relaxed">
                 Connect with local businesses through regular networking events,
                 our ambassador program, ribbon cuttings, and our Women in
@@ -110,7 +110,7 @@ export default function CardsPage() {
                   />
                 </svg>
               </div>
-              <h3 className="heading-sm text-primary">Attend an Event</h3>
+              <h3 className="heading-xs text-primary">Attend an Event</h3>
               <p className="font-body text-base text-slate-500 leading-relaxed">
                 Experience the resources available to help you grow. See the
                 connections, energy, and community that MWCC brings together.

@@ -105,7 +105,7 @@ export default function Page() {
               { value: "Awards", label: "Luncheon" },
             ].map((s) => (
               <div key={s.value} className="bg-primary px-6 py-8 text-center">
-                <div className="heading-xl text-yellow mb-1">{s.value}</div>
+                <div className="heading-l text-yellow mb-1">{s.value}</div>
                 <div className="eyebrow text-white/60">{s.label}</div>
               </div>
             ))}
@@ -199,7 +199,7 @@ export default function Page() {
         <div className="section-container max-w-4xl">
           <div className="text-center mb-12">
             <p className="eyebrow text-teal mb-3">Day Of</p>
-            <h2 className="heading-xl text-primary">Event Agenda</h2>
+            <h2 className="heading-l text-primary">Event Agenda</h2>
           </div>
           <div className="relative">
             {/* Vertical line */}
@@ -257,7 +257,7 @@ export default function Page() {
             <div className="bg-primary rounded-3xl p-10 text-white flex flex-col gap-6">
               <div>
                 <p className="eyebrow text-teal mb-3">Questions?</p>
-                <h2 className="heading-xl text-white mb-2">Get In Touch</h2>
+                <h2 className="heading-l text-white mb-2">Get In Touch</h2>
                 <p className="font-body text-white/75 text-sm leading-relaxed">
                   Reach out to Susan Schilling directly for questions about
                   registration, sponsorships, or event details.

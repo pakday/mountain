@@ -25,7 +25,7 @@ export default function BlogPostPage() {
           >
             ← Back to Blog
           </Link>
-          <h1 className="heading-xl text-primary mb-4">{postTitle}</h1>
+          <h1 className="heading-l text-primary mb-4">{postTitle}</h1>
           <div className="flex items-center gap-4 text-sm text-slate-400">
             <span>April 10, 2026</span>
             <span>·</span>
@@ -37,7 +37,6 @@ export default function BlogPostPage() {
       {/* Article body */}
       <section className="py-14 bg-white">
         <div className="section-container max-w-3xl space-y-10">
-
           {/* Lead paragraph */}
           <p className="font-body text-base text-slate-700 leading-relaxed">
             Supporting local business is one of the most effective ways to keep
@@ -128,7 +127,7 @@ export default function BlogPostPage() {
                 key={item.title}
                 className="border border-slate-200 rounded-2xl p-5"
               >
-                <h3 className="heading-xs text-primary mb-2">{item.title}</h3>
+                <h3 className="heading-2xs text-primary mb-2">{item.title}</h3>
                 <p className="font-body text-sm text-slate-600 leading-relaxed">
                   {item.description}
                 </p>

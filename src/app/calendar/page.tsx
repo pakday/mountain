@@ -25,7 +25,7 @@ export default function Page() {
           <p className="eyebrow text-teal mb-4">
             Mountain West Chamber of Commerce
           </p>
-          <h1 className="heading-2xl text-white">Calendar &amp; Events</h1>
+          <h1 className="heading-xl text-white">Calendar &amp; Events</h1>
           <p className="font-body text-white/80 mt-3 max-w-xl">
             Stay connected with Chamber events, city council meetings,
             luncheons, and community programs.
@@ -38,7 +38,7 @@ export default function Page() {
         <div className="section-container">
           {/* Section Header */}
           <div className="max-w-3xl mb-12">
-            <h2 className="heading-lg text-primary mb-2">
+            <h2 className="heading-m text-primary mb-2">
               Event &amp; Sponsorship Opportunities
             </h2>
             <p className="font-body text-slate-600">
@@ -106,7 +106,7 @@ export default function Page() {
       {/* CTA */}
       <section className="py-16 bg-off-white">
         <div className="section-container text-center max-w-2xl">
-          <h2 className="heading-lg text-primary mb-3">Attend an Event</h2>
+          <h2 className="heading-m text-primary mb-3">Attend an Event</h2>
           <p className="font-body text-slate-600 mb-6">
             Come experience the Chamber — build relationships, grow your
             business, and strengthen our community.

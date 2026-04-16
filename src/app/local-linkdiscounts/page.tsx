@@ -291,9 +291,7 @@ export default function Page() {
               </div>
               <div>
                 <div className="eyebrow text-teal mb-2">For Consumers</div>
-                <h2 className="heading-md text-white mb-2">
-                  100% Free to Join
-                </h2>
+                <h2 className="heading-s text-white mb-2">100% Free to Join</h2>
                 <p className="font-body text-white/70 text-sm leading-relaxed">
                   Download the GooseChase App, join the Local Link Passport,
                   shop at participating businesses, and earn points for real
@@ -319,7 +317,7 @@ export default function Page() {
               </div>
               <div>
                 <div className="eyebrow text-yellow mb-2">For Businesses</div>
-                <h2 className="heading-md text-white mb-2">
+                <h2 className="heading-s text-white mb-2">
                   Only $50 Per Quarter
                 </h2>
                 <p className="font-body text-white/70 text-sm leading-relaxed">
@@ -339,7 +337,7 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="eyebrow mb-3">About the Program</p>
-              <h2 className="heading-2xl text-primary mb-6">
+              <h2 className="heading-xl text-primary mb-6">
                 Connecting Your Community
                 <br />
                 <span className="text-teal">One Local Business at a Time</span>
@@ -422,7 +420,7 @@ export default function Page() {
         <div className="section-container max-w-7xl">
           <div className="text-center mb-14">
             <p className="eyebrow mb-3">For Community Members</p>
-            <h2 className="heading-2xl text-primary mb-4">
+            <h2 className="heading-xl text-primary mb-4">
               Get Started in <span className="text-teal">3 Simple Steps</span>
             </h2>
             <p className="font-body text-gray-500 max-w-xl mx-auto">
@@ -451,7 +449,7 @@ export default function Page() {
           <div className="bg-primary rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-center md:text-left">
               <p className="eyebrow text-teal mb-2">GooseChase Join Code</p>
-              <h3 className="heading-xl text-white mb-2">Use Code:</h3>
+              <h3 className="heading-l text-white mb-2">Use Code:</h3>
               <div className="inline-block bg-teal text-primary font-heading font-700 text-5xl px-8 py-4 rounded-xl tracking-widest shadow-lg">
                 HBZ14G
               </div>
@@ -513,7 +511,7 @@ export default function Page() {
 
             <div className="order-1 lg:order-2">
               <p className="eyebrow mb-3">Calling All Businesses!</p>
-              <h2 className="heading-2xl text-primary mb-6">
+              <h2 className="heading-xl text-primary mb-6">
                 Local Link <span className="text-teal">Passport Benefits</span>
               </h2>
               <div className="section-divider mb-6" />
@@ -576,7 +574,7 @@ export default function Page() {
 
             <div>
               <p className="eyebrow text-teal mb-3">Ready to Grow?</p>
-              <h2 className="heading-2xl text-white mb-6">
+              <h2 className="heading-xl text-white mb-6">
                 Scan to Apply &amp;{" "}
                 <span className="text-yellow">Join the Program</span>
               </h2>
@@ -644,7 +642,7 @@ export default function Page() {
         <div className="section-container max-w-7xl">
           <div className="text-center mb-12">
             <p className="eyebrow mb-3">Local Link Partners</p>
-            <h2 className="heading-2xl text-primary mb-4">
+            <h2 className="heading-xl text-primary mb-4">
               Participating <span className="text-teal">Local Businesses</span>
             </h2>
             <p className="font-body text-gray-500 max-w-xl mx-auto">
@@ -695,7 +693,7 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="eyebrow mb-3">Download &amp; Explore</p>
-              <h2 className="heading-2xl text-primary mb-6">
+              <h2 className="heading-xl text-primary mb-6">
                 The GooseChase App —{" "}
                 <span className="text-teal">Your Local Savings Hub</span>
               </h2>
@@ -799,7 +797,7 @@ export default function Page() {
         />
         <div className="relative z-10 section-container max-w-4xl text-center">
           <p className="eyebrow text-teal mb-4">Together We Are Stronger</p>
-          <h2 className="heading-2xl text-white mb-6">
+          <h2 className="heading-xl text-white mb-6">
             Ready to Shop Local &amp;{" "}
             <span className="text-yellow">Win Big?</span>
           </h2>

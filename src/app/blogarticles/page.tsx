@@ -88,7 +88,7 @@ function FeaturedCard({
         <span className="text-xs font-semibold uppercase tracking-widest text-teal">
           Featured
         </span>
-        <h2 className="heading-md text-primary">{title}</h2>
+        <h2 className="heading-s text-primary">{title}</h2>
         <p className="font-body text-sm text-slate-600 leading-relaxed">
           {excerpt}
         </p>
@@ -127,7 +127,7 @@ function BlogCard({
       </div>
       <div className="p-6 flex flex-col gap-2 flex-1">
         <span className="text-xs text-slate-400">{date}</span>
-        <h3 className="heading-sm text-primary leading-snug">{title}</h3>
+        <h3 className="heading-xs text-primary leading-snug">{title}</h3>
         <p className="font-body text-sm text-slate-600 leading-relaxed flex-1">
           {excerpt}
         </p>
@@ -153,7 +153,7 @@ export default function Page() {
           <p className="text-xs font-semibold uppercase tracking-widest text-teal mb-3">
             Mountain West Chamber
           </p>
-          <h1 className="heading-2xl text-primary mb-4">Blog</h1>
+          <h1 className="heading-xl text-primary mb-4">Blog</h1>
           <p className="font-body text-base text-slate-500 max-w-xl leading-relaxed">
             Business tips, local ideas, and community news for Utah small
             businesses and Chamber members.
@@ -171,7 +171,7 @@ export default function Page() {
       {/* Post grid */}
       <section className="py-12 bg-white">
         <div className="section-container max-w-5xl">
-          <h2 className="heading-sm text-primary mb-8 border-b border-slate-200 pb-4">
+          <h2 className="heading-xs text-primary mb-8 border-b border-slate-200 pb-4">
             More Articles
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

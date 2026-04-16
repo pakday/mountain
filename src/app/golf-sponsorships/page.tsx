@@ -343,7 +343,7 @@ export default function Page() {
                 key={stat.value}
                 className="bg-white rounded-2xl p-8 shadow-sm"
               >
-                <div className="heading-2xl text-primary font-800 mb-1">
+                <div className="heading-xl text-primary font-800 mb-1">
                   {stat.value}
                 </div>
                 <div className="font-accent font-700 text-sm uppercase tracking-wider text-teal-dark mb-2">
@@ -360,7 +360,7 @@ export default function Page() {
       <section className="py-16 bg-white">
         <div className="section-container max-w-4xl text-center">
           <div className="section-divider mx-auto mb-6" />
-          <h2 className="heading-xl text-primary mb-4">Sponsorship Details</h2>
+          <h2 className="heading-l text-primary mb-4">Sponsorship Details</h2>
           <p className="font-body text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
             The 144 players include local business owners and avid golfers. This
             is a fundraiser for the high school scholarship program. Choose the
@@ -385,7 +385,7 @@ export default function Page() {
       <section className="py-16 bg-primary">
         <div className="section-container max-w-7xl text-center">
           <p className="eyebrow text-teal mb-3">Thank You</p>
-          <h2 className="heading-xl text-white mb-10">Our Event Sponsors</h2>
+          <h2 className="heading-l text-white mb-10">Our Event Sponsors</h2>
           <div className="flex flex-wrap justify-center gap-6 items-center">
             {[
               {

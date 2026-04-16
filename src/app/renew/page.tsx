@@ -97,7 +97,7 @@ export default function Page() {
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce
             </p>
-            <h1 className="heading-2xl text-white mb-4">
+            <h1 className="heading-xl text-white mb-4">
               Continue Your Success
             </h1>
             <div className="section-divider bg-teal mb-6" />
@@ -157,7 +157,7 @@ export default function Page() {
         <div className="section-container max-w-7xl">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="eyebrow mb-4">Renewal Options</p>
-            <h2 className="heading-xl text-primary mb-5">
+            <h2 className="heading-l text-primary mb-5">
               Choose Your Membership Level
             </h2>
             <div className="section-divider mx-auto mb-5" />
@@ -207,7 +207,7 @@ export default function Page() {
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
               <p className="eyebrow mb-4">Member Since 1997</p>
-              <h2 className="heading-xl text-primary mb-5">
+              <h2 className="heading-l text-primary mb-5">
                 Together We Are Stronger
               </h2>
               <div className="section-divider mb-6" />
@@ -273,7 +273,7 @@ export default function Page() {
               },
             ].map((item) => (
               <div key={item.q} className="py-6">
-                <h3 className="heading-xs text-primary mb-2">{item.q}</h3>
+                <h3 className="heading-2xs text-primary mb-2">{item.q}</h3>
                 <p className="font-body text-sm text-slate-500 leading-relaxed">
                   {item.a}
                 </p>
@@ -287,7 +287,7 @@ export default function Page() {
       <section className="bg-primary py-16">
         <div className="section-container max-w-3xl text-center">
           <p className="eyebrow text-teal mb-4">Ready to Renew?</p>
-          <h2 className="heading-xl text-white mb-5">
+          <h2 className="heading-l text-white mb-5">
             Keep Building. Keep Growing.
           </h2>
           <p className="font-body text-white/75 text-base mb-8 leading-relaxed">

@@ -138,7 +138,7 @@ export default function Page() {
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce
             </p>
-            <h1 className="heading-2xl text-white mb-4">
+            <h1 className="heading-xl text-white mb-4">
               Take Your Community Recognition to the Next Level
             </h1>
             <div className="section-divider bg-teal mb-6" />
@@ -158,7 +158,7 @@ export default function Page() {
         <div className="section-container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="eyebrow mb-4">Why Sponsor</p>
-            <h2 className="heading-xl text-primary mb-5">
+            <h2 className="heading-l text-primary mb-5">
               More Than a Logo — Real Business Impact
             </h2>
             <div className="section-divider mx-auto mb-5" />
@@ -269,7 +269,7 @@ export default function Page() {
           >
             <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
           </svg>
-          <blockquote className="heading-md text-white/90 leading-relaxed mb-8 italic">
+          <blockquote className="heading-s text-white/90 leading-relaxed mb-8 italic">
             The Mountain West Chamber of Commerce has contributed immeasurably
             in promoting First Utah Bank since the opening of its eighth branch
             in January 2008. The success of the Bank&rsquo;s Riverton Office is
@@ -291,7 +291,7 @@ export default function Page() {
         <div className="section-container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="eyebrow mb-4">Simple Process</p>
-            <h2 className="heading-xl text-primary mb-5">How It Works</h2>
+            <h2 className="heading-l text-primary mb-5">How It Works</h2>
             <div className="section-divider mx-auto mb-5" />
             <p className="font-body text-base text-slate-500 leading-relaxed">
               Review the available opportunities and let us know what&rsquo;s
@@ -321,10 +321,10 @@ export default function Page() {
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-yellow heading-md font-700 mb-5">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-yellow heading-s font-700 mb-5">
                   {item.step}
                 </div>
-                <h3 className="heading-sm text-primary mb-3">{item.title}</h3>
+                <h3 className="heading-xs text-primary mb-3">{item.title}</h3>
                 <p
                   className="font-body text-sm text-slate-500 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: item.description }}
@@ -360,7 +360,7 @@ export default function Page() {
         </div>
         <div className="section-container max-w-2xl mx-auto text-center relative z-10">
           <p className="eyebrow text-teal mb-5">Ready to Sponsor?</p>
-          <h2 className="heading-xl text-white mb-5">
+          <h2 className="heading-l text-white mb-5">
             Let&rsquo;s Grow Together
           </h2>
           <p className="font-body text-base text-white/80 mb-10 leading-relaxed">

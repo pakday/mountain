@@ -321,7 +321,7 @@ export default function Page() {
               { value: "100+", label: "Heroes", sub: "honored every year" },
             ].map((s) => (
               <div key={s.value}>
-                <div className="heading-2xl text-primary mb-1">{s.value}</div>
+                <div className="heading-l text-primary mb-1">{s.value}</div>
                 <div className="font-accent font-700 text-xs text-primary uppercase tracking-widest">
                   {s.label}
                 </div>
@@ -340,7 +340,7 @@ export default function Page() {
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="eyebrow text-teal mb-3">Year-Round Visibility</p>
-            <h2 className="heading-2xl text-primary mb-4">
+            <h2 className="heading-xl text-primary mb-4">
               Sustaining Partner Sponsorships
             </h2>
             <div className="section-divider mx-auto mb-6" />
@@ -377,14 +377,14 @@ export default function Page() {
                     {tier.badge}
                   </span>
                   <h3
-                    className={`heading-lg mb-2 ${
+                    className={`heading-m mb-2 ${
                       tier.featured ? "text-white" : "text-primary"
                     }`}
                   >
                     {tier.name}
                   </h3>
                   <div
-                    className={`heading-2xl font-700 ${
+                    className={`heading-l font-700 ${
                       tier.featured
                         ? "text-yellow"
                         : tier.accent
@@ -475,7 +475,7 @@ export default function Page() {
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="eyebrow text-teal mb-3">Award Banquet</p>
-            <h2 className="heading-2xl text-white mb-4">
+            <h2 className="heading-xl text-white mb-4">
               Knight of Heroes Sponsorships
             </h2>
             <div
@@ -602,7 +602,7 @@ export default function Page() {
             <div>
               {/* Event details card */}
               <div className="bg-white rounded-2xl border border-light-gray p-6 mb-8 shadow-sm">
-                <h3 className="heading-sm text-primary mb-5">Event Details</h3>
+                <h3 className="heading-xs text-primary mb-5">Event Details</h3>
                 <div className="space-y-4">
                   {[
                     {
@@ -655,7 +655,7 @@ export default function Page() {
               </div>
 
               {/* Sponsorship package cards */}
-              <h3 className="heading-md text-primary mb-6">
+              <h3 className="heading-s text-primary mb-6">
                 Sponsorship Packages
               </h3>
               <div className="space-y-4">
@@ -672,7 +672,7 @@ export default function Page() {
                   >
                     <div className="flex items-center justify-between gap-3 mb-3">
                       <h4
-                        className={`heading-sm ${
+                        className={`heading-xs ${
                           i === 0 ? "text-primary" : "text-primary"
                         }`}
                       >
@@ -752,7 +752,7 @@ export default function Page() {
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-8">
             <p className="eyebrow text-teal mb-3">Annual Fundraiser</p>
-            <h2 className="heading-2xl text-primary mb-4">
+            <h2 className="heading-xl text-primary mb-4">
               Golf Tournament Sponsorships
             </h2>
             <div className="section-divider mx-auto mb-6" />
@@ -794,10 +794,10 @@ export default function Page() {
                       Top Tier
                     </span>
                   )}
-                  <h3 className="heading-sm text-primary">{tier.name}</h3>
+                  <h3 className="heading-xs text-primary">{tier.name}</h3>
                 </div>
                 <div
-                  className={`heading-xl font-700 mb-4 ${
+                  className={`heading-l font-700 mb-4 ${
                     tier.featured
                       ? "text-primary"
                       : i <= 2

@@ -188,7 +188,7 @@ export default function Page() {
           <p className="eyebrow text-teal mb-4">
             Mountain West Chamber of Commerce
           </p>
-          <h1 className="heading-2xl text-white mb-4 max-w-3xl">
+          <h1 className="heading-xl text-white mb-4 max-w-3xl">
             Working Together for Growth &amp; Success
           </h1>
           <div className="section-divider bg-yellow mb-6" />
@@ -215,7 +215,7 @@ export default function Page() {
           <div className="grid lg:grid-cols-2 gap-14 items-center mb-14">
             <div>
               <p className="eyebrow mb-4">Featured Resources</p>
-              <h2 className="heading-xl text-primary mb-5">
+              <h2 className="heading-l text-primary mb-5">
                 Practical Reads for Business Owners Who Want to Keep Moving
               </h2>
               <div className="section-divider mb-6" />
@@ -261,7 +261,7 @@ export default function Page() {
         <div className="section-container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="eyebrow mb-4">Resource Partners</p>
-            <h2 className="heading-xl text-primary mb-5">
+            <h2 className="heading-l text-primary mb-5">
               Trusted Organizations That Help Utah Businesses Solve Real
               Problems
             </h2>
@@ -290,7 +290,7 @@ export default function Page() {
             {/* Left column */}
             <div>
               <p className="eyebrow text-teal mb-4">Activities</p>
-              <h2 className="heading-xl text-white mb-5">
+              <h2 className="heading-l text-white mb-5">
                 Find New Ways to Build Your Business
               </h2>
               <div className="section-divider bg-yellow mb-6" />
@@ -320,7 +320,7 @@ export default function Page() {
                   className="rounded-xl border border-white/10 bg-white/10 p-6 backdrop-blur-sm"
                 >
                   <p className="eyebrow text-teal mb-4">{pillar.num}</p>
-                  <h3 className="heading-sm text-white mb-3">{pillar.title}</h3>
+                  <h3 className="heading-xs text-white mb-3">{pillar.title}</h3>
                   <p className="font-body text-sm text-white/75 leading-relaxed">
                     {pillar.description}
                   </p>
@@ -339,7 +339,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div className="max-w-2xl">
               <p className="eyebrow mb-4">Chamber In Action</p>
-              <h2 className="heading-xl text-primary mb-5">
+              <h2 className="heading-l text-primary mb-5">
                 Ribbon Cuttings, Events &amp; Community Moments
               </h2>
               <div className="section-divider mb-6" />
@@ -372,7 +372,7 @@ export default function Page() {
             <div className="relative z-10 grid lg:grid-cols-[minmax(0,1fr)_16rem] gap-8 items-center">
               <div>
                 <p className="eyebrow text-yellow mb-4">Utah Strong</p>
-                <h2 className="heading-xl text-white mb-4">
+                <h2 className="heading-l text-white mb-4">
                   Need Broader Statewide Support?
                 </h2>
                 <div className="section-divider bg-yellow mb-5" />
@@ -398,7 +398,7 @@ export default function Page() {
       <section className="py-20 bg-primary">
         <div className="section-container max-w-3xl text-center">
           <p className="eyebrow text-teal mb-4">Join the Network</p>
-          <h2 className="heading-xl text-white mb-5">
+          <h2 className="heading-l text-white mb-5">
             Resources Matter More When They Come With People Who Want to Help
           </h2>
           <div className="section-divider bg-yellow mx-auto mb-6" />

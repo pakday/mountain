@@ -110,9 +110,7 @@ export default function Page() {
             <p className="eyebrow text-teal mb-4">
               Mountain West Chamber of Commerce
             </p>
-            <h1 className="heading-2xl text-white mb-4">
-              Why Become a Member?
-            </h1>
+            <h1 className="heading-xl text-white mb-4">Why Become a Member?</h1>
             <div className="section-divider bg-teal mb-6" />
             <p className="font-body text-lg text-white/80 leading-relaxed mb-8">
               Benefiting &amp; Giving Back — your bridge between business and
@@ -131,7 +129,7 @@ export default function Page() {
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
               <p className="eyebrow mb-4">Membership Benefits</p>
-              <h2 className="heading-xl text-primary mb-5">
+              <h2 className="heading-l text-primary mb-5">
                 Grow Your Business &amp; Your Community
               </h2>
               <div className="section-divider mb-6" />

@@ -83,7 +83,7 @@ export default function Page() {
           <div className="max-w-3xl">
             <p className="eyebrow text-teal mb-5">Programs · Education</p>
             <h1
-              className="heading-2xl text-white mb-6"
+              className="heading-xl text-white mb-6"
               style={{ lineHeight: "1.05" }}
             >
               2024 Scholarship <span className="text-yellow">Recipients</span>
@@ -118,7 +118,7 @@ export default function Page() {
                 className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-4 text-center"
               >
                 <div
-                  className="heading-xl text-yellow"
+                  className="heading-l text-yellow"
                   style={{ fontFamily: "var(--font-heading)" }}
                 >
                   {s.value}
@@ -141,7 +141,7 @@ export default function Page() {
             {/* Text */}
             <div>
               <p className="eyebrow mb-4">Our Commitment to Education</p>
-              <h2 className="heading-xl text-primary mb-5">
+              <h2 className="heading-l text-primary mb-5">
                 Investing in Tomorrow's{" "}
                 <span className="text-teal-dark">Community Leaders</span>
               </h2>
@@ -241,7 +241,7 @@ export default function Page() {
           {/* Section header */}
           <div className="text-center mb-14">
             <p className="eyebrow mb-4">Class of 2024</p>
-            <h2 className="heading-xl text-primary mb-4">
+            <h2 className="heading-l text-primary mb-4">
               Meet Our{" "}
               <span className="text-teal-dark">Scholarship Recipients</span>
             </h2>
@@ -284,7 +284,7 @@ export default function Page() {
                     {r.year}
                   </span>
                   {/* Name */}
-                  <h3 className="heading-sm text-primary group-hover:text-teal-dark transition-colors duration-300">
+                  <h3 className="heading-xs text-primary group-hover:text-teal-dark transition-colors duration-300">
                     {r.name}
                   </h3>
                   {/* Divider */}
@@ -292,7 +292,7 @@ export default function Page() {
                   {/* Amount */}
                   <div className="flex items-baseline gap-2 mt-1">
                     <span
-                      className="heading-md text-teal-dark"
+                      className="heading-s text-teal-dark"
                       style={{ fontFamily: "var(--font-heading)" }}
                     >
                       {r.amount}
