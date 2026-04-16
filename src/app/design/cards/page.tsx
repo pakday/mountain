@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { DesignNav } from "../DesignNav";
 import { MembershipTierCards } from "../components/MembershipTierCards";
+import BenefitCardHorizontal from "@/components/Cards/BenefitCardHorizontal";
+import BenefitCardBold from "@/components/Cards/BenefitCardBold";
+import BenefitCardDark from "@/components/Cards/BenefitCardDark";
 
 export default function CardsPage() {
   return (
@@ -119,10 +122,84 @@ export default function CardsPage() {
           </div>
         </section>
 
+        {/* New Component Cards */}
+        <section className="flex flex-col gap-4">
+          <div className="text-sm font-bold tracking-widest uppercase text-[#3F6183] border-b border-[#EDEDED] pb-2">
+            02 — New Component Card Designs
+          </div>
+          <p className="text-xs text-slate-500 max-w-2xl">
+            These are the new card designs for the homepage card component. The
+            first and third are the strongest options for the current brand
+            direction.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4">
+            <BenefitCardHorizontal
+              title="Modern membership perks"
+              description="Clean white background card with a strong icon and clear, approachable text. Ideal for membership benefits and service highlights."
+              href="/why-become-a-member"
+              icon={
+                <svg
+                  className="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              }
+            />
+            <BenefitCardBold
+              title="Bold benefit highlight"
+              description="White background with a thicker accent edge and a strong heading. Works well where you want a confident, high-energy statement."
+              href="/becomeamember"
+              icon={
+                <svg
+                  className="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              }
+            />
+            <BenefitCardDark
+              title="Premium chamber experience"
+              description="High-contrast navy styling with white text and bright yellow accents. Best for premium sponsorship, event, or leadership promotion."
+              href="/sponsorshipopps"
+              icon={
+                <svg
+                  className="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              }
+            />
+          </div>
+        </section>
+
         {/* Program Cards */}
         <section className="flex flex-col gap-4">
           <div className="text-sm font-bold tracking-widest uppercase text-[#3F6183] border-b border-[#EDEDING] pb-2">
-            02 — Program Cards (with Image)
+            03 — Program Cards (with Image)
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
@@ -141,11 +218,11 @@ export default function CardsPage() {
                 key={i}
                 className="bg-white rounded-lg shadow-sm overflow-hidden border border-[#EDEDED] group cursor-pointer"
               >
-                <div className="relative h-40 bg-gradient-to-br from-[#0D3B66] to-[#5DCAD1] overflow-hidden">
+                <div className="relative h-40 bg-linear-to-br from-[#0D3B66] to-[#5DCAD1] overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center text-white font-serif text-lg opacity-40">
                     [Image]
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D3B66] via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#0D3B66] via-transparent to-transparent opacity-60" />
                   <div className="absolute top-4 left-4 bg-[#F7DE32] text-[#0D3B66] text-xs font-bold px-3 py-1 rounded">
                     {program.tag}
                   </div>
@@ -186,7 +263,7 @@ export default function CardsPage() {
                 key={i}
                 className="bg-white rounded-lg shadow-sm overflow-hidden border border-[#EDEDED]"
               >
-                <div className="h-32 bg-gradient-to-br from-[#3F6183] to-[#0D3B66] flex items-center justify-center text-white opacity-40 font-serif">
+                <div className="h-32 bg-linear-to-br from-[#3F6183] to-[#0D3B66] flex items-center justify-center text-white opacity-40 font-serif">
                   [Article Image]
                 </div>
                 <div className="p-4">
@@ -270,6 +347,154 @@ export default function CardsPage() {
         </section>
 
         <MembershipTierCards />
+
+        {/* ── NEW BENEFIT CARD DESIGNS ─────────────────────────────── */}
+        {/* Design A — Horizontal Icon-Left */}
+        <section className="flex flex-col gap-4">
+          <div className="text-sm font-bold tracking-widest uppercase text-[#3F6183] border-b border-[#EDEDED] pb-2">
+            NEW — Design A: Horizontal Icon-Left
+          </div>
+          <p className="text-xs text-slate-400">
+            Icon anchored left, compact horizontal rows. Great for dense benefit
+            lists or sidebar cards.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                title: "Build Relationships",
+                desc: "Connect with local businesses through regular networking events, our ambassador program, and ribbon cuttings.",
+              },
+              {
+                title: "Up-level Your Skills",
+                desc: "Learn finance, cybersecurity, HR, and marketing in our monthly Connect & Learn events.",
+              },
+              {
+                title: "Gain Visibility",
+                desc: "Drive foot traffic via ribbon cuttings and get promoted on our website and social channels.",
+              },
+            ].map((item, i) => (
+              <BenefitCardHorizontal
+                key={i}
+                title={item.title}
+                description={item.desc}
+                href="#"
+                icon={
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                }
+              />
+            ))}
+          </div>
+        </section>
+
+        {/* Design B — Bold Left-Border Accent */}
+        <section className="flex flex-col gap-4">
+          <div className="text-sm font-bold tracking-widest uppercase text-[#3F6183] border-b border-[#EDEDED] pb-2">
+            NEW — Design B: Bold Left-Border Accent
+          </div>
+          <p className="text-xs text-slate-400">
+            Yellow left border, icon in a circle that fills gold on hover.
+            Energetic and confident.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                title: "Build Relationships",
+                desc: "Connect with local businesses through regular networking events, our ambassador program, and ribbon cuttings.",
+              },
+              {
+                title: "Up-level Your Skills",
+                desc: "Learn finance, cybersecurity, HR, and marketing in our monthly Connect & Learn events.",
+              },
+              {
+                title: "Gain Visibility",
+                desc: "Drive foot traffic via ribbon cuttings and get promoted on our website and social channels.",
+              },
+            ].map((item, i) => (
+              <BenefitCardBold
+                key={i}
+                title={item.title}
+                description={item.desc}
+                href="#"
+                icon={
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                }
+              />
+            ))}
+          </div>
+        </section>
+
+        {/* Design C — Dark Navy Cards */}
+        <section className="flex flex-col gap-4 bg-[#EDEDED] p-6 rounded-xl">
+          <div className="text-sm font-bold tracking-widest uppercase text-[#3F6183] border-b border-[#d0d0d0] pb-2">
+            NEW — Design C: Dark Navy Cards
+          </div>
+          <p className="text-xs text-slate-400">
+            Navy background, yellow icon, white text. Premium, high-contrast,
+            authoritative. Looks great on light-gray section backgrounds.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                title: "Build Relationships",
+                desc: "Connect with local businesses through regular networking events, our ambassador program, and ribbon cuttings.",
+              },
+              {
+                title: "Up-level Your Skills",
+                desc: "Learn finance, cybersecurity, HR, and marketing in our monthly Connect & Learn events.",
+              },
+              {
+                title: "Gain Visibility",
+                desc: "Drive foot traffic via ribbon cuttings and get promoted on our website and social channels.",
+              },
+            ].map((item, i) => (
+              <BenefitCardDark
+                key={i}
+                title={item.title}
+                description={item.desc}
+                href="#"
+                icon={
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                }
+              />
+            ))}
+          </div>
+        </section>
 
         {/* Contact Action Cards */}
         <section className="flex flex-col gap-4">

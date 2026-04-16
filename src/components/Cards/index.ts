@@ -15,3 +15,13 @@ export type { MembershipTierCardProps } from "./MembershipTierCard";
 
 export { default as PersonCard } from "./PersonCard";
 export type { PersonCardProps } from "./PersonCard";
+
+// ─── New benefit card design variants ───────────────────────────────────────
+export { default as BenefitCardHorizontal } from "./BenefitCardHorizontal";
+export type { BenefitCardHorizontalProps } from "./BenefitCardHorizontal";
+
+export { default as BenefitCardBold } from "./BenefitCardBold";
+export type { BenefitCardBoldProps } from "./BenefitCardBold";
+
+export { default as BenefitCardDark } from "./BenefitCardDark";
+export type { BenefitCardDarkProps } from "./BenefitCardDark";

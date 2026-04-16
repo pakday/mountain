@@ -37,39 +37,39 @@
   :root {
     /* ── Heading size scale ── */
     --heading-2xs: clamp(
-      0.64rem,
-      calc(-0.00017391304347826102 * (100vw - 22.5rem) + 0.64rem),
-      0.63rem
-    );
-    --heading-xs: clamp(
-      0.8rem,
-      calc(0.0006956521739130421 * (100vw - 22.5rem) + 0.8rem),
+      0.77rem,
+      calc(0.0012173913043478253 * (100vw - 22.5rem) + 0.77rem),
       0.84rem
     );
-    --heading-s: clamp(
-      1rem,
-      calc(0.0022608695652173894 * (100vw - 22.5rem) + 1rem),
+    --heading-xs: clamp(
+      0.96rem,
+      calc(0.0029565217391304337 * (100vw - 22.5rem) + 0.96rem),
       1.13rem
     );
-    --heading-m: clamp(
-      1.25rem,
-      calc(0.004347826086956522 * (100vw - 22.5rem) + 1.25rem),
+    --heading-s: clamp(
+      1.2rem,
+      calc(0.0052173913043478265 * (100vw - 22.5rem) + 1.2rem),
       1.5rem
     );
-    --heading-l: clamp(
-      1.56rem,
-      calc(0.007652173913043478 * (100vw - 22.5rem) + 1.56rem),
+    --heading-m: clamp(
+      1.5rem,
+      calc(0.008695652173913044 * (100vw - 22.5rem) + 1.5rem),
       2rem
     );
-    --heading-xl: clamp(
-      1.95rem,
-      calc(0.012521739130434782 * (100vw - 22.5rem) + 1.95rem),
+    --heading-l: clamp(
+      1.88rem,
+      calc(0.01373913043478261 * (100vw - 22.5rem) + 1.88rem),
       2.67rem
     );
-    --heading-2xl: clamp(
-      2.44rem,
-      calc(0.019304347826086955 * (100vw - 22.5rem) + 2.44rem),
+    --heading-xl: clamp(
+      2.34rem,
+      calc(0.021043478260869563 * (100vw - 22.5rem) + 2.34rem),
       3.55rem
+    );
+    --heading-2xl: clamp(
+      2.93rem,
+      calc(0.03147826086956522 * (100vw - 22.5rem) + 2.93rem),
+      4.74rem
     );
 
     /* ── Section spacing scale ──────────────── */
@@ -234,17 +234,20 @@
     font-family: var(--font-heading);
     line-height: var(--leading-tight);
   }
-  .heading-s {
+  .heading-s,
+  .heading-sm {
     font-size: var(--heading-s);
     font-family: var(--font-heading);
     line-height: var(--leading-tight);
   }
-  .heading-m {
+  .heading-m,
+  .heading-md {
     font-size: var(--heading-m);
     font-family: var(--font-heading);
     line-height: var(--leading-tight);
   }
-  .heading-l {
+  .heading-l,
+  .heading-lg {
     font-size: var(--heading-l);
     font-family: var(--font-heading);
     line-height: var(--leading-tight);
@@ -603,7 +606,7 @@
 .fullcalendar-wrapper .fc-toolbar-title {
   font-family: var(--font-heading);
   color: #0d3b66;
-  font-size: var(--heading-md);
+  font-size: var(--heading-m);
 }
 
 .fullcalendar-wrapper .fc-button {

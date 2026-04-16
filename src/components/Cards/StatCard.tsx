@@ -22,7 +22,7 @@ export default function StatCard({
     return (
       <div className="card p-8 text-center group hover:shadow-xl transition-shadow duration-300">
         <div
-          className="heading-xl text-teal mb-3"
+          className="heading-l text-teal mb-3"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           {value}
@@ -36,7 +36,7 @@ export default function StatCard({
   return (
     <div className="text-center px-6">
       <div
-        className="heading-xl text-yellow font-800"
+        className="heading-l text-yellow font-800"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         {value}

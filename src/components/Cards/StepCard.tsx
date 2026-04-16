@@ -43,7 +43,7 @@ export default function StepCard({
             {step}
           </span>
         </div>
-        <h3 className="heading-sm text-primary mb-3">{title}</h3>
+        <h3 className="heading-xs text-primary mb-3">{title}</h3>
         <p className="font-body text-gray-500 text-sm leading-relaxed">
           {description}
         </p>

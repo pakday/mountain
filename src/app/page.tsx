@@ -36,7 +36,7 @@ export default function HomePage() {
               Riverton · Herriman · Bluffdale, Utah
             </p>
             <h1
-              className="heading-2xl text-white mb-6"
+              className="heading-xl text-white mb-6"
               style={{ lineHeight: "1.05" }}
             >
               We Help Businesses Make{" "}
@@ -90,7 +90,7 @@ export default function HomePage() {
             {/* Text */}
             <div>
               <p className="eyebrow mb-4">About the Chamber</p>
-              <h2 className="heading-xl text-primary mb-6">
+              <h2 className="heading-l text-primary mb-6">
                 Building Stronger Businesses.{" "}
                 <span className="text-teal-dark">
                   Building Stronger Communities.
@@ -110,9 +110,9 @@ export default function HomePage() {
                 engagement, and community partnerships.
               </p>
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-10 rounded-full bg-yellow/20 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center shrink-0">
                   <svg
-                    className="w-5 h-5 text-primary"
+                    className="w-5 h-5 text-yellow"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -134,9 +134,9 @@ export default function HomePage() {
             </div>
 
             {/* Image collage */}
-            <div className="relative">
+            <div className="flex flex-col gap-4">
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative h-64 rounded-xl overflow-hidden">
+                <div className="relative aspect-4/5 rounded-2xl overflow-hidden shadow-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
                     alt="Business networking event"
@@ -145,7 +145,7 @@ export default function HomePage() {
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
                 </div>
-                <div className="relative h-64 rounded-xl overflow-hidden mt-8">
+                <div className="relative aspect-4/5 rounded-2xl overflow-hidden shadow-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
                     alt="Community leaders"
@@ -156,7 +156,7 @@ export default function HomePage() {
                 </div>
               </div>
               {/* Quote badge */}
-              <div className="absolute -bottom-4 left-4 right-4 bg-primary text-white rounded-xl p-5 shadow-xl">
+              <div className="bg-primary text-white rounded-2xl p-5 shadow-xl">
                 <svg
                   className="w-6 h-6 text-yellow mb-2"
                   fill="currentColor"
@@ -185,7 +185,7 @@ export default function HomePage() {
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="eyebrow mb-4">Why Membership Matters</p>
-            <h2 className="heading-xl text-primary mb-5">
+            <h2 className="heading-l text-primary mb-5">
               Everything Your Business Needs to Thrive
             </h2>
             <div className="section-divider mx-auto mb-5" />
@@ -202,7 +202,7 @@ export default function HomePage() {
               iconAnimated
               icon={
                 <svg
-                  className="w-7 h-7"
+                  className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -222,7 +222,7 @@ export default function HomePage() {
               iconAnimated
               icon={
                 <svg
-                  className="w-7 h-7"
+                  className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -242,7 +242,7 @@ export default function HomePage() {
               iconAnimated
               icon={
                 <svg
-                  className="w-7 h-7"
+                  className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -268,7 +268,7 @@ export default function HomePage() {
               iconAnimated
               icon={
                 <svg
-                  className="w-7 h-7"
+                  className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -288,7 +288,7 @@ export default function HomePage() {
               iconAnimated
               icon={
                 <svg
-                  className="w-7 h-7"
+                  className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -308,7 +308,7 @@ export default function HomePage() {
               iconAnimated
               icon={
                 <svg
-                  className="w-7 h-7"
+                  className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -356,7 +356,7 @@ export default function HomePage() {
         </div>
         <div className="section-container relative z-10 text-center">
           <p className="eyebrow text-teal mb-5">Never Miss a Beat</p>
-          <h2 className="heading-2xl text-white mb-5 max-w-2xl mx-auto">
+          <h2 className="heading-xl text-white mb-5 max-w-2xl mx-auto">
             Attend, Connect, Learn, Support &amp; Sponsor
           </h2>
           <p className="font-body text-lg text-white/80 mb-10 max-w-xl mx-auto">
@@ -377,7 +377,7 @@ export default function HomePage() {
         <div className="section-container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="eyebrow mb-4">Community Programs</p>
-            <h2 className="heading-xl text-primary mb-5">
+            <h2 className="heading-l text-primary mb-5">
               Events That Bring the Valley Together
             </h2>
             <div className="section-divider mx-auto" />
@@ -422,7 +422,7 @@ export default function HomePage() {
         <div className="section-container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="eyebrow mb-4">Get Started</p>
-            <h2 className="heading-xl text-primary mb-5">
+            <h2 className="heading-l text-primary mb-5">
               Make Your Business Life Easier
             </h2>
             <div className="section-divider mx-auto mb-5" />
@@ -472,7 +472,7 @@ export default function HomePage() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <blockquote>
-              <p className="heading-md text-white font-heading italic leading-snug mb-8">
+              <p className="heading-sm text-white font-heading italic leading-snug mb-8">
                 &ldquo;My involvement in the Chamber has in every way trumped
                 the opportunities I was finding on my own. As an attorney,
                 relationships and referrals are essential to the success of my
@@ -522,7 +522,7 @@ export default function HomePage() {
             {/* Left — copy */}
             <div>
               <p className="eyebrow mb-4">Questions About Membership?</p>
-              <h2 className="heading-xl text-primary mb-5">
+              <h2 className="heading-lg text-primary mb-5">
                 We&rsquo;d Love to Hear from You
               </h2>
               <div className="section-divider mb-6" />

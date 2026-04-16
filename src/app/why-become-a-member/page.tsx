@@ -188,7 +188,7 @@ export default function Page() {
                 key={benefit.title}
                 icon={
                   <svg
-                    className="w-7 h-7"
+                    className="w-6 h-6"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
