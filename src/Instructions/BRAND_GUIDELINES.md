@@ -67,15 +67,19 @@
 
 ### Accent Colors
 
-All accent colors should be used strategically for visual interest and program differentiation:
+Use only the core accent colors below. Additional palette colors are not part of the MWCC brand system.
 
-| Color Name    | Hex Code  | Primary Use             |
-| ------------- | --------- | ----------------------- |
-| Deep Teal     | `#43727A` | Accent highlights       |
-| Bright Teal   | `#5DCAD1` | Call-to-action elements |
-| Bright Yellow | `#F7DE32` | High-impact highlights  |
-| Coral         | `#FFA384` | Warm accents            |
-| Off-White     | `#FFFAF9` | Premium backgrounds     |
+| Color Name | Hex Code  | Primary Use                                 |
+| ---------- | --------- | ------------------------------------------- |
+| Teal       | `#5DCAD1` | Interactive elements, links, icons          |
+| Yellow     | `#F7DE32` | CTA highlights, badges, high-impact accents |
+| Off-White  | `#FFFAF9` | Premium backgrounds, soft surface color     |
+
+### Color Usage Rules
+
+- Use only the six brand colors in visual design and page styles.
+- Avoid additional Tailwind palettes such as `slate-*`, `gray-*`, `neutral-*`, `stone-*`, and `zinc-*`.
+- Use only these alpha levels: `/10`, `/20`, `/40`, `/60`, `/70`, `/80`, `/90`.
 
 ---
 
