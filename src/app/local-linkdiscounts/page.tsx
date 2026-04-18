@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { IconFeatureCard, StepCard } from "@/components/Cards";
+import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Local Link Discounts — Mountain West Chamber",
@@ -174,86 +174,74 @@ export default function Page() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative min-h-[70vh] flex items-end overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80"
-            alt="Local businesses and community shopping"
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/80 to-slate-blue/70" />
-        </div>
-
-        <div className="relative z-10 section-container w-full max-w-7xl pb-32 pt-40">
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10">
-            <div className="max-w-2xl">
-              {/* NEW ARRIVAL badge */}
-              <div className="inline-flex items-center gap-2 bg-yellow text-primary rounded-full px-4 py-1.5 mb-6">
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
-                  />
-                </svg>
-                <span className="font-accent font-700 text-sm tracking-wide uppercase">
-                  New Program 2025
-                </span>
-              </div>
-              <p className="eyebrow text-teal mb-3">
-                Mountain West Chamber of Commerce
-              </p>
-              <h1
-                className="heading-3xl text-white mb-5"
-                style={{ lineHeight: 1.05 }}
+      <PageHero
+        imageSrc="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80"
+        imageAlt="Local businesses and community shopping"
+        overlay="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/80 to-slate-blue/70"
+        minHeight="70vh"
+        containerPadding="pb-32 pt-40"
+        badge={
+          <div className="inline-flex items-center gap-2 bg-yellow text-primary rounded-full px-4 py-1.5">
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2.5}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+              />
+            </svg>
+            <span className="font-accent font-700 text-sm tracking-wide uppercase">
+              New Program 2025
+            </span>
+          </div>
+        }
+        eyebrow="Mountain West Chamber of Commerce"
+        title={
+          <>
+            Local Link
+            <br />
+            <span className="text-yellow">Discount</span>{" "}
+            <span className="text-teal">Program</span>
+          </>
+        }
+        description={
+          <>
+            Shop local, earn points, and win prizes — powered by the{" "}
+            <span className="text-teal font-600">GooseChase App</span>. Free for
+            consumers. An exclusive low-cost marketing tool for chamber member
+            businesses.
+          </>
+        }
+        aside={
+          <div className="flex flex-wrap gap-3 lg:flex-col lg:items-end lg:min-w-55">
+            {[
+              { value: "FREE", label: "For Consumers" },
+              { value: "$50/qtr", label: "For Businesses" },
+              { value: "HBZ14G", label: "Join Code" },
+            ].map((b) => (
+              <div
+                key={b.label}
+                className="flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3"
               >
-                Local Link
-                <br />
-                <span className="text-yellow">Discount</span>{" "}
-                <span className="text-teal">Program</span>
-              </h1>
-              <p className="font-body text-lg text-white/80 max-w-xl leading-relaxed">
-                Shop local, earn points, and win prizes — powered by the{" "}
-                <span className="text-teal font-600">GooseChase App</span>. Free
-                for consumers. An exclusive low-cost marketing tool for chamber
-                member businesses.
-              </p>
-            </div>
-
-            {/* Quick facts sidebar */}
-            <div className="flex flex-wrap gap-3 lg:flex-col lg:items-end lg:min-w-55">
-              {[
-                { value: "FREE", label: "For Consumers" },
-                { value: "$50/qtr", label: "For Businesses" },
-                { value: "HBZ14G", label: "Join Code" },
-              ].map((b) => (
-                <div
-                  key={b.label}
-                  className="flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3"
-                >
-                  <div>
-                    <div className="font-heading text-yellow font-700 text-lg">
-                      {b.value}
-                    </div>
-                    <div className="eyebrow text-white/60 text-[10px]">
-                      {b.label}
-                    </div>
+                <div>
+                  <div className="font-heading text-yellow font-700 text-lg">
+                    {b.value}
+                  </div>
+                  <div className="eyebrow text-white/60 text-[10px]">
+                    {b.label}
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-
-          <div className="flex flex-wrap gap-4 mt-8">
+        }
+        actions={
+          <>
             <a
               href="https://www.goosechase.com"
               target="_blank"
@@ -265,9 +253,9 @@ export default function Page() {
             <a href="#for-businesses" className="btn btn-outline-white btn-lg">
               Businesses: Join the Program
             </a>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       {/* ─── DUAL AUDIENCE STRIP ─── */}
       <section className="bg-primary py-12">
@@ -725,9 +713,7 @@ export default function Page() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    <span className="font-body text-ink text-sm">
-                      {item}
-                    </span>
+                    <span className="font-body text-ink text-sm">{item}</span>
                   </li>
                 ))}
               </ul>

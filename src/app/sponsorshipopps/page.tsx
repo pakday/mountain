@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Sponsorship Opportunities | Mountain West Chamber of Commerce",
@@ -239,39 +239,22 @@ export default function Page() {
   return (
     <>
       {/* ─── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-[72vh] flex items-end overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/Structure/Programs/sponsorshipopps/SWVCOC+Mtg+Sized+wEffect.jpg"
-            alt="Mountain West Chamber of Commerce community networking event"
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/80 to-slate-blue/60" />
-        </div>
-
-        <div className="relative z-10 section-container w-full max-w-7xl pb-36 pt-36">
-          <p className="eyebrow text-teal mb-4">
-            Mountain West Chamber of Commerce
-          </p>
-          <h1
-            className="heading-3xl text-white mb-5"
-            style={{ lineHeight: 1.05 }}
-          >
+      <PageHero
+        imageSrc="/Structure/Programs/sponsorshipopps/SWVCOC+Mtg+Sized+wEffect.jpg"
+        imageAlt="Mountain West Chamber of Commerce community networking event"
+        minHeight="72vh"
+        containerPadding="pb-36 pt-36"
+        eyebrow="Mountain West Chamber of Commerce"
+        title={
+          <>
             Sponsorship
             <br />
             <span className="text-yellow">Opportunities</span>
-          </h1>
-          <p className="font-body text-lg text-white/80 max-w-xl leading-relaxed mb-8">
-            Become a Sponsor — Increase Your Visibility. Connect your brand with
-            hundreds of local business leaders, community advocates, and avid
-            supporters across the Mountain West.
-          </p>
-
-          {/* Quick-jump buttons */}
-          <div className="flex flex-wrap gap-3">
+          </>
+        }
+        description="Become a Sponsor — Increase Your Visibility. Connect your brand with hundreds of local business leaders, community advocates, and avid supporters across the Mountain West."
+        actions={
+          <>
             <a href="#sustaining" className="btn btn-yellow btn-lg">
               Sustaining Partner
             </a>
@@ -284,9 +267,9 @@ export default function Page() {
             <a href="#golf" className="btn btn-outline-white">
               Golf Tournament
             </a>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       {/* ─── SECTION QUICK-NAV BAR ────────────────────────────────────────── */}
       <nav className="bg-primary hidden md:block border-b border-white/10">
@@ -325,9 +308,7 @@ export default function Page() {
                 <div className="font-accent font-700 text-xs text-primary uppercase tracking-widest">
                   {s.label}
                 </div>
-                <div className="font-body text-xs text-ink mt-0.5">
-                  {s.sub}
-                </div>
+                <div className="font-body text-xs text-ink mt-0.5">{s.sub}</div>
               </div>
             ))}
           </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Golf Tournament 2025",
@@ -19,63 +20,52 @@ export default function Page() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative min-h-[65vh] flex items-end overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/Structure/Programs/golf-tournament/Green.jpeg"
-            alt="Golf green at Stonebridge Golf Course"
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/70 to-slate-blue/60" />
-        </div>
-
-        <div className="relative z-10 section-container w-full max-w-7xl pb-28 pt-36">
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
-            <div className="max-w-2xl">
-              <p className="eyebrow text-teal mb-4">
-                Mountain West Chamber of Commerce
-              </p>
-              <h1
-                className="heading-3xl text-white mb-4"
-                style={{ lineHeight: 1.05 }}
+      <PageHero
+        imageSrc="/Structure/Programs/golf-tournament/Green.jpeg"
+        imageAlt="Golf green at Stonebridge Golf Course"
+        overlay="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/70 to-slate-blue/60"
+        minHeight="65vh"
+        containerPadding="pb-28 pt-36"
+        eyebrow="Mountain West Chamber of Commerce"
+        title={
+          <>
+            Scholarship
+            <br />
+            <span className="text-yellow">Golf Classic</span>{" "}
+            <span className="text-white">2025</span>
+          </>
+        }
+        description={
+          <>
+            Thursday, October 2, 2025 · 7:30 AM Registration · 8:30 AM Shotgun
+            Start
+            <br />
+            <span className="text-teal font-600">
+              Stonebridge Golf Course, West Valley City, UT
+            </span>
+          </>
+        }
+        aside={
+          <div className="flex flex-wrap gap-3 lg:flex-col lg:items-end">
+            {[
+              { icon: "📅", label: "October 2, 2025" },
+              { icon: "📍", label: "Stonebridge Golf Course" },
+              { icon: "🎓", label: "All Proceeds → Scholarships" },
+            ].map((b) => (
+              <div
+                key={b.label}
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2"
               >
-                Scholarship
-                <br />
-                <span className="text-yellow">Golf Classic</span>{" "}
-                <span className="text-white">2025</span>
-              </h1>
-              <p className="font-body text-lg text-white/80 max-w-xl leading-relaxed">
-                Thursday, October 2, 2025 · 7:30 AM Registration · 8:30 AM
-                Shotgun Start
-                <br />
-                <span className="text-teal font-600">
-                  Stonebridge Golf Course, West Valley City, UT
+                <span>{b.icon}</span>
+                <span className="font-accent text-white text-sm font-600">
+                  {b.label}
                 </span>
-              </p>
-            </div>
-            {/* Quick badges */}
-            <div className="flex flex-wrap gap-3 lg:flex-col lg:items-end">
-              {[
-                { icon: "📅", label: "October 2, 2025" },
-                { icon: "📍", label: "Stonebridge Golf Course" },
-                { icon: "🎓", label: "All Proceeds → Scholarships" },
-              ].map((b) => (
-                <div
-                  key={b.label}
-                  className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2"
-                >
-                  <span>{b.icon}</span>
-                  <span className="font-accent text-white text-sm font-600">
-                    {b.label}
-                  </span>
-                </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-          <div className="flex flex-wrap gap-4 mt-8">
+        }
+        actions={
+          <>
             <a
               href="https://lp.constantcontactpages.com/ev/reg/hya9mx9/lp/19b74e5b-e44c-4a6a-ac98-9e9e969b534a"
               target="_blank"
@@ -90,9 +80,9 @@ export default function Page() {
             >
               View Sponsorship Options
             </Link>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       {/* ─── EVENT HIGHLIGHTS STRIP ─── */}
       <section className="bg-primary py-10">
@@ -142,9 +132,7 @@ export default function Page() {
                 <p className="font-body text-base text-ink font-600">
                   Stonebridge Golf Course
                 </p>
-                <p className="font-body text-sm text-ink">
-                  4415 W Links Dr.
-                </p>
+                <p className="font-body text-sm text-ink">4415 W Links Dr.</p>
                 <p className="font-body text-sm text-ink">
                   West Valley City, Utah
                 </p>

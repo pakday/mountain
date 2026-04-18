@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PhotoGallerySlider from "@/components/PhotoGallerySlider";
+import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Teacher Appreciation Luncheon | Mountain West Chamber of Commerce",
@@ -135,66 +136,52 @@ export default function Page() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="relative min-h-[88vh] flex items-end justify-start overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={`${BASE}/unsplash-image-OyCl7Y4y0Bk.jpg`}
-            alt="Teacher appreciation luncheon celebration"
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/80 to-slate-blue/80" />
-        </div>
-
-        <div className="relative z-10 section-container w-full max-w-7xl pb-32 pt-40 flex justify-start flex-1">
-          <div className="max-w-3xl">
-            <p className="eyebrow text-teal mb-4">
-              Mountain West Chamber of Commerce
-            </p>
-            <h1
-              className="heading-3xl text-white mb-5"
-              style={{ lineHeight: 1.05 }}
+      <PageHero
+        imageSrc={`${BASE}/unsplash-image-OyCl7Y4y0Bk.jpg`}
+        imageAlt="Teacher appreciation luncheon celebration"
+        overlay="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/80 to-slate-blue/80"
+        minHeight="88vh"
+        containerPadding="pb-32 pt-40"
+        eyebrow="Mountain West Chamber of Commerce"
+        title={
+          <>
+            Annual Teacher
+            <br />
+            <span className="text-yellow">Appreciation</span> Luncheon
+          </>
+        }
+        subtitle='"Teachers are the real superheroes!"'
+        chips={[
+          {
+            icon: <CalendarIcon className="shrink-0" />,
+            label: "Thursday, May 1, 2025",
+          },
+          {
+            icon: <ClockIcon className="shrink-0" />,
+            label: "11:30 AM – 1:00 PM MDT",
+          },
+          {
+            icon: <MapPinIcon className="shrink-0" />,
+            label: "Herriman City Hall",
+          },
+        ]}
+        actions={
+          <>
+            <Link
+              href="#registration"
+              className="btn btn-yellow btn-lg font-heading text-primary"
             >
-              Annual Teacher
-              <br />
-              <span className="text-yellow">Appreciation</span> Luncheon
-            </h1>
-            <p className="font-body text-xl text-white/80 mb-6 leading-relaxed italic font-medium">
-              "Teachers are the real superheroes!"
-            </p>
-            <div className="flex flex-wrap gap-3 mb-8">
-              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white rounded-full px-4 py-2 text-sm font-body font-semibold border border-white/20">
-                <CalendarIcon className="shrink-0" />
-                Thursday, May 1, 2025
-              </span>
-              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white rounded-full px-4 py-2 text-sm font-body font-semibold border border-white/20">
-                <ClockIcon className="shrink-0" />
-                11:30 AM – 1:00 PM MDT
-              </span>
-              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white rounded-full px-4 py-2 text-sm font-body font-semibold border border-white/20">
-                <MapPinIcon className="shrink-0" />
-                Herriman City Hall
-              </span>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="#registration"
-                className="btn btn-yellow btn-lg font-heading text-primary"
-              >
-                Register Now
-              </Link>
-              <Link
-                href="#sponsor"
-                className="btn btn-outline-white btn-lg font-heading"
-              >
-                Become a Sponsor
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+              Register Now
+            </Link>
+            <Link
+              href="#sponsor"
+              className="btn btn-outline-white btn-lg font-heading"
+            >
+              Become a Sponsor
+            </Link>
+          </>
+        }
+      />
 
       {/* ── EVENT DETAILS ── */}
       <section className="py-20 md:py-28 bg-white">

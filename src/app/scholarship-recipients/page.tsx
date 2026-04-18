@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "2024 Scholarship Recipients | Mountain West Chamber",
@@ -70,67 +71,39 @@ export default function Page() {
       {/* ═══════════════════════════════════════
           HERO
       ═══════════════════════════════════════ */}
-      <section className="relative py-28 overflow-hidden bg-primary">
-        {/* Diagonal accent bar */}
-        <div
-          className="absolute top-0 right-0 w-1/2 h-full bg-slate-blue/40"
-          style={{ clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)" }}
-        />
-        {/* Yellow accent line */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-yellow" />
-
-        <div className="section-container relative z-10">
-          <div className="max-w-3xl">
-            <p className="eyebrow text-teal mb-5">Programs · Education</p>
-            <h1
-              className="heading-xl text-white mb-6"
-              style={{ lineHeight: "1.05" }}
-            >
-              2024 Scholarship <span className="text-yellow">Recipients</span>
-            </h1>
-            <p className="font-body text-lg text-white/80 max-w-2xl leading-relaxed mb-10">
-              Every year the Mountain West Chamber of Commerce awards
-              scholarships to outstanding local students through proceeds from
-              our Annual Scholarship Golf Tournament. These young leaders
-              represent the future of our community.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link href="/golf-tournament" className="btn btn-yellow btn-lg">
-                Support the Golf Tournament
-              </Link>
-              <Link href="/golf-sponsorships" className="btn btn-outline-white">
-                Become a Sponsor
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Floating stat cards */}
-        <div className="section-container relative z-10 mt-14">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl">
-            {[
-              { value: "5", label: "Recipients" },
-              { value: "$7,500", label: "Total Awarded" },
-              { value: "27+", label: "Years of Service" },
-            ].map((s) => (
-              <div
-                key={s.label}
-                className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-4 text-center"
-              >
-                <div
-                  className="heading-l text-yellow"
-                  style={{ fontFamily: "var(--font-heading)" }}
-                >
-                  {s.value}
-                </div>
-                <div className="font-accent text-xs font-700 uppercase tracking-widest text-white/80 mt-1">
-                  {s.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Programs · Education"
+        title={
+          <>
+            2024 Scholarship <span className="text-yellow">Recipients</span>
+          </>
+        }
+        description="Every year the Mountain West Chamber of Commerce awards scholarships to outstanding local students through proceeds from our Annual Scholarship Golf Tournament. These young leaders represent the future of our community."
+        actions={
+          <>
+            <Link href="/golf-tournament" className="btn btn-yellow btn-lg">
+              Support the Golf Tournament
+            </Link>
+            <Link href="/golf-sponsorships" className="btn btn-outline-white">
+              Become a Sponsor
+            </Link>
+          </>
+        }
+        stats={[
+          { value: "5", label: "Recipients" },
+          { value: "$7,500", label: "Total Awarded" },
+          { value: "27+", label: "Years of Service" },
+        ]}
+        decorations={
+          <>
+            <div
+              className="absolute top-0 right-0 w-1/2 h-full bg-slate-blue/40"
+              style={{ clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)" }}
+            />
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-yellow" />
+          </>
+        }
+      />
 
       {/* ═══════════════════════════════════════
           ABOUT THE SCHOLARSHIP

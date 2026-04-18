@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Golf Sponsorships",
@@ -272,34 +273,21 @@ export default function Page() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative min-h-[60vh] flex items-end overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/Structure/Programs/golf-sponsorships/unsplash-image-uy5ZEqUOscs.jpg"
-            alt="Golf tournament"
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/80 to-slate-blue/60" />
-        </div>
-        <div className="relative z-10 section-container w-full max-w-7xl pb-24 pt-32">
-          <p className="eyebrow text-teal mb-4">
-            Mountain West Chamber of Commerce
-          </p>
-          <h1
-            className="heading-3xl text-white mb-4"
-            style={{ lineHeight: 1.05 }}
-          >
+      <PageHero
+        imageSrc="/Structure/Programs/golf-sponsorships/unsplash-image-uy5ZEqUOscs.jpg"
+        imageAlt="Golf tournament"
+        overlay="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/80 to-slate-blue/60"
+        minHeight="60vh"
+        containerPadding="pb-24 pt-32"
+        eyebrow="Mountain West Chamber of Commerce"
+        title={
+          <>
             Golf <span className="text-yellow">Sponsorships</span>
-          </h1>
-          <p className="font-body text-lg text-white/80 max-w-xl leading-relaxed mb-8">
-            Make a lasting impact — sponsor the Annual Scholarship Golf Classic
-            and align your brand with a community fundraiser supporting local
-            high school students.
-          </p>
-          <div className="flex flex-wrap gap-3">
+          </>
+        }
+        description="Make a lasting impact — sponsor the Annual Scholarship Golf Classic and align your brand with a community fundraiser supporting local high school students."
+        actions={
+          <>
             <a
               href="https://lp.constantcontactpages.com/ev/reg/hya9mx9/lp/19b74e5b-e44c-4a6a-ac98-9e9e969b534a"
               target="_blank"
@@ -314,9 +302,9 @@ export default function Page() {
             >
               View Tournament Info
             </Link>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       {/* ─── INTRO BANNER ─── */}
       <section className="bg-light-gray py-14">
