@@ -73,7 +73,7 @@ export default function Page() {
       <section className="relative py-28 overflow-hidden bg-primary">
         {/* Diagonal accent bar */}
         <div
-          className="absolute top-0 right-0 w-1/2 h-full bg-slate-blue/30"
+          className="absolute top-0 right-0 w-1/2 h-full bg-slate-blue/40"
           style={{ clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)" }}
         />
         {/* Yellow accent line */}
@@ -123,7 +123,7 @@ export default function Page() {
                 >
                   {s.value}
                 </div>
-                <div className="font-accent text-xs font-700 uppercase tracking-widest text-white/75 mt-1">
+                <div className="font-accent text-xs font-700 uppercase tracking-widest text-white/80 mt-1">
                   {s.label}
                 </div>
               </div>
@@ -143,10 +143,10 @@ export default function Page() {
               <p className="eyebrow mb-4">Our Commitment to Education</p>
               <h2 className="heading-l text-primary mb-5">
                 Investing in Tomorrow's{" "}
-                <span className="text-teal-dark">Community Leaders</span>
+                <span className="text-slate-blue">Community Leaders</span>
               </h2>
               <div className="w-16 h-1 bg-yellow rounded-full mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-4">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-4">
                 Since 1997, the Mountain West Chamber of Commerce has championed
                 education as a cornerstone of community growth. Our annual
                 scholarship program provides financial support to graduating
@@ -154,7 +154,7 @@ export default function Page() {
                 exceptional character, academic achievement, and community
                 involvement.
               </p>
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-8">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
                 These scholarships are funded entirely through the generosity of
                 our business members and sponsors who participate in the Annual
                 Scholarship Golf Classic — proof that when businesses invest in
@@ -162,7 +162,7 @@ export default function Page() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-yellow/25 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-yellow/20 flex items-center justify-center shrink-0">
                     <svg
                       className="w-5 h-5 text-primary"
                       fill="none"
@@ -177,14 +177,14 @@ export default function Page() {
                       />
                     </svg>
                   </div>
-                  <span className="font-accent text-sm font-600 text-slate-700">
+                  <span className="font-accent text-sm font-600 text-slate-blue/80">
                     Academic Excellence
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-teal/15 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
                     <svg
-                      className="w-5 h-5 text-teal-dark"
+                      className="w-5 h-5 text-slate-blue"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth={2.5}
@@ -197,7 +197,7 @@ export default function Page() {
                       />
                     </svg>
                   </div>
-                  <span className="font-accent text-sm font-600 text-slate-700">
+                  <span className="font-accent text-sm font-600 text-slate-blue/80">
                     Community Impact
                   </span>
                 </div>
@@ -214,7 +214,7 @@ export default function Page() {
                   className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-primary/50 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-primary/60 to-transparent" />
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-5 -left-5 bg-yellow text-primary rounded-xl px-5 py-4 shadow-lg">
@@ -243,9 +243,9 @@ export default function Page() {
             <p className="eyebrow mb-4">Class of 2024</p>
             <h2 className="heading-l text-primary mb-4">
               Meet Our{" "}
-              <span className="text-teal-dark">Scholarship Recipients</span>
+              <span className="text-slate-blue">Scholarship Recipients</span>
             </h2>
-            <p className="font-body text-base text-slate-500 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-body text-base text-slate-blue/60 max-w-2xl mx-auto leading-relaxed">
               Five exceptional students from across the southwest Salt Lake
               County school districts were selected to receive a $1,500
               scholarship this year.
@@ -284,7 +284,7 @@ export default function Page() {
                     {r.year}
                   </span>
                   {/* Name */}
-                  <h3 className="heading-xs text-primary group-hover:text-teal-dark transition-colors duration-300">
+                  <h3 className="heading-xs text-primary group-hover:text-teal transition-colors duration-300">
                     {r.name}
                   </h3>
                   {/* Divider */}
@@ -292,17 +292,17 @@ export default function Page() {
                   {/* Amount */}
                   <div className="flex items-baseline gap-2 mt-1">
                     <span
-                      className="heading-s text-teal-dark"
+                      className="heading-s text-slate-blue"
                       style={{ fontFamily: "var(--font-heading)" }}
                     >
                       {r.amount}
                     </span>
-                    <span className="font-accent text-xs text-slate-400 uppercase tracking-wide font-600">
+                    <span className="font-accent text-xs text-slate-blue/40 uppercase tracking-wide font-600">
                       Scholarship Award
                     </span>
                   </div>
                   {/* Funded by note */}
-                  <p className="font-body text-xs text-slate-400 mt-1 leading-relaxed">
+                  <p className="font-body text-xs text-slate-blue/40 mt-1 leading-relaxed">
                     Funded through the Annual Scholarship Golf Classic
                   </p>
                 </div>
@@ -321,9 +321,9 @@ export default function Page() {
             <p className="eyebrow mb-4">Award Ceremonies</p>
             <h2 className="heading-xl text-primary mb-4">
               Celebrating Their{" "}
-              <span className="text-teal-dark">Achievements</span>
+              <span className="text-slate-blue">Achievements</span>
             </h2>
-            <p className="font-body text-base text-slate-500 max-w-xl mx-auto leading-relaxed">
+            <p className="font-body text-base text-slate-blue/60 max-w-xl mx-auto leading-relaxed">
               Chamber representatives personally visit each recipient's school
               to present the award — making the moment as memorable as possible.
             </p>
@@ -438,7 +438,7 @@ export default function Page() {
                 >
                   {s.value}
                 </div>
-                <div className="font-accent text-sm font-600 uppercase tracking-widest text-white/75">
+                <div className="font-accent text-sm font-600 uppercase tracking-widest text-white/80">
                   {s.label}
                 </div>
               </div>
@@ -529,7 +529,7 @@ export default function Page() {
                   </span>
                 </div>
                 <h3 className="heading-sm text-primary mb-3">{item.title}</h3>
-                <p className="font-body text-sm text-slate-500 leading-relaxed">
+                <p className="font-body text-sm text-slate-blue/60 leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -541,11 +541,11 @@ export default function Page() {
             className="relative rounded-2xl overflow-hidden py-14 px-8 md:px-16 text-center"
             style={{
               background:
-                "linear-gradient(135deg, #0D3B66 0%, #3F6183 60%, #43727A 100%)",
+                "linear-gradient(135deg, #0D3B66 0%, #3F6183 60%, #3F6183 100%)",
             }}
           >
             {/* Decorative circles */}
-            <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-white/10 -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-teal/10 translate-y-1/2 -translate-x-1/2" />
 
             <div className="relative z-10 max-w-2xl mx-auto">

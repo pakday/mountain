@@ -143,7 +143,7 @@ export default function Page() {
                 <p className="font-accent font-700 text-primary text-sm uppercase tracking-wide">
                   {item.label}
                 </p>
-                <p className="font-body text-xs text-slate-500">
+                <p className="font-body text-xs text-slate-blue/60">
                   {item.detail}
                 </p>
               </div>
@@ -161,19 +161,19 @@ export default function Page() {
               Choose Your Membership Level
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-500 leading-relaxed">
+            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
               All memberships run for one calendar year from your renewal date.
               Questions? Call us at{" "}
               <a
                 href="tel:8012800595"
-                className="text-teal-dark font-600 hover:text-teal"
+                className="text-slate-blue font-600 hover:text-teal"
               >
                 801-280-0595
               </a>{" "}
               or email{" "}
               <a
                 href="mailto:Info@mountainwestchamber.org"
-                className="text-teal-dark font-600 hover:text-teal"
+                className="text-slate-blue font-600 hover:text-teal"
               >
                 Info@mountainwestchamber.org
               </a>
@@ -211,13 +211,13 @@ export default function Page() {
                 Together We Are Stronger
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-5">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
                 For over 27 years, the Mountain West Chamber of Commerce has
                 connected businesses in Riverton, Herriman, and Bluffdale. Our
                 members help each other succeed through referrals, visibility,
                 and a community committed to growth.
               </p>
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-8">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
                 Your renewal continues that impact — keeping your business in
                 front of thousands of local customers and decision-makers while
                 giving you access to events, education, and advocacy that
@@ -274,7 +274,7 @@ export default function Page() {
             ].map((item) => (
               <div key={item.q} className="py-6">
                 <h3 className="heading-2xs text-primary mb-2">{item.q}</h3>
-                <p className="font-body text-sm text-slate-500 leading-relaxed">
+                <p className="font-body text-sm text-slate-blue/60 leading-relaxed">
                   {item.a}
                 </p>
               </div>
@@ -290,7 +290,7 @@ export default function Page() {
           <h2 className="heading-l text-white mb-5">
             Keep Building. Keep Growing.
           </h2>
-          <p className="font-body text-white/75 text-base mb-8 leading-relaxed">
+          <p className="font-body text-white/80 text-base mb-8 leading-relaxed">
             Contact us today and let&rsquo;s make sure your membership is active
             and working hard for your business.
           </p>

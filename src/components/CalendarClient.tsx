@@ -64,7 +64,7 @@ const events: EventInput[] = [
     start: "2026-04-16T08:00:00",
     end: "2026-04-16T09:30:00",
     location: "First Utah Bank Bldg, 4168 S 12600 S, Riverton, UT 84065",
-    color: "#FFA384",
+    color: "#F7DE32",
     textColor: "#0D3B66",
   },
   {
@@ -139,7 +139,7 @@ const events: EventInput[] = [
     start: "2026-05-07T08:00:00",
     end: "2026-05-07T09:30:00",
     location: "First Utah Bank Bldg, 4168 S 12600 S, Riverton, UT 84065",
-    color: "#FFA384",
+    color: "#F7DE32",
     textColor: "#0D3B66",
   },
   {

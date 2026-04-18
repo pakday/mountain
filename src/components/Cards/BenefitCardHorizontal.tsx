@@ -26,7 +26,7 @@ export default function BenefitCardHorizontal({
       className={[
         "bg-white rounded-xl p-6 flex gap-5 items-start",
         "border border-transparent shadow-sm",
-        "hover:border-teal/30 hover:shadow-lg transition-all duration-300",
+        "hover:border-teal/20 hover:shadow-lg transition-all duration-300",
         "group",
       ].join(" ")}
     >
@@ -38,7 +38,7 @@ export default function BenefitCardHorizontal({
       {/* Content */}
       <div className="flex flex-col gap-2 flex-1 min-w-0">
         <h3 className="heading-xs text-primary leading-snug">{title}</h3>
-        <p className="font-body text-sm text-slate-500 leading-relaxed">
+        <p className="font-body text-sm text-slate-blue/60 leading-relaxed">
           {description}
         </p>
         {href && (

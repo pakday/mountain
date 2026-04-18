@@ -63,7 +63,7 @@ const sponsorTiers: SponsorTier[] = [
     tier: "Birdie Sponsor",
     price: "$1,400",
     icon: "/Structure/Programs/golf-sponsorships/Mountain_West_Chamber_Web_Birdie+Sponsor.png",
-    color: "bg-teal-dark",
+    color: "bg-slate-blue",
     accentColor: "text-yellow",
     benefits: [
       "One hole sponsor — See hole sponsor for details",
@@ -118,7 +118,7 @@ const sponsorTiers: SponsorTier[] = [
     tier: "Cart Sponsor",
     price: "$1,200",
     icon: "/Structure/Programs/golf-sponsorships/Mountain_West_Chamber_Web_Cart+Sponsor.png",
-    color: "bg-teal-dark",
+    color: "bg-slate-blue",
     accentColor: "text-yellow",
     benefits: [
       "Company name listed on registration website",
@@ -191,7 +191,7 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
       {/* Header */}
       <div className={`${tier.color} px-7 pt-8 pb-6 flex flex-col gap-4`}>
         <div className="flex items-center gap-4">
-          <div className="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center">
+          <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
             <Image
               src={tier.icon}
               alt={tier.tier}
@@ -215,9 +215,9 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
           {tier.benefits.map((b, i) => (
             <li
               key={i}
-              className="flex gap-2.5 text-slate-600 font-body text-sm leading-snug"
+              className="flex gap-2.5 text-slate-blue/70 font-body text-sm leading-snug"
             >
-              <span className="text-teal-dark">
+              <span className="text-slate-blue">
                 <CheckIcon />
               </span>
               {b}
@@ -228,7 +228,7 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
         {/* Existing sponsors */}
         {tier.sponsors && tier.sponsors.length > 0 && (
           <div>
-            <p className="eyebrow text-slate-400 mb-3">Current Sponsors</p>
+            <p className="eyebrow text-slate-blue/40 mb-3">Current Sponsors</p>
             <div className="flex flex-wrap gap-3 items-center">
               {tier.sponsors.map((s, i) => (
                 <div
@@ -250,7 +250,7 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
 
         {/* Note */}
         {tier.note && (
-          <p className="text-xs text-slate-400 italic font-body">{tier.note}</p>
+          <p className="text-xs text-slate-blue/40 italic font-body">{tier.note}</p>
         )}
 
         <div className="mt-auto pt-2">
@@ -282,7 +282,7 @@ export default function Page() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-linear-to-r from-primary/92 via-primary/75 to-slate-blue/50" />
+          <div className="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/80 to-slate-blue/60" />
         </div>
         <div className="relative z-10 section-container w-full max-w-7xl pb-24 pt-32">
           <p className="eyebrow text-teal mb-4">
@@ -346,10 +346,10 @@ export default function Page() {
                 <div className="heading-xl text-primary font-800 mb-1">
                   {stat.value}
                 </div>
-                <div className="font-accent font-700 text-sm uppercase tracking-wider text-teal-dark mb-2">
+                <div className="font-accent font-700 text-sm uppercase tracking-wider text-slate-blue mb-2">
                   {stat.label}
                 </div>
-                <p className="font-body text-sm text-slate-500">{stat.desc}</p>
+                <p className="font-body text-sm text-slate-blue/60">{stat.desc}</p>
               </div>
             ))}
           </div>
@@ -361,7 +361,7 @@ export default function Page() {
         <div className="section-container max-w-4xl text-center">
           <div className="section-divider mx-auto mb-6" />
           <h2 className="heading-l text-primary mb-4">Sponsorship Details</h2>
-          <p className="font-body text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-base text-slate-blue/70 leading-relaxed max-w-2xl mx-auto">
             The 144 players include local business owners and avid golfers. This
             is a fundraiser for the high school scholarship program. Choose the
             sponsorship level that fits your budget and marketing goals — each
@@ -437,7 +437,7 @@ export default function Page() {
           <h2 className="heading-xl text-primary mb-4">
             Ready to Become a Sponsor?
           </h2>
-          <p className="font-body text-base text-slate-600 leading-relaxed mb-8 max-w-xl mx-auto">
+          <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8 max-w-xl mx-auto">
             Join leading local businesses in supporting youth scholarships while
             gaining invaluable brand exposure at one of the Southwest Valley's
             most attended business events.

@@ -181,7 +181,7 @@ export default function Page() {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-linear-to-r from-primary/95 via-primary/80 to-slate-blue/50" />
+          <div className="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/80 to-slate-blue/60" />
         </div>
 
         <div className="section-container max-w-7xl w-full relative z-10 py-28">
@@ -219,7 +219,7 @@ export default function Page() {
                 Practical Reads for Business Owners Who Want to Keep Moving
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed">
                 These articles give you a strong starting point for marketing,
                 communication, and new technology adoption — straight from the
                 Chamber&rsquo;s member resource library.
@@ -266,7 +266,7 @@ export default function Page() {
               Problems
             </h2>
             <div className="section-divider mx-auto mb-6" />
-            <p className="font-body text-base text-slate-500 leading-relaxed">
+            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
               From workforce and funding to exports, utilities, and compliance —
               these partners give members a stronger operating network across
               Utah.
@@ -321,7 +321,7 @@ export default function Page() {
                 >
                   <p className="eyebrow text-teal mb-4">{pillar.num}</p>
                   <h3 className="heading-xs text-white mb-3">{pillar.title}</h3>
-                  <p className="font-body text-sm text-white/75 leading-relaxed">
+                  <p className="font-body text-sm text-white/80 leading-relaxed">
                     {pillar.description}
                   </p>
                 </div>
@@ -343,7 +343,7 @@ export default function Page() {
                 Ribbon Cuttings, Events &amp; Community Moments
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-500 leading-relaxed">
+              <p className="font-body text-base text-slate-blue/60 leading-relaxed">
                 Ribbon cuttings, educational events, business openings, and
                 community-facing gatherings are how this Chamber builds trust
                 and visibility for its members.
@@ -366,7 +366,7 @@ export default function Page() {
       ═══════════════════════════════ */}
       <section className="py-20 bg-white">
         <div className="section-container">
-          <div className="relative overflow-hidden rounded-2xl bg-linear-to-r from-primary via-slate-blue to-teal-dark px-8 py-12 lg:px-14">
+          <div className="relative overflow-hidden rounded-2xl bg-linear-to-r from-primary via-slate-blue to-slate-blue px-8 py-12 lg:px-14">
             <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-yellow/20 blur-3xl pointer-events-none" />
             <div className="absolute -bottom-16 left-8 h-48 w-48 rounded-full bg-teal/20 blur-3xl pointer-events-none" />
             <div className="relative z-10 grid lg:grid-cols-[minmax(0,1fr)_16rem] gap-8 items-center">

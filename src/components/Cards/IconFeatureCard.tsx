@@ -33,7 +33,7 @@ export default function IconFeatureCard({
   return (
     <div
       className={[
-        "card p-8 flex flex-col gap-4 group border border-slate-200 bg-white shadow-sm",
+        "card p-8 flex flex-col gap-4 group border border-light-gray bg-white shadow-sm",
         "hover:shadow-xl transition-all duration-300",
         lift ? "hover:-translate-y-1 border-teal/20" : "",
       ]
@@ -44,7 +44,7 @@ export default function IconFeatureCard({
       <div
         className={[
           "w-12 h-12 flex items-center justify-center rounded-xl",
-          "bg-teal/15 text-teal-dark shrink-0 transition-all duration-300",
+          "bg-teal/10 text-slate-blue shrink-0 transition-all duration-300",
           iconAnimated ? "group-hover:bg-teal group-hover:text-white" : "",
         ]
           .filter(Boolean)
@@ -55,7 +55,7 @@ export default function IconFeatureCard({
 
       <h3 className="heading-xs text-primary">{title}</h3>
 
-      <p className="font-body text-sm text-slate-500 leading-relaxed flex-1">
+      <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
         {description}
       </p>
 

@@ -27,7 +27,9 @@ export default function StatCard({
         >
           {value}
         </div>
-        <p className="font-body text-sm text-slate-500 leading-snug">{label}</p>
+        <p className="font-body text-sm text-slate-blue/60 leading-snug">
+          {label}
+        </p>
       </div>
     );
   }

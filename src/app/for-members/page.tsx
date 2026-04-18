@@ -92,7 +92,7 @@ export default function Page() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-primary/75" />
+          <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative z-10 section-container w-full py-20">
           <p className="eyebrow text-teal mb-4">
@@ -141,7 +141,7 @@ export default function Page() {
             <h2 className="heading-l text-primary mb-4">
               Deals from Your Fellow Members
             </h2>
-            <p className="font-body text-slate-600 max-w-2xl mx-auto text-base leading-relaxed">
+            <p className="font-body text-slate-blue/70 max-w-2xl mx-auto text-base leading-relaxed">
               These special offers are made possible by the businesses in our
               chamber community. Support local and take advantage of exclusive
               rates you won&apos;t find anywhere else.
@@ -203,7 +203,7 @@ export default function Page() {
                   <h3 className="heading-xs text-primary mb-3 leading-snug">
                     {b.title}
                   </h3>
-                  <p className="font-body text-slate-600 text-sm leading-relaxed flex-1">
+                  <p className="font-body text-slate-blue/70 text-sm leading-relaxed flex-1">
                     {b.description}
                   </p>
 

@@ -71,7 +71,7 @@ export default function CardsPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card p-8 flex flex-col gap-4 group hover:shadow-lg transition-shadow duration-300">
-              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-teal/15 text-teal-dark group-hover:bg-teal group-hover:text-white transition-all duration-300">
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-teal/10 text-slate-blue group-hover:bg-teal group-hover:text-white transition-all duration-300">
                 <svg
                   className="w-7 h-7"
                   fill="none"
@@ -87,7 +87,7 @@ export default function CardsPage() {
                 </svg>
               </div>
               <h3 className="heading-xs text-primary">Build Relationships</h3>
-              <p className="font-body text-base text-slate-500 leading-relaxed">
+              <p className="font-body text-base text-slate-blue/60 leading-relaxed">
                 Connect with local businesses through regular networking events,
                 our ambassador program, ribbon cuttings, and our Women in
                 Business program — double the opportunities.
@@ -95,7 +95,7 @@ export default function CardsPage() {
             </div>
 
             <div className="card p-8 flex flex-col gap-4 group hover:shadow-lg transition-shadow duration-300">
-              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-teal/15 text-teal-dark group-hover:bg-teal group-hover:text-white transition-all duration-300">
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-teal/10 text-slate-blue group-hover:bg-teal group-hover:text-white transition-all duration-300">
                 <svg
                   className="w-7 h-7"
                   fill="none"
@@ -111,7 +111,7 @@ export default function CardsPage() {
                 </svg>
               </div>
               <h3 className="heading-xs text-primary">Attend an Event</h3>
-              <p className="font-body text-base text-slate-500 leading-relaxed">
+              <p className="font-body text-base text-slate-blue/60 leading-relaxed">
                 Experience the resources available to help you grow. See the
                 connections, energy, and community that MWCC brings together.
               </p>
@@ -127,7 +127,7 @@ export default function CardsPage() {
           <div className="text-sm font-bold tracking-widest uppercase text-[#3F6183] border-b border-[#EDEDED] pb-2">
             02 — New Component Card Designs
           </div>
-          <p className="text-xs text-slate-500 max-w-2xl">
+          <p className="text-xs text-slate-blue/60 max-w-2xl">
             These are the new card designs for the homepage card component. The
             first and third are the strongest options for the current brand
             direction.
@@ -354,7 +354,7 @@ export default function CardsPage() {
           <div className="text-sm font-bold tracking-widest uppercase text-[#3F6183] border-b border-[#EDEDED] pb-2">
             NEW — Design A: Horizontal Icon-Left
           </div>
-          <p className="text-xs text-slate-400">
+          <p className="text-xs text-slate-blue/40">
             Icon anchored left, compact horizontal rows. Great for dense benefit
             lists or sidebar cards.
           </p>
@@ -403,7 +403,7 @@ export default function CardsPage() {
           <div className="text-sm font-bold tracking-widest uppercase text-[#3F6183] border-b border-[#EDEDED] pb-2">
             NEW — Design B: Bold Left-Border Accent
           </div>
-          <p className="text-xs text-slate-400">
+          <p className="text-xs text-slate-blue/40">
             Yellow left border, icon in a circle that fills gold on hover.
             Energetic and confident.
           </p>
@@ -452,7 +452,7 @@ export default function CardsPage() {
           <div className="text-sm font-bold tracking-widest uppercase text-[#3F6183] border-b border-[#d0d0d0] pb-2">
             NEW — Design C: Dark Navy Cards
           </div>
-          <p className="text-xs text-slate-400">
+          <p className="text-xs text-slate-blue/40">
             Navy background, yellow icon, white text. Premium, high-contrast,
             authoritative. Looks great on light-gray section backgrounds.
           </p>

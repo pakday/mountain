@@ -168,7 +168,7 @@ export default function Footer() {
                 <div>
                   <p>4168 South 12600 South</p>
                   <p>Riverton, UT 84065</p>
-                  <p className="text-white/50 text-xs mt-1">
+                  <p className="text-white/60 text-xs mt-1">
                     First Floor — First Utah Bank Bldg
                     <br />
                     Office Hours Vary
@@ -248,7 +248,7 @@ export default function Footer() {
 
       {/* ── Bottom bar ── */}
       <div className="border-t border-white/10">
-        <div className="section-container py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm font-body text-white/50">
+        <div className="section-container py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm font-body text-white/60">
           <p>
             © {new Date().getFullYear()} Mountain West Chamber of Commerce. All
             rights reserved.

@@ -11,8 +11,6 @@
                #FFFAF9  warm off-white sections
      Accent 1: #5DCAD1  teal — interactive, links, dividers, icons
      Accent 2: #F7DE32  yellow — hero highlights, CTA badges, key buttons
-     Accent 3: #FFA384  coral — warmth moments, required fields
-     Hover:    #43727A  deep teal — hover/active for teal elements only
   ─────────────────────────────────────────── */
   --color-primary: #0d3b66;
   --color-primary-dark: #07263f;
@@ -21,10 +19,8 @@
   --color-light-gray: #ededed;
   --color-off-white: #fffaf9;
   --color-teal: #5dcad1;
-  --color-teal-dark: #43727a;
   --color-yellow: #f7de32;
   --color-yellow-dark: #e5cc1a;
-  --color-coral: #ffa384;
   --color-white: #ffffff;
 
   /* Fonts — Roboto Slab (headings) + Montserrat (all UI/body) */

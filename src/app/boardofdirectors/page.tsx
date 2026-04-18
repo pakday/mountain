@@ -130,10 +130,10 @@ export default function Page() {
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/80 to-primary/40" />
         {/* Decorative rings */}
         <div className="absolute -right-24 top-1/2 -translate-y-1/2 w-[28rem] h-[28rem] rounded-full border border-teal/20" />
-        <div className="absolute -right-8 top-1/2 -translate-y-1/2 w-72 h-72 rounded-full border border-teal/15" />
+        <div className="absolute -right-8 top-1/2 -translate-y-1/2 w-72 h-72 rounded-full border border-teal/10" />
         <div className="absolute right-20 top-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-teal/10" />
 
         <div className="relative z-10 section-container max-w-7xl">
@@ -160,7 +160,7 @@ export default function Page() {
                 <p className="font-heading text-2xl font-bold text-white leading-tight">
                   {s.num}
                 </p>
-                <p className="font-body text-[0.65rem] uppercase tracking-widest text-white/75 mt-0.5">
+                <p className="font-body text-[0.65rem] uppercase tracking-widest text-white/80 mt-0.5">
                   {s.label}
                 </p>
               </div>
@@ -176,7 +176,7 @@ export default function Page() {
             <p className="eyebrow mb-3">Our Officers</p>
             <h2 className="heading-l text-primary mb-4">Chamber Leadership</h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-600 leading-relaxed">
+            <p className="font-body text-base text-slate-blue/70 leading-relaxed">
               Meet the officers who set the strategic direction for our chamber
               and community.
             </p>
@@ -243,7 +243,7 @@ export default function Page() {
               >
                 {/* Photo */}
                 <div className="shrink-0">
-                  <div className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden ring-4 ring-teal/25">
+                  <div className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden ring-4 ring-teal/20">
                     <Image
                       src={s.image}
                       alt={s.name}
@@ -263,7 +263,7 @@ export default function Page() {
                   >
                     &ldquo;
                   </div>
-                  <p className="font-body text-white/85 text-base leading-relaxed mb-5 pt-6 sm:pt-4">
+                  <p className="font-body text-white/80 text-base leading-relaxed mb-5 pt-6 sm:pt-4">
                     {s.bio}
                   </p>
                   <div className="flex items-center gap-3">
@@ -292,7 +292,7 @@ export default function Page() {
             Interested in Joining the Board?
           </h2>
           <div className="section-divider mx-auto mb-7" />
-          <p className="font-body text-base text-slate-600 mb-8 leading-relaxed">
+          <p className="font-body text-base text-slate-blue/70 mb-8 leading-relaxed">
             We&rsquo;re always looking for passionate community leaders ready to
             make a difference. Reach out to learn more about board involvement.
           </p>

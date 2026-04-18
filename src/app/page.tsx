@@ -26,7 +26,7 @@ export default function HomePage() {
             sizes="100vw"
           />
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/75 to-slate-blue/50" />
+          <div className="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/80 to-slate-blue/60" />
         </div>
 
         {/* Content */}
@@ -42,7 +42,7 @@ export default function HomePage() {
               We Help Businesses Make{" "}
               <span className="text-yellow">Connections</span> for Success
             </h1>
-            <p className="font-body text-lg text-white/85 max-w-xl mb-10 leading-relaxed">
+            <p className="font-body text-lg text-white/80 max-w-xl mb-10 leading-relaxed">
               The Mountain West Chamber of Commerce is the bridge between
               businesses and the community — helping you increase revenue, build
               lasting relationships, and give back in meaningful ways.
@@ -63,7 +63,7 @@ export default function HomePage() {
           <span className="font-accent text-xs tracking-widest uppercase">
             Scroll
           </span>
-          <div className="w-px h-12 bg-linear-to-b from-white/50 to-transparent animate-pulse" />
+          <div className="w-px h-12 bg-linear-to-b from-white/60 to-transparent animate-pulse" />
         </div>
       </section>
 
@@ -72,7 +72,7 @@ export default function HomePage() {
       ═══════════════════════════════════════ */}
       <section className="bg-primary py-12">
         <div className="section-container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 divide-y-0 md:divide-x md:divide-white/15">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 divide-y-0 md:divide-x md:divide-white/10">
             <StatCard value="27+" label="Years Serving Utah" />
             <StatCard value="300+" label="Member Businesses" />
             <StatCard value="20+" label="Annual Events" />
@@ -92,18 +92,18 @@ export default function HomePage() {
               <p className="eyebrow mb-4">About the Chamber</p>
               <h2 className="heading-l text-primary mb-6">
                 Building Stronger Businesses.{" "}
-                <span className="text-teal-dark">
+                <span className="text-slate-blue">
                   Building Stronger Communities.
                 </span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-5">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
                 We&rsquo;ve been working in Riverton, Herriman, and Bluffdale
                 since 1997 to build bridges between businesses and the
                 community. We understand what it takes to build a successful
                 business here — and we&rsquo;ve built the network to prove it.
               </p>
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-8">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
                 At MWCC, we focus on networking, business education, and
                 political involvement within our cities — empowering members to
                 grow and give back through annual events, legislative
@@ -136,7 +136,7 @@ export default function HomePage() {
             {/* Image collage */}
             <div className="flex flex-col gap-4">
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative aspect-4/5 rounded-2xl overflow-hidden shadow-lg">
+                <div className="relative aspect-4/10 rounded-2xl overflow-hidden shadow-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
                     alt="Business networking event"
@@ -145,7 +145,7 @@ export default function HomePage() {
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
                 </div>
-                <div className="relative aspect-4/5 rounded-2xl overflow-hidden shadow-lg">
+                <div className="relative aspect-4/10 rounded-2xl overflow-hidden shadow-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
                     alt="Community leaders"
@@ -189,7 +189,7 @@ export default function HomePage() {
               Everything Your Business Needs to Thrive
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-500 leading-relaxed">
+            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
               Looking to grow your business, increase revenue, build lasting
               relationships, and give back to the community? Our membership
               opens the door to all of it.
@@ -426,7 +426,7 @@ export default function HomePage() {
               Make Your Business Life Easier
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-500">
+            <p className="font-body text-base text-slate-blue/60">
               Participate in the Chamber to find the answers, connections, and
               brand exposure you need for business success. Trying it is simple.
             </p>
@@ -526,7 +526,7 @@ export default function HomePage() {
                 We&rsquo;d Love to Hear from You
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-8">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
                 The best way to experience what the Chamber has to offer is to
                 attend an event. Come out and see us soon! We&rsquo;re also
                 happy to answer any questions you may have.
@@ -535,7 +535,7 @@ export default function HomePage() {
               {/* Contact details */}
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/12 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                     <svg
                       className="w-5 h-5 text-primary"
                       fill="none"
@@ -560,17 +560,17 @@ export default function HomePage() {
                     <p className="font-accent font-700 text-sm text-primary mb-0.5">
                       Address
                     </p>
-                    <p className="font-body text-sm text-slate-600">
+                    <p className="font-body text-sm text-slate-blue/70">
                       4168 South 12600 South, Riverton, UT 84065
                       <br />
                       First Floor of First Utah Bank Bldg
                       <br />
-                      <span className="text-slate-400">Office Hours Vary</span>
+                      <span className="text-slate-blue/40">Office Hours Vary</span>
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/12 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                     <svg
                       className="w-5 h-5 text-primary"
                       fill="currentColor"
@@ -585,14 +585,14 @@ export default function HomePage() {
                     </p>
                     <a
                       href="tel:8012800595"
-                      className="font-body text-sm text-slate-600 hover:text-primary transition-colors"
+                      className="font-body text-sm text-slate-blue/70 hover:text-primary transition-colors"
                     >
                       801-280-0595
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/12 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                     <svg
                       className="w-5 h-5 text-primary"
                       fill="currentColor"
@@ -608,7 +608,7 @@ export default function HomePage() {
                     </p>
                     <a
                       href="mailto:Info@mountainwestchamber.org"
-                      className="font-body text-sm text-slate-600 hover:text-primary transition-colors"
+                      className="font-body text-sm text-slate-blue/70 hover:text-primary transition-colors"
                     >
                       Info@mountainwestchamber.org
                     </a>
@@ -627,9 +627,9 @@ export default function HomePage() {
                   <div>
                     <label
                       htmlFor="firstName"
-                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                     >
-                      First Name <span className="text-coral">*</span>
+                      First Name <span className="text-slate-blue">*</span>
                     </label>
                     <input
                       id="firstName"
@@ -642,9 +642,9 @@ export default function HomePage() {
                   <div>
                     <label
                       htmlFor="lastName"
-                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                     >
-                      Last Name <span className="text-coral">*</span>
+                      Last Name <span className="text-slate-blue">*</span>
                     </label>
                     <input
                       id="lastName"
@@ -658,7 +658,7 @@ export default function HomePage() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                   >
                     Phone
                   </label>
@@ -672,9 +672,9 @@ export default function HomePage() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                   >
-                    Email <span className="text-coral">*</span>
+                    Email <span className="text-slate-blue">*</span>
                   </label>
                   <input
                     id="email"
@@ -687,7 +687,7 @@ export default function HomePage() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                   >
                     How Can We Help?
                   </label>
@@ -731,7 +731,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="section-container">
-          <p className="text-center font-body text-sm text-slate-400 mt-8">
+          <p className="text-center font-body text-sm text-slate-blue/40 mt-8">
             Interested in becoming a sponsor?{" "}
             <Link
               href="/sponsorshipopps"

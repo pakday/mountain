@@ -32,7 +32,7 @@ export default function BenefitCardBold({
       ].join(" ")}
     >
       {/* Icon in a yellow-tinted circle */}
-      <div className="w-14 h-14 rounded-full bg-yellow/15 flex items-center justify-center text-primary group-hover:bg-yellow transition-colors duration-300">
+      <div className="w-14 h-14 rounded-full bg-yellow/10 flex items-center justify-center text-primary group-hover:bg-yellow transition-colors duration-300">
         {icon}
       </div>
 
@@ -43,7 +43,7 @@ export default function BenefitCardBold({
       <div className="w-8 h-0.5 bg-teal rounded-full" />
 
       {/* Description */}
-      <p className="font-body text-sm text-slate-500 leading-relaxed flex-1">
+      <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
         {description}
       </p>
 

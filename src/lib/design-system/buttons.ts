@@ -22,7 +22,7 @@ export const BADGE_VARIANTS = [
   { label: "Member", bg: "#0D3B66", text: "#FFFAF9" },
   { label: "Open", bg: "#5DCAD1", text: "#0D3B66" },
   { label: "Featured", bg: "#F7DE32", text: "#0D3B66" },
-  { label: "Event", bg: "#FFA384", text: "#4a2318" },
+  { label: "Event", bg: "#5DCAD1", text: "#0D3B66" },
   { label: "Community", bg: "#EDEDED", text: "#3F6183" },
   { label: "Sponsor", bg: "#3F6183", text: "#fff" },
 ] as const;

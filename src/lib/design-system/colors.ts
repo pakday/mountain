@@ -27,12 +27,6 @@ export const COLORS = {
     usage: ["Secondary text", "Subheadings"],
     pass: "✓ Passes WCAG AA on white",
   },
-  warm: {
-    salmon: "#FFA384",
-    description: "Salmon — Warm Accent",
-    usage: ["Event tags", "Highlights"],
-    warning: "⚠ No body text on white",
-  },
   surface: {
     lightGray: "#EDEDED",
     description: "Light Gray — Surface",

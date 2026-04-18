@@ -42,7 +42,7 @@ const smallBusiness = [
   },
   {
     name: "SBDC — Utah",
-    url: "https://utahsbdc.org/2018/10/25/salt-lake/",
+    url: "https://utahsbdc.org/2018/10/20/salt-lake/",
     desc: "Free consulting and training for Utah small business owners.",
   },
   {
@@ -336,7 +336,7 @@ export default function Page() {
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-primary/75" />
+        <div className="absolute inset-0 bg-primary/80" />
         <div className="relative z-10 section-container max-w-7xl text-left">
           <div className="max-w-3xl">
             <p className="eyebrow text-yellow mb-4">
@@ -392,7 +392,7 @@ export default function Page() {
                 <h3 className="heading-xs text-primary font-semibold leading-snug">
                   {r.name}
                 </h3>
-                <p className="font-body text-sm text-slate-500 leading-relaxed flex-1">
+                <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
                   {r.desc}
                 </p>
                 <span className="font-accent text-xs text-teal font-bold mt-1">
@@ -425,7 +425,7 @@ export default function Page() {
                 <h3 className="heading-xs text-primary font-semibold leading-snug">
                   {r.name}
                 </h3>
-                <p className="font-body text-sm text-slate-500 leading-relaxed flex-1">
+                <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
                   {r.desc}
                 </p>
                 <span className="font-accent text-xs text-teal font-bold mt-1">
@@ -446,7 +446,7 @@ export default function Page() {
               Restaurant Takeout, Curbside &amp; Delivery
             </h2>
           </div>
-          <p className="font-body text-sm text-slate-500 mb-10">
+          <p className="font-body text-sm text-slate-blue/60 mb-10">
             Chamber member restaurants offering takeout and delivery.{" "}
             <a
               href="https://www.curbsideutah.com"
@@ -464,14 +464,16 @@ export default function Page() {
                 <h3 className="heading-2xs text-primary font-semibold">
                   {r.name}
                 </h3>
-                <p className="font-body text-sm text-teal-dark font-semibold">
+                <p className="font-body text-sm text-slate-blue font-semibold">
                   {r.phone}
                 </p>
-                <p className="font-body text-sm text-slate-500 leading-snug">
+                <p className="font-body text-sm text-slate-blue/60 leading-snug">
                   {r.address}
                 </p>
                 {r.note && (
-                  <p className="font-body text-xs text-coral mt-1">{r.note}</p>
+                  <p className="font-body text-xs text-slate-blue mt-1">
+                    {r.note}
+                  </p>
                 )}
               </div>
             ))}
@@ -495,7 +497,7 @@ export default function Page() {
                 rel="noopener noreferrer"
                 className="card p-6 flex flex-col gap-3 hover:shadow-lg hover:border-teal/40 transition-all"
               >
-                <span className="font-accent text-xs text-teal-dark uppercase tracking-wider font-semibold">
+                <span className="font-accent text-xs text-slate-blue uppercase tracking-wider font-semibold">
                   {r.source}
                 </span>
                 <h3 className="heading-2xs text-primary font-semibold leading-snug flex-1">
@@ -540,11 +542,11 @@ export default function Page() {
                           {t.price}
                         </span>
                       </div>
-                      <p className="font-body text-xs text-slate-500 leading-relaxed">
+                      <p className="font-body text-xs text-slate-blue/60 leading-relaxed">
                         {t.services}
                       </p>
                       {t.note && (
-                        <p className="font-body text-xs text-slate-400 italic leading-relaxed border-t border-light-gray pt-2 mt-1">
+                        <p className="font-body text-xs text-slate-blue/40 italic leading-relaxed border-t border-light-gray pt-2 mt-1">
                           {t.note}
                         </p>
                       )}
@@ -565,7 +567,7 @@ export default function Page() {
           fill
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-primary/85" />
+        <div className="absolute inset-0 bg-primary/80" />
         <div className="relative z-10 section-container text-center max-w-xl mx-auto">
           <p className="eyebrow text-teal mb-5">
             Together We&rsquo;re Stronger

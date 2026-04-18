@@ -51,7 +51,7 @@ export default function MembershipTierCard({
         className={[
           "relative flex flex-col rounded-2xl overflow-hidden border transition-shadow hover:shadow-xl",
           highlight
-            ? "border-teal shadow-lg ring-2 ring-teal/30"
+            ? "border-teal shadow-lg ring-2 ring-teal/20"
             : "border-light-gray shadow",
         ].join(" ")}
       >
@@ -86,12 +86,12 @@ export default function MembershipTierCard({
             >
               {price}
             </span>
-            <span className="font-body text-slate-400 text-sm pb-1">
+            <span className="font-body text-slate-blue/40 text-sm pb-1">
               {period}
             </span>
           </div>
           {description && (
-            <p className="font-body text-sm text-slate-500 leading-relaxed mb-6">
+            <p className="font-body text-sm text-slate-blue/60 leading-relaxed mb-6">
               {description}
             </p>
           )}
@@ -113,7 +113,7 @@ export default function MembershipTierCard({
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  <span className="font-body text-sm text-slate-600 leading-snug">
+                  <span className="font-body text-sm text-slate-blue/70 leading-snug">
                     {f}
                   </span>
                 </li>
@@ -164,7 +164,9 @@ export default function MembershipTierCard({
             >
               {price}
             </span>
-            <span className="font-body text-sm text-slate-400">{period}</span>
+            <span className="font-body text-sm text-slate-blue/40">
+              {period}
+            </span>
           </div>
           <h3 className="heading-sm text-primary">{title}</h3>
         </div>
@@ -172,7 +174,7 @@ export default function MembershipTierCard({
         <div className="section-divider" />
 
         {description && (
-          <p className="font-body text-sm text-slate-500 leading-relaxed flex-1">
+          <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
             {description}
           </p>
         )}
@@ -194,7 +196,7 @@ export default function MembershipTierCard({
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="font-body text-sm text-slate-600 leading-snug">
+                <span className="font-body text-sm text-slate-blue/70 leading-snug">
                   {f}
                 </span>
               </li>

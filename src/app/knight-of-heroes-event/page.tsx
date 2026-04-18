@@ -97,7 +97,7 @@ function DetailBadge({
     <div className="flex items-start gap-3">
       <span className="mt-0.5 text-teal shrink-0">{icon}</span>
       <div>
-        <p className="font-accent text-xs uppercase tracking-widest text-white/55 mb-0.5">
+        <p className="font-accent text-xs uppercase tracking-widest text-white/60 mb-0.5">
           {label}
         </p>
         <p className="font-body text-sm text-white font-semibold leading-snug">
@@ -128,13 +128,13 @@ function ActionCard({
 }) {
   return (
     <div
-      className={`bg-white/5 border ${accentClass} rounded-2xl p-8 flex flex-col gap-4 hover:bg-white/10 transition-colors duration-300`}
+      className={`bg-white/10 border ${accentClass} rounded-2xl p-8 flex flex-col gap-4 hover:bg-white/20 transition-colors duration-300`}
     >
       <span className="font-heading font-extrabold text-5xl opacity-20 text-white leading-none">
         {number}
       </span>
       <h3 className="heading-sm text-white">{title}</h3>
-      <p className="font-body text-sm text-white/65 leading-relaxed flex-1">
+      <p className="font-body text-sm text-white/60 leading-relaxed flex-1">
         {description}
       </p>
       <a
@@ -220,7 +220,7 @@ export default function Page() {
               </p>
 
               {/* Glass event-details card */}
-              <div className="grid sm:grid-cols-2 gap-5 bg-white/6 backdrop-blur-sm border border-white/10 rounded-2xl p-6 mb-10">
+              <div className="grid sm:grid-cols-2 gap-5 bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 mb-10">
                 <DetailBadge
                   icon={<CalendarIcon />}
                   label="Date"
@@ -304,8 +304,8 @@ export default function Page() {
       {/* ══════════════════════════════════════════
           LOCATION / QUICK-INFO BAR
       ══════════════════════════════════════════ */}
-      <div className="bg-[#071f36] border-b border-white/5 py-4">
-        <div className="section-container flex flex-wrap justify-center items-center gap-x-8 gap-y-2 text-white/65 text-sm font-body">
+      <div className="bg-[#071f36] border-b border-white/10 py-4">
+        <div className="section-container flex flex-wrap justify-center items-center gap-x-8 gap-y-2 text-white/60 text-sm font-body">
           <span className="flex items-center gap-2">
             <MapPinIcon />
             <span>
@@ -342,17 +342,17 @@ export default function Page() {
               <p className="eyebrow mb-4">About the Event</p>
               <h2 className="heading-xl text-primary mb-5">
                 Honoring the Heroes{" "}
-                <span className="text-teal-dark">of Our Community</span>
+                <span className="text-slate-blue">of Our Community</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-5">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
                 Each year, the Mountain West Chamber of Commerce hosts the{" "}
                 <strong>Knight of Heroes</strong> event to celebrate the
                 extraordinary men and women who serve our community — first
                 responders, healthcare workers, educators, and business leaders
                 who go above and beyond every single day.
               </p>
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-8">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
                 The 2025 theme,{" "}
                 <em className="text-primary font-semibold">
                   Diamonds &amp; Denim
@@ -385,7 +385,7 @@ export default function Page() {
                     <p className="font-accent font-bold text-sm text-primary uppercase tracking-wide">
                       {label}
                     </p>
-                    <p className="font-body text-xs text-slate-400 mt-1">
+                    <p className="font-body text-xs text-slate-blue/40 mt-1">
                       {sub}
                     </p>
                   </div>
@@ -453,7 +453,7 @@ export default function Page() {
               description="Purchase your tickets for an unforgettable evening of awards, dinner, and optional golf. Celebrate alongside local heroes and MWCC members."
               href="https://lp.constantcontactpages.com/ev/reg/cq6y5ue"
               cta="Register Now"
-              accentClass="border-yellow/25"
+              accentClass="border-yellow/20"
               btnClass="btn-yellow"
             />
             <ActionCard
@@ -462,7 +462,7 @@ export default function Page() {
               description="Know someone who deserves recognition? Submit a nomination for a deserving individual — a first responder, nurse, teacher, or community leader."
               href="https://lp.constantcontactpages.com/sv/uAxes3I"
               cta="Submit Nomination"
-              accentClass="border-teal/30"
+              accentClass="border-teal/20"
               btnClass="btn-secondary"
             />
             <ActionCard
@@ -471,7 +471,7 @@ export default function Page() {
               description="Support this community event and increase your brand visibility among our 300+ member business network. Beverage sponsors & prize items needed."
               href="https://lp.constantcontactpages.com/ev/reg/cq6y5ue"
               cta="Sponsorship Info"
-              accentClass="border-white/15"
+              accentClass="border-white/10"
               btnClass="btn-outline-white"
             />
           </div>
@@ -494,7 +494,7 @@ export default function Page() {
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-stretch">
             {/* Holy Cross / CommonSpirit sponsor card */}
             <div className="card p-8 flex flex-col items-center gap-5 max-w-sm w-full text-center hover:shadow-lg transition-shadow duration-300">
-              <span className="eyebrow text-slate-400">Title Sponsor</span>
+              <span className="eyebrow text-slate-blue/40">Title Sponsor</span>
               <div className="relative w-56 h-20 flex items-center justify-center">
                 <Image
                   src="/Structure/Programs/knight-of-heroes-event/Holy+Cross+Logo.jpeg"
@@ -504,20 +504,20 @@ export default function Page() {
                   className="object-contain"
                 />
               </div>
-              <p className="font-body text-sm text-slate-500 leading-relaxed">
+              <p className="font-body text-sm text-slate-blue/60 leading-relaxed">
                 CommonSpirit Health · Holy Cross Hospital Jordan Valley
               </p>
             </div>
 
             {/* Become a sponsor CTA */}
-            <div className="flex flex-col items-center justify-center gap-5 max-w-sm w-full text-center bg-primary/4 border-2 border-dashed border-primary/15 rounded-xl p-8 hover:bg-primary/7] transition-colors duration-300">
-              <div className="w-14 h-14 rounded-full bg-teal/15 flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center gap-5 max-w-sm w-full text-center bg-primary/10 border-2 border-dashed border-primary/10 rounded-xl p-8 hover:bg-primary/20 transition-colors duration-300">
+              <div className="w-14 h-14 rounded-full bg-teal/10 flex items-center justify-center">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#43727A"
+                  stroke="#5DCAD1"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -530,7 +530,7 @@ export default function Page() {
                 <h3 className="heading-sm text-primary mb-2">
                   Become a Sponsor
                 </h3>
-                <p className="font-body text-sm text-slate-500 mb-4">
+                <p className="font-body text-sm text-slate-blue/60 mb-4">
                   Beverage sponsors and prize drawing items are needed. Make an
                   impact while showcasing your brand to the community.
                 </p>
@@ -561,7 +561,7 @@ export default function Page() {
                 We Can Help
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-8">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
                 Our team is happy to answer questions about tickets, hero
                 nominations, or sponsorships. Reach out to Susan Schilling
                 directly.
@@ -569,7 +569,7 @@ export default function Page() {
               <div className="flex flex-col gap-4">
                 <a
                   href="tel:8012800595"
-                  className="flex items-center gap-3 font-body text-primary hover:text-teal-dark transition-colors group"
+                  className="flex items-center gap-3 font-body text-primary hover:text-slate-blue transition-colors group"
                 >
                   <span className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-teal/20 transition-colors shrink-0">
                     <svg
@@ -590,7 +590,7 @@ export default function Page() {
                 </a>
                 <a
                   href="mailto:susan@mountainwestchamber.org"
-                  className="flex items-center gap-3 font-body text-primary hover:text-teal-dark transition-colors group"
+                  className="flex items-center gap-3 font-body text-primary hover:text-slate-blue transition-colors group"
                 >
                   <span className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-teal/20 transition-colors shrink-0">
                     <svg
@@ -623,7 +623,7 @@ export default function Page() {
                   alt="Susan Schilling, President of Mountain West Chamber of Commerce"
                   width={130}
                   height={130}
-                  className="rounded-full object-cover ring-4 ring-teal/25"
+                  className="rounded-full object-cover ring-4 ring-teal/20"
                 />
                 <span className="absolute -bottom-1 -right-1 bg-teal w-5 h-5 rounded-full ring-2 ring-white" />
               </div>
@@ -631,10 +631,10 @@ export default function Page() {
                 <h3 className="heading-sm text-primary mb-1">
                   Susan Schilling
                 </h3>
-                <p className="eyebrow text-teal-dark mb-3 mt-1">
-                  President, MWCC
+                <p className="eyebrow mb-3 mt-1">President, MWCC</p>
+                <p className="font-body text-sm text-slate-blue/60 leading-relaxed mb-4">
+                  {item.description}
                 </p>
-                <p className="font-body text-sm text-slate-500 leading-relaxed mb-4">
                   Mountain West Chamber of Commerce
                   <br />
                   Serving Riverton, Herriman &amp; Bluffdale
@@ -681,17 +681,17 @@ export default function Page() {
 
             {/* Caption */}
             <div>
-              <p className="eyebrow mb-3 text-slate-400">Looking Back</p>
+              <p className="eyebrow mb-3 text-slate-blue/40">Looking Back</p>
               <h3 className="heading-lg text-primary mb-4">
                 Dinner, Recognition &amp; Community
               </h3>
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-5">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
                 In 2023, the Chamber gathered at Megaplex Events in South Jordan
                 to celebrate and honor the outstanding individuals making our
                 community exceptional. The evening featured dinner, a prize
                 drawing, and heartfelt recognition of local heroes.
               </p>
-              <ul className="font-body text-sm text-slate-600 space-y-3 mb-8">
+              <ul className="font-body text-sm text-slate-blue/70 space-y-3 mb-8">
                 {[
                   "$500 table for 6 guests + a hero and their guest",
                   "$50/person or $80/couple tickets available",

@@ -48,7 +48,7 @@ export default function Page() {
                   Join the Chamber
                 </h2>
                 <div className="section-divider mb-6" />
-                <p className="font-body text-base text-slate-600 leading-relaxed">
+                <p className="font-body text-base text-slate-blue/70 leading-relaxed">
                   Whether you&rsquo;re curious about membership benefits,
                   upcoming events, or sponsorship opportunities — we&rsquo;re
                   happy to help.
@@ -66,7 +66,7 @@ export default function Page() {
                         <br />
                         Bluffdale, UT 84065 — 2nd Floor
                         <br />
-                        <span className="text-slate-400 text-xs">
+                        <span className="text-slate-blue/40 text-xs">
                           Office Hours Vary
                         </span>
                       </>
@@ -123,7 +123,7 @@ export default function Page() {
                       <p className="font-accent font-700 text-sm text-primary mb-0.5">
                         {item.label}
                       </p>
-                      <p className="font-body text-sm text-slate-600">
+                      <p className="font-body text-sm text-slate-blue/70">
                         {item.content}
                       </p>
                     </div>
@@ -133,9 +133,9 @@ export default function Page() {
 
               {/* Staff card */}
               <div className="card p-6 flex items-center gap-5">
-                <div className="w-16 h-16 rounded-full bg-teal/15 flex items-center justify-center shrink-0">
+                <div className="w-16 h-16 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
                   <svg
-                    className="w-8 h-8 text-teal-dark/60"
+                    className="w-8 h-8 text-slate-blue/60"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -146,18 +146,18 @@ export default function Page() {
                   <p className="heading-2xs text-primary font-700">
                     Susan Schilling
                   </p>
-                  <p className="font-accent text-xs text-teal-dark uppercase tracking-wide font-600">
+                  <p className="font-accent text-xs text-slate-blue uppercase tracking-wide font-600">
                     President
                   </p>
                   <a
                     href="mailto:Info@mountainwestchamber.org"
-                    className="font-body text-xs text-slate-500 hover:text-primary transition-colors mt-1 block"
+                    className="font-body text-xs text-slate-blue/60 hover:text-primary transition-colors mt-1 block"
                   >
                     Email Us
                   </a>
                   <a
                     href="tel:8012800595"
-                    className="font-body text-xs text-slate-500 hover:text-primary transition-colors"
+                    className="font-body text-xs text-slate-blue/60 hover:text-primary transition-colors"
                   >
                     801-280-0595
                   </a>
@@ -168,7 +168,7 @@ export default function Page() {
             {/* ── Right: contact form ── */}
             <div className="lg:col-span-3 card p-8 lg:p-10">
               <h3 className="heading-s text-primary mb-2">Send Us a Message</h3>
-              <p className="font-body text-sm text-slate-500 mb-8">
+              <p className="font-body text-sm text-slate-blue/60 mb-8">
                 Tell us what you&rsquo;d like to know more about.
               </p>
 
@@ -177,9 +177,9 @@ export default function Page() {
                   <div>
                     <label
                       htmlFor="firstName"
-                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                     >
-                      First Name <span className="text-coral">*</span>
+                      First Name <span className="text-slate-blue">*</span>
                     </label>
                     <input
                       id="firstName"
@@ -192,9 +192,9 @@ export default function Page() {
                   <div>
                     <label
                       htmlFor="lastName"
-                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                     >
-                      Last Name <span className="text-coral">*</span>
+                      Last Name <span className="text-slate-blue">*</span>
                     </label>
                     <input
                       id="lastName"
@@ -209,7 +209,7 @@ export default function Page() {
                 <div>
                   <label
                     htmlFor="company"
-                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                   >
                     Company Name
                   </label>
@@ -225,9 +225,9 @@ export default function Page() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                     >
-                      Email <span className="text-coral">*</span>
+                      Email <span className="text-slate-blue">*</span>
                     </label>
                     <input
                       id="email"
@@ -240,7 +240,7 @@ export default function Page() {
                   <div>
                     <label
                       htmlFor="phone"
-                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                     >
                       Phone
                     </label>
@@ -254,9 +254,9 @@ export default function Page() {
                 </div>
 
                 <div>
-                  <label className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-2">
+                  <label className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-2">
                     What would you like to know more about?{" "}
-                    <span className="text-coral">*</span>
+                    <span className="text-slate-blue">*</span>
                   </label>
                   <div className="grid sm:grid-cols-2 gap-2">
                     {[
@@ -274,9 +274,9 @@ export default function Page() {
                           type="checkbox"
                           name="interest"
                           value={opt}
-                          className="rounded border-light-gray text-primary focus:ring-teal/30"
+                          className="rounded border-light-gray text-primary focus:ring-teal/40"
                         />
-                        <span className="font-body text-sm text-slate-600 group-hover:text-primary transition-colors">
+                        <span className="font-body text-sm text-slate-blue/70 group-hover:text-primary transition-colors">
                           {opt}
                         </span>
                       </label>
@@ -287,7 +287,7 @@ export default function Page() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-600 block mb-1.5"
+                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
                   >
                     Please give us more details
                   </label>
@@ -336,7 +336,7 @@ export default function Page() {
                 <h3 className="heading-xs text-primary font-700">
                   {item.title}
                 </h3>
-                <p className="font-body text-sm text-slate-500 leading-relaxed flex-1">
+                <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
                   {item.desc}
                 </p>
                 <Link

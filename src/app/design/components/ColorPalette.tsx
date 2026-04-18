@@ -18,7 +18,7 @@ export function ColorPalette() {
                 {item.usage.map((u) => (
                   <span
                     key={u}
-                    className="bg-black/5 text-[#0D3B66] text-xs px-1.5 py-0.5 rounded font-semibold"
+                    className="bg-black/10 text-[#0D3B66] text-xs px-1.5 py-0.5 rounded font-semibold"
                   >
                     {u}
                   </span>

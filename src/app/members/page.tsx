@@ -1303,20 +1303,20 @@ function MemberCard({ member }: { member: Member }) {
         </p>
       )}
       {member.contact && (
-        <p className="font-body text-xs text-slate-500 mb-0.5">
+        <p className="font-body text-xs text-slate-blue/60 mb-0.5">
           {member.contact}
         </p>
       )}
       {member.phone && (
         <a
           href={`tel:${member.phone.replace(/\D/g, "")}`}
-          className="font-body text-xs text-teal-dark hover:text-teal block mb-0.5"
+          className="font-body text-xs text-slate-blue hover:text-teal block mb-0.5"
         >
           {member.phone}
         </a>
       )}
       {member.address && (
-        <p className="font-body text-xs text-slate-400 leading-snug">
+        <p className="font-body text-xs text-slate-blue/40 leading-snug">
           {member.address}
         </p>
       )}
@@ -1384,7 +1384,7 @@ export default function Page() {
         <div className="section-container max-w-7xl">
           <div className="flex items-baseline gap-3 mb-5 flex-wrap">
             <p className="eyebrow">Member Categories A – M</p>
-            <span className="font-body text-xs text-slate-400">
+            <span className="font-body text-xs text-slate-blue/40">
               (Categories N–Z coming soon)
             </span>
           </div>
@@ -1417,7 +1417,7 @@ export default function Page() {
             <h2 className="heading-lg text-white mb-4">
               Get Your Business in the Directory
             </h2>
-            <p className="font-body text-white/75 text-base max-w-lg mx-auto mb-8">
+            <p className="font-body text-white/80 text-base max-w-lg mx-auto mb-8">
               Join the Mountain West Chamber of Commerce and connect with
               hundreds of businesses and thousands of customers in the southwest
               Salt Lake Valley.

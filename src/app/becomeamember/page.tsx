@@ -57,7 +57,7 @@ const memberships = [
       "A 1-year membership for women entrepreneurs and professionals. Included at no extra cost with any standard membership.",
     cta: "Learn More",
     href: "/why-become-a-member",
-    accent: "bg-teal-dark",
+    accent: "bg-slate-blue",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function Page() {
             className="object-cover object-center opacity-30"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-linear-to-b from-primary/60 via-primary/50 to-primary/80" />
+          <div className="absolute inset-0 bg-linear-to-b from-primary/60 via-primary/60 to-primary/80" />
         </div>
 
         <div className="section-container max-w-7xl w-full relative z-10 py-24">
@@ -115,7 +115,7 @@ export default function Page() {
               Choose Your Membership
             </h2>
             <div className="section-divider bg-teal mx-auto mb-6" />
-            <p className="font-body text-base text-slate-500 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-body text-base text-slate-blue/60 max-w-2xl mx-auto leading-relaxed">
               Whether you&apos;re a growing business, a solo operator, or a
               nonprofit leader — there&apos;s a membership built for you.
             </p>
@@ -147,7 +147,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
               <h2 className="heading-m text-white mb-2">Already a Member?</h2>
-              <p className="font-body text-white/75 text-base leading-relaxed max-w-lg">
+              <p className="font-body text-white/80 text-base leading-relaxed max-w-lg">
                 Keep your membership active and continue enjoying all the
                 benefits of being part of the Mountain West Chamber community.
               </p>
@@ -170,14 +170,14 @@ export default function Page() {
                 Chamber Membership Has a Major Impact on Small Businesses
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-500 leading-relaxed mb-4">
+              <p className="font-body text-base text-slate-blue/60 leading-relaxed mb-4">
                 Small businesses represent the largest segment of most local
                 chamber membership rolls. This study indicates that chamber
                 membership has consistent and powerful benefits: if consumers
                 know a small business is a chamber member, that business enjoys
                 significantly higher trust and visibility.
               </p>
-              <p className="font-body text-xs text-slate-400 italic">
+              <p className="font-body text-xs text-slate-blue/40 italic">
                 — Shapiro Study, 2012
               </p>
             </div>
@@ -205,7 +205,7 @@ export default function Page() {
             Together We Are Stronger
           </h2>
           <div className="section-divider bg-teal mx-auto mb-6" />
-          <p className="font-body text-base text-slate-500 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="font-body text-base text-slate-blue/60 leading-relaxed mb-10 max-w-xl mx-auto">
             Join the Mountain West Chamber of Commerce and become part of a
             vibrant business community serving Riverton, Herriman, and Bluffdale
             since 1997.

@@ -129,7 +129,7 @@ const passportBenefits = [
 const consumerSteps = [
   {
     number: "1",
-    color: "bg-coral",
+    color: "bg-teal",
     title: "Download the App",
     desc: "Scan the QR code or search GooseChase in the App Store or Google Play. It's completely free to download.",
   },
@@ -184,7 +184,7 @@ export default function Page() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-linear-to-br from-primary/95 via-primary/80 to-teal-dark/70" />
+          <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/80 to-slate-blue/70" />
         </div>
 
         <div className="relative z-10 section-container w-full max-w-7xl pb-32 pt-40">
@@ -221,7 +221,7 @@ export default function Page() {
                 <span className="text-yellow">Discount</span>{" "}
                 <span className="text-teal">Program</span>
               </h1>
-              <p className="font-body text-lg text-white/85 max-w-xl leading-relaxed">
+              <p className="font-body text-lg text-white/80 max-w-xl leading-relaxed">
                 Shop local, earn points, and win prizes — powered by the{" "}
                 <span className="text-teal font-600">GooseChase App</span>. Free
                 for consumers. An exclusive low-cost marketing tool for chamber
@@ -343,7 +343,7 @@ export default function Page() {
                 <span className="text-teal">One Local Business at a Time</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-gray-600 leading-relaxed mb-5">
+              <p className="font-body text-slate-blue/70 leading-relaxed mb-5">
                 We are adding a new maintenance-free, low-cost marketing program
                 that allows you to create a personalized experience for your
                 customers. By offering the{" "}
@@ -351,7 +351,7 @@ export default function Page() {
                 the GooseChase App, the Chamber is connecting more community
                 residents with our members.
               </p>
-              <p className="font-body text-gray-600 leading-relaxed mb-8">
+              <p className="font-body text-slate-blue/70 leading-relaxed mb-8">
                 Participants pay a{" "}
                 <strong className="text-primary">$50 per quarter</strong>{" "}
                 subscription and post a community experience in the
@@ -374,7 +374,7 @@ export default function Page() {
                   </span>
                 </div>
                 <div className="flex items-center gap-2 bg-light-gray rounded-full px-4 py-2">
-                  <span className="w-2 h-2 rounded-full bg-coral shrink-0" />
+                  <span className="w-2 h-2 rounded-full bg-teal shrink-0" />
                   <span className="font-accent text-sm font-600 text-primary">
                     New Offers Weekly
                   </span>
@@ -423,7 +423,7 @@ export default function Page() {
             <h2 className="heading-xl text-primary mb-4">
               Get Started in <span className="text-teal">3 Simple Steps</span>
             </h2>
-            <p className="font-body text-gray-500 max-w-xl mx-auto">
+            <p className="font-body text-slate-blue/60 max-w-xl mx-auto">
               Turn notifications on — never miss a new offer! More local
               discounts are added every single week.
             </p>
@@ -479,7 +479,7 @@ export default function Page() {
         <div className="section-container max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
             <div className="relative order-2 lg:order-1">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-4/5">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-4/10">
                 <Image
                   src="https://images.unsplash.com/photo-1607703703520-bb638e84caf2?w=800&q=80"
                   alt="Business owner using mobile app for marketing"
@@ -490,13 +490,13 @@ export default function Page() {
                 <div className="absolute inset-0 bg-linear-to-t from-primary/60 to-transparent" />
               </div>
               {/* Cost highlight */}
-              <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-sm rounded-xl p-5 shadow-xl border border-teal/20">
+              <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-sm rounded-xl p-5 shadow-xl border border-teal/20">
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-heading text-primary text-4xl font-700">
                       $50
                     </div>
-                    <div className="font-body text-gray-500 text-sm">
+                    <div className="font-body text-slate-blue/60 text-sm">
                       per quarter / per chamber member
                     </div>
                   </div>
@@ -515,7 +515,7 @@ export default function Page() {
                 Local Link <span className="text-teal">Passport Benefits</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-gray-600 leading-relaxed mb-8">
+              <p className="font-body text-slate-blue/70 leading-relaxed mb-8">
                 Join the Local Link Discount Program to increase awareness of
                 your business and boost foot traffic. It&apos;s one of the most
                 cost-effective marketing tools available exclusively to Mountain
@@ -645,7 +645,7 @@ export default function Page() {
             <h2 className="heading-xl text-primary mb-4">
               Participating <span className="text-teal">Local Businesses</span>
             </h2>
-            <p className="font-body text-gray-500 max-w-xl mx-auto">
+            <p className="font-body text-slate-blue/60 max-w-xl mx-auto">
               These amazing local businesses are already on the Local Link
               Passport. Visit them, complete their experiences, and earn your
               points toward monthly prizes!
@@ -656,7 +656,7 @@ export default function Page() {
             {participatingBusinesses.map((biz) => (
               <div
                 key={biz}
-                className="card px-4 py-5 text-center hover:shadow-md hover:border-teal/30 border border-transparent transition-all duration-200 hover:-translate-y-0.5"
+                className="card px-4 py-5 text-center hover:shadow-md hover:border-teal/40 border border-transparent transition-all duration-200 hover:-translate-y-0.5"
               >
                 <div className="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center mx-auto mb-3">
                   <svg
@@ -680,7 +680,7 @@ export default function Page() {
             ))}
           </div>
 
-          <p className="text-center font-body text-gray-400 text-sm mt-8">
+          <p className="text-center font-body text-slate-blue/40 text-sm mt-8">
             More businesses are added weekly. Turn on notifications in the
             GooseChase app to never miss a new offer!
           </p>
@@ -698,7 +698,7 @@ export default function Page() {
                 <span className="text-teal">Your Local Savings Hub</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-gray-600 leading-relaxed mb-6">
+              <p className="font-body text-slate-blue/70 leading-relaxed mb-6">
                 GooseChase is a free mobile experience app that turns local
                 shopping into an adventure. Businesses post unique challenges
                 for you to complete — visit their store, try a product, snap a
@@ -725,7 +725,7 @@ export default function Page() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    <span className="font-body text-gray-600 text-sm">
+                    <span className="font-body text-slate-blue/70 text-sm">
                       {item}
                     </span>
                   </li>
@@ -751,7 +751,7 @@ export default function Page() {
                   className="w-full h-auto object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-linear-to-tr from-primary/30 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-tr from-primary/40 to-transparent" />
               </div>
               {/* Notification card */}
               <div className="absolute top-8 -left-4 bg-white rounded-xl shadow-xl px-5 py-4 border border-light-gray max-w-50">
@@ -761,7 +761,7 @@ export default function Page() {
                     New Offer!
                   </span>
                 </div>
-                <p className="font-body text-xs text-gray-600 leading-snug">
+                <p className="font-body text-xs text-slate-blue/70 leading-snug">
                   Costa Vida — Buy one, get one free burrito today!
                 </p>
               </div>
@@ -784,7 +784,7 @@ export default function Page() {
         className="py-20 relative overflow-hidden"
         style={{
           background:
-            "linear-gradient(135deg, #0D3B66 0%, #3F6183 50%, #43727A 100%)",
+            "linear-gradient(135deg, #0D3B66 0%, #3F6183 50%, #3F6183 100%)",
         }}
       >
         <div
@@ -801,7 +801,7 @@ export default function Page() {
             Ready to Shop Local &amp;{" "}
             <span className="text-yellow">Win Big?</span>
           </h2>
-          <p className="font-body text-white/75 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="font-body text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
             Whether you&apos;re a community member looking for great deals or a
             business ready to grow — the Local Link Passport has something for
             everyone. Join the movement today!

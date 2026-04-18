@@ -33,12 +33,12 @@ export default function PersonCard({
       href={companyUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="font-body text-sm text-teal-dark hover:text-teal transition-colors"
+      className="font-body text-sm text-slate-blue hover:text-teal transition-colors"
     >
       {company}
     </a>
   ) : company ? (
-    <p className="font-body text-sm text-slate-500">{company}</p>
+    <p className="font-body text-sm text-slate-blue/60">{company}</p>
   ) : null;
 
   if (variant === "officer") {
@@ -57,7 +57,7 @@ export default function PersonCard({
           />
         </div>
         <div>
-          <span className="inline-block bg-teal/10 text-teal-dark text-[0.65rem] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
+          <span className="inline-block bg-teal/10 text-slate-blue text-[0.65rem] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
             {role}
           </span>
           <h3 className="heading-sm text-primary mb-1">{name}</h3>
@@ -78,10 +78,10 @@ export default function PersonCard({
           quality={90}
           className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       <div className="p-4 text-center">
-        <p className="font-body text-[0.6rem] font-bold uppercase tracking-wider text-teal-dark mb-1">
+        <p className="font-body text-[0.6rem] font-bold uppercase tracking-wider text-slate-blue mb-1">
           {role}
         </p>
         <h3 className="heading-xs text-primary font-semibold mb-1">{name}</h3>

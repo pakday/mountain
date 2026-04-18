@@ -73,7 +73,7 @@ function FeaturedCard({
   image: string;
 }) {
   return (
-    <article className="grid md:grid-cols-2 gap-0 border border-slate-200 rounded-2xl overflow-hidden bg-white">
+    <article className="grid md:grid-cols-2 gap-0 border border-light-gray rounded-2xl overflow-hidden bg-white">
       <div className="relative h-64 md:h-auto md:min-h-60">
         <Image
           src={image}
@@ -89,11 +89,11 @@ function FeaturedCard({
           Featured
         </span>
         <h2 className="heading-s text-primary">{title}</h2>
-        <p className="font-body text-sm text-slate-600 leading-relaxed">
+        <p className="font-body text-sm text-slate-blue/70 leading-relaxed">
           {excerpt}
         </p>
-        <div className="flex items-center justify-between pt-2 border-t border-slate-100">
-          <span className="text-xs text-slate-400">{date}</span>
+        <div className="flex items-center justify-between pt-2 border-t border-light-gray">
+          <span className="text-xs text-slate-blue/40">{date}</span>
           <Link href={postUrl} className="btn btn-primary btn-sm">
             Read Article
           </Link>
@@ -115,7 +115,7 @@ function BlogCard({
   image: string;
 }) {
   return (
-    <article className="border border-slate-200 rounded-2xl overflow-hidden bg-white flex flex-col">
+    <article className="border border-light-gray rounded-2xl overflow-hidden bg-white flex flex-col">
       <div className="relative h-44">
         <Image
           src={image}
@@ -126,14 +126,14 @@ function BlogCard({
         />
       </div>
       <div className="p-6 flex flex-col gap-2 flex-1">
-        <span className="text-xs text-slate-400">{date}</span>
+        <span className="text-xs text-slate-blue/40">{date}</span>
         <h3 className="heading-xs text-primary leading-snug">{title}</h3>
-        <p className="font-body text-sm text-slate-600 leading-relaxed flex-1">
+        <p className="font-body text-sm text-slate-blue/70 leading-relaxed flex-1">
           {excerpt}
         </p>
         <Link
           href={postUrl}
-          className="text-sm font-semibold text-teal mt-3 hover:text-teal-dark transition-colors self-start"
+          className="text-sm font-semibold text-teal mt-3 hover:text-slate-blue transition-colors self-start"
         >
           Read Article →
         </Link>
@@ -148,13 +148,13 @@ export default function Page() {
   return (
     <>
       {/* Page header */}
-      <section className="border-b border-slate-200 py-14 bg-white">
+      <section className="border-b border-light-gray py-14 bg-white">
         <div className="section-container max-w-5xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-teal mb-3">
             Mountain West Chamber
           </p>
           <h1 className="heading-xl text-primary mb-4">Blog</h1>
-          <p className="font-body text-base text-slate-500 max-w-xl leading-relaxed">
+          <p className="font-body text-base text-slate-blue/60 max-w-xl leading-relaxed">
             Business tips, local ideas, and community news for Utah small
             businesses and Chamber members.
           </p>
@@ -171,7 +171,7 @@ export default function Page() {
       {/* Post grid */}
       <section className="py-12 bg-white">
         <div className="section-container max-w-5xl">
-          <h2 className="heading-xs text-primary mb-8 border-b border-slate-200 pb-4">
+          <h2 className="heading-xs text-primary mb-8 border-b border-light-gray pb-4">
             More Articles
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

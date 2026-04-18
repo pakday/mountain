@@ -96,7 +96,7 @@ export default function FeaturedEventsCarousel() {
       >
         {featuredEvents.map((event) => (
           <SwiperSlide key={event.id} className="h-auto">
-            <div className="bg-white rounded-lg border border-slate-200 p-6 h-full flex flex-col hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg border border-light-gray p-6 h-full flex flex-col hover:shadow-md transition-shadow">
               {/* Date Badge */}
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-primary rounded-lg p-3 text-white text-center">
@@ -108,10 +108,10 @@ export default function FeaturedEventsCarousel() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <p className="font-accent text-xs text-slate-500 tracking-widest uppercase">
+                  <p className="font-accent text-xs text-slate-blue/60 tracking-widest uppercase">
                     Event Date
                   </p>
-                  <p className="font-body text-sm font-semibold text-slate-600">
+                  <p className="font-body text-sm font-semibold text-slate-blue/70">
                     {event.date}
                   </p>
                 </div>
@@ -124,7 +124,7 @@ export default function FeaturedEventsCarousel() {
 
               {/* Description */}
               {event.description && (
-                <p className="font-body text-sm text-slate-600 mb-4">
+                <p className="font-body text-sm text-slate-blue/70 mb-4">
                   {event.description}
                 </p>
               )}

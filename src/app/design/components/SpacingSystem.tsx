@@ -47,7 +47,7 @@ export function SpacingSystem() {
                   }}
                 />
                 <code className="text-xs text-[#3F6183]">{item.cls}</code>
-                <span className="text-xs text-gray-400">{item.style}</span>
+                <span className="text-xs text-slate-blue/40">{item.style}</span>
               </div>
             ))}
           </div>

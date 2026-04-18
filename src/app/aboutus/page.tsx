@@ -49,26 +49,26 @@ export default function Page() {
                 Benefiting &amp; Giving Back
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-5">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
                 We live and work in these communities just like you, and we want
                 to work together to make them all stronger. If you&rsquo;re like
                 us, you want to be part of a successful business in a thriving
                 community — but it can be hard to know where to turn to find the
                 connections and resources you need.
               </p>
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-8">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
                 At the Mountain West Chamber of Commerce, we get it. We&rsquo;ve
                 been working in Riverton, Herriman, and Bluffdale
                 since&nbsp;1997 to build bridges between businesses and the
                 community. We focus on networking, business education, and
                 political involvement within our cities.
               </p>
-              <div className="bg-primary/5 border-l-4 border-teal rounded-r-xl p-6 mb-8">
+              <div className="bg-primary/10 border-l-4 border-teal rounded-r-xl p-6 mb-8">
                 <p className="font-body text-base text-primary italic leading-relaxed">
                   &ldquo;Our members bridge business and community, through
                   leadership and volunteerism. Together we are stronger.&rdquo;
                 </p>
-                <p className="font-accent text-xs font-700 text-teal-dark uppercase tracking-wide mt-3">
+                <p className="font-accent text-xs font-700 text-slate-blue uppercase tracking-wide mt-3">
                   MWCC Vision Statement
                 </p>
               </div>
@@ -94,7 +94,7 @@ export default function Page() {
       {/* ── Stats ── */}
       <section className="bg-primary py-14">
         <div className="section-container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y-0 md:divide-x md:divide-white/15">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y-0 md:divide-x md:divide-white/20">
             {[
               { value: "27+", label: "Years Serving Utah" },
               { value: "300+", label: "Member Businesses" },
@@ -116,7 +116,7 @@ export default function Page() {
               We Invest in Our Communities
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-500 leading-relaxed">
+            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
               Our community give-back events include an annual teacher
               appreciation lunch, honoring local civic heroes, sports
               activities, and supporting community events throughout the year.

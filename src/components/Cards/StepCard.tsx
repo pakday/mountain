@@ -19,7 +19,7 @@ export type StepCardProps = {
   href?: string;
   /** CTA variant only: button label */
   cta?: string;
-  /** circle variant only: Tailwind bg class for the circle, e.g. "bg-coral" */
+  /** circle variant only: Tailwind bg class for the circle, e.g. "bg-teal" */
   colorClass?: string;
   variant?: "cta" | "circle";
 };
@@ -44,7 +44,7 @@ export default function StepCard({
           </span>
         </div>
         <h3 className="heading-xs text-primary mb-3">{title}</h3>
-        <p className="font-body text-gray-500 text-sm leading-relaxed">
+        <p className="font-body text-slate-blue/60 text-sm leading-relaxed">
           {description}
         </p>
       </div>
@@ -69,7 +69,7 @@ export default function StepCard({
 
       <div className="relative z-10">
         <h3 className="heading-md text-primary mb-3">{title}</h3>
-        <p className="font-body text-sm text-slate-500 leading-relaxed mb-5">
+        <p className="font-body text-sm text-slate-blue/60 leading-relaxed mb-5">
           {description}
         </p>
         {href && cta && (

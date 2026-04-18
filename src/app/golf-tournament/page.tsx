@@ -29,7 +29,7 @@ export default function Page() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/70 to-teal-dark/60" />
+          <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/70 to-slate-blue/60" />
         </div>
 
         <div className="relative z-10 section-container w-full max-w-7xl pb-28 pt-36">
@@ -47,7 +47,7 @@ export default function Page() {
                 <span className="text-yellow">Golf Classic</span>{" "}
                 <span className="text-white">2025</span>
               </h1>
-              <p className="font-body text-lg text-white/85 max-w-xl leading-relaxed">
+              <p className="font-body text-lg text-white/80 max-w-xl leading-relaxed">
                 Thursday, October 2, 2025 · 7:30 AM Registration · 8:30 AM
                 Shotgun Start
                 <br />
@@ -122,15 +122,15 @@ export default function Page() {
               <p className="eyebrow text-teal mb-3">Annual Event</p>
               <h2 className="heading-2xl text-primary mb-4">
                 Please Join Us for a{" "}
-                <span className="text-teal-dark">Great Day on the Course</span>
+                <span className="text-slate-blue">Great Day on the Course</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-6">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-6">
                 All proceeds above costs go directly to scholarships for local
                 high school students and support for educators. Prize drawing
                 tickets are also available for purchase on the day of the event.
               </p>
-              <p className="font-body text-sm font-600 italic text-slate-500 mb-8">
+              <p className="font-body text-sm font-600 italic text-slate-blue/60 mb-8">
                 "A Great Time Will Be Had by All!"
               </p>
 
@@ -139,13 +139,13 @@ export default function Page() {
                 <h3 className="heading-sm text-primary mb-3 flex items-center gap-2">
                   <span className="text-teal">📍</span> Where
                 </h3>
-                <p className="font-body text-base text-slate-700 font-600">
+                <p className="font-body text-base text-slate-blue/80 font-600">
                   Stonebridge Golf Course
                 </p>
-                <p className="font-body text-sm text-slate-500">
+                <p className="font-body text-sm text-slate-blue/60">
                   4415 W Links Dr.
                 </p>
-                <p className="font-body text-sm text-slate-500">
+                <p className="font-body text-sm text-slate-blue/60">
                   West Valley City, Utah
                 </p>
                 <a
@@ -203,7 +203,7 @@ export default function Page() {
           </div>
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-8 top-0 bottom-0 w-px bg-teal/30 hidden md:block" />
+            <div className="absolute left-8 top-0 bottom-0 w-px bg-teal/40 hidden md:block" />
             <div className="flex flex-col gap-0">
               {agendaItems.map((item, i) => (
                 <div
@@ -215,10 +215,10 @@ export default function Page() {
                     <div className="w-2 h-2 rounded-full bg-white" />
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 w-full">
-                    <span className="font-accent text-sm font-700 text-teal-dark min-w-40">
+                    <span className="font-accent text-sm font-700 text-slate-blue min-w-40">
                       {item.time}
                     </span>
-                    <span className="font-body text-base text-slate-700">
+                    <span className="font-body text-base text-slate-blue/80">
                       {item.label}
                     </span>
                   </div>
@@ -240,7 +240,7 @@ export default function Page() {
                 d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
               />
             </svg>
-            <p className="font-body text-sm text-slate-600 leading-relaxed">
+            <p className="font-body text-sm text-slate-blue/70 leading-relaxed">
               <strong className="text-primary">Prize Drawing Tickets</strong>{" "}
               available for purchase on the day of the event. Driving Range &
               Cart included with all registrations.
@@ -258,7 +258,7 @@ export default function Page() {
               <div>
                 <p className="eyebrow text-teal mb-3">Questions?</p>
                 <h2 className="heading-l text-white mb-2">Get In Touch</h2>
-                <p className="font-body text-white/75 text-sm leading-relaxed">
+                <p className="font-body text-white/80 text-sm leading-relaxed">
                   Reach out to Susan Schilling directly for questions about
                   registration, sponsorships, or event details.
                 </p>
@@ -311,8 +311,8 @@ export default function Page() {
                   </span>
                 </a>
               </div>
-              <div className="pt-2 border-t border-white/15 flex items-center gap-4">
-                <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-teal/50">
+              <div className="pt-2 border-t border-white/20 flex items-center gap-4">
+                <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-teal/60">
                   <Image
                     src="/Structure/Programs/golf-tournament/Susan+Schilling+Sq.jpg"
                     alt="Susan Schilling"
@@ -336,10 +336,10 @@ export default function Page() {
             <div>
               <p className="eyebrow text-teal mb-3">Join the Classic</p>
               <h2 className="heading-xl text-primary mb-4">
-                Ready to <span className="text-teal-dark">Tee Off?</span>
+                Ready to <span className="text-slate-blue">Tee Off?</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-8">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
                 Register today for the Annual Scholarship Golf Classic. Spots
                 are limited — secure your foursome now. All proceeds go to
                 scholarships for local high school students and support for

@@ -226,7 +226,7 @@ function Check({ dark }: { dark?: boolean }) {
   return (
     <span
       className={`mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-700 ${
-        dark ? "bg-yellow text-primary" : "bg-teal/15 text-teal-dark"
+        dark ? "bg-yellow text-primary" : "bg-teal/10 text-slate-blue"
       }`}
     >
       ✓
@@ -249,7 +249,7 @@ export default function Page() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-linear-to-br from-primary/93 via-primary/78 to-teal-dark/65" />
+          <div className="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/80 to-slate-blue/60" />
         </div>
 
         <div className="relative z-10 section-container w-full max-w-7xl pb-36 pt-36">
@@ -264,7 +264,7 @@ export default function Page() {
             <br />
             <span className="text-yellow">Opportunities</span>
           </h1>
-          <p className="font-body text-lg text-white/85 max-w-xl leading-relaxed mb-8">
+          <p className="font-body text-lg text-white/80 max-w-xl leading-relaxed mb-8">
             Become a Sponsor — Increase Your Visibility. Connect your brand with
             hundreds of local business leaders, community advocates, and avid
             supporters across the Mountain West.
@@ -301,7 +301,7 @@ export default function Page() {
               <a
                 key={href}
                 href={href}
-                className="font-accent text-xs font-700 text-white/65 hover:text-yellow uppercase tracking-widest px-6 py-4 border-b-2 border-transparent hover:border-yellow transition-all whitespace-nowrap"
+                className="font-accent text-xs font-700 text-white/60 hover:text-yellow uppercase tracking-widest px-6 py-4 border-b-2 border-transparent hover:border-yellow transition-all whitespace-nowrap"
               >
                 {label}
               </a>
@@ -325,7 +325,7 @@ export default function Page() {
                 <div className="font-accent font-700 text-xs text-primary uppercase tracking-widest">
                   {s.label}
                 </div>
-                <div className="font-body text-xs text-slate-400 mt-0.5">
+                <div className="font-body text-xs text-slate-blue/40 mt-0.5">
                   {s.sub}
                 </div>
               </div>
@@ -344,7 +344,7 @@ export default function Page() {
               Sustaining Partner Sponsorships
             </h2>
             <div className="section-divider mx-auto mb-6" />
-            <p className="font-body text-base text-slate-600 leading-relaxed">
+            <p className="font-body text-base text-slate-blue/70 leading-relaxed">
               Maximize your brand with 12 months of continuous recognition
               across every Chamber event, newsletter, and promotional campaign.
             </p>
@@ -371,7 +371,7 @@ export default function Page() {
                         ? "bg-yellow text-primary"
                         : tier.accent
                           ? "bg-teal text-white"
-                          : "bg-light-gray text-slate-500"
+                          : "bg-light-gray text-slate-blue/60"
                     }`}
                   >
                     {tier.badge}
@@ -388,7 +388,7 @@ export default function Page() {
                       tier.featured
                         ? "text-yellow"
                         : tier.accent
-                          ? "text-teal-dark"
+                          ? "text-slate-blue"
                           : "text-slate-blue"
                     }`}
                   >
@@ -396,7 +396,7 @@ export default function Page() {
                   </div>
                   <p
                     className={`font-accent text-xs uppercase tracking-widest mt-1 ${
-                      tier.featured ? "text-white/50" : "text-slate-400"
+                      tier.featured ? "text-white/60" : "text-slate-blue/40"
                     }`}
                   >
                     per year
@@ -416,7 +416,7 @@ export default function Page() {
                       <Check dark={tier.featured} />
                       <span
                         className={`font-body text-sm leading-relaxed ${
-                          tier.featured ? "text-white/85" : "text-slate-600"
+                          tier.featured ? "text-white/80" : "text-slate-blue/70"
                         }`}
                       >
                         {f}
@@ -444,7 +444,7 @@ export default function Page() {
             ))}
           </div>
 
-          <p className="font-body text-xs text-slate-400 text-center mt-8">
+          <p className="font-body text-xs text-slate-blue/40 text-center mt-8">
             * Pricing subject to change. Contact the Chamber for current rates.
           </p>
         </div>
@@ -482,7 +482,7 @@ export default function Page() {
               className="section-divider mx-auto mb-6"
               style={{ backgroundColor: "#5DCAD1" }}
             />
-            <p className="font-body text-base text-white/75 leading-relaxed">
+            <p className="font-body text-base text-white/80 leading-relaxed">
               100–150 attendees including Fire, Police, Medical, Military, and
               Business individuals gather for an award banquet honoring heroes
               in our community.
@@ -519,7 +519,7 @@ export default function Page() {
                   <span className="mt-0.5 shrink-0 w-5 h-5 rounded-full bg-teal/20 text-teal flex items-center justify-center text-xs font-700">
                     ✓
                   </span>
-                  <span className="font-body text-sm text-white/85 leading-relaxed">
+                  <span className="font-body text-sm text-white/80 leading-relaxed">
                     {f}
                   </span>
                 </li>
@@ -532,7 +532,7 @@ export default function Page() {
             {heroTiers.map((tier) => (
               <div
                 key={tier.name}
-                className="bg-white/8 border border-white/15 rounded-2xl p-6 hover:bg-white/12 transition-colors"
+                className="bg-white/10 border border-white/10 rounded-2xl p-6 hover:bg-white/20 transition-colors"
               >
                 <div className="flex items-start justify-between gap-3 mb-4">
                   <h3 className="heading-sm text-white leading-snug">
@@ -557,11 +557,11 @@ export default function Page() {
           </div>
 
           {/* Raffle callout */}
-          <div className="bg-yellow/10 border border-yellow/30 rounded-2xl p-7 max-w-2xl mx-auto text-center mb-10">
+          <div className="bg-yellow/10 border border-yellow/40 rounded-2xl p-7 max-w-2xl mx-auto text-center mb-10">
             <h3 className="heading-sm text-yellow mb-2">
               Raffle Item Donation Needed
             </h3>
-            <p className="font-body text-sm text-white/75 leading-relaxed">
+            <p className="font-body text-sm text-white/80 leading-relaxed">
               We are looking for raffle items for the silent auction. Sign up to
               donate and arrange delivery of items to the Chamber by November
               4th, 2025.
@@ -591,7 +591,7 @@ export default function Page() {
               Teacher Appreciation Lunch
             </h2>
             <div className="section-divider mx-auto mb-6" />
-            <p className="font-body text-base text-slate-600 leading-relaxed">
+            <p className="font-body text-base text-slate-blue/70 leading-relaxed">
               Join the Mountain West Chamber of Commerce's celebration of 25+
               educators in our community. Teachers are the real superheroes!
             </p>
@@ -628,14 +628,14 @@ export default function Page() {
                     },
                   ].map((item) => (
                     <div key={item.title} className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-xl bg-teal/12 flex items-center justify-center shrink-0 text-lg">
+                      <div className="w-10 h-10 rounded-xl bg-teal/10 flex items-center justify-center shrink-0 text-lg">
                         {item.icon}
                       </div>
                       <div>
                         <p className="font-accent text-xs font-700 uppercase tracking-widest text-primary mb-0.5">
                           {item.title}
                         </p>
-                        <p className="font-body text-sm text-slate-600 leading-relaxed">
+                        <p className="font-body text-sm text-slate-blue/70 leading-relaxed">
                           {item.detail}
                         </p>
                       </div>
@@ -664,7 +664,7 @@ export default function Page() {
                     key={pkg.name}
                     className={`rounded-2xl border-2 p-5 transition-all hover:-translate-y-0.5 hover:shadow-md ${
                       i === 0
-                        ? "border-primary bg-primary/5"
+                        ? "border-primary bg-primary/10"
                         : i === 1
                           ? "border-teal/40 bg-white"
                           : "border-light-gray bg-white"
@@ -683,7 +683,7 @@ export default function Page() {
                           i === 0
                             ? "text-primary"
                             : i === 1
-                              ? "text-teal-dark"
+                              ? "text-slate-blue"
                               : "text-slate-blue"
                         }`}
                       >
@@ -694,7 +694,7 @@ export default function Page() {
                       {pkg.features.map((f) => (
                         <li key={f} className="flex items-start gap-2">
                           <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-teal" />
-                          <span className="font-body text-sm text-slate-600 leading-relaxed">
+                          <span className="font-body text-sm text-slate-blue/70 leading-relaxed">
                             {f}
                           </span>
                         </li>
@@ -707,7 +707,7 @@ export default function Page() {
 
             {/* Right column — event flyers */}
             <div className="space-y-6 lg:sticky lg:top-8">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/10">
                 <Image
                   src="/Structure/Programs/sponsorshipopps/2.png"
                   alt="Teachers Are The Real Superheroes — Teacher Appreciation event flyer"
@@ -716,7 +716,7 @@ export default function Page() {
                   className="w-full h-auto"
                 />
               </div>
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/10">
                 <Image
                   src="/Structure/Programs/sponsorshipopps/1.png"
                   alt="Teacher Appreciation Sponsorship Packages flyer"
@@ -725,18 +725,18 @@ export default function Page() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="font-body text-xs text-slate-400 text-center">
+              <p className="font-body text-xs text-slate-blue/40 text-center">
                 Contact:{" "}
                 <a
                   href="tel:8012800595"
-                  className="text-teal-dark hover:underline"
+                  className="text-slate-blue hover:underline"
                 >
                   801-280-0595
                 </a>{" "}
                 ·{" "}
                 <a
                   href="mailto:susan@mountainwestchamber.org"
-                  className="text-teal-dark hover:underline"
+                  className="text-slate-blue hover:underline"
                 >
                   susan@mountainwestchamber.org
                 </a>
@@ -759,8 +759,8 @@ export default function Page() {
           </div>
 
           {/* Info + CTA banner */}
-          <div className="bg-teal/8 border border-teal/25 rounded-2xl p-7 max-w-2xl mx-auto mb-14 text-center">
-            <p className="font-body text-base text-slate-700 leading-relaxed mb-5">
+          <div className="bg-teal/10 border border-teal/20 rounded-2xl p-7 max-w-2xl mx-auto mb-14 text-center">
+            <p className="font-body text-base text-slate-blue/80 leading-relaxed mb-5">
               The 144 players include local business owners and avid golfers.
               All proceeds above costs fund teacher appreciation events and high
               school scholarship programs.
@@ -782,9 +782,9 @@ export default function Page() {
                 key={tier.name}
                 className={`flex flex-col rounded-2xl border-2 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
                   tier.featured
-                    ? "border-primary bg-primary/5"
+                    ? "border-primary bg-primary/10"
                     : i <= 2
-                      ? "border-teal/35 bg-white"
+                      ? "border-teal/40 bg-white"
                       : "border-light-gray bg-white"
                 }`}
               >
@@ -801,7 +801,7 @@ export default function Page() {
                     tier.featured
                       ? "text-primary"
                       : i <= 2
-                        ? "text-teal-dark"
+                        ? "text-slate-blue"
                         : "text-slate-blue"
                   }`}
                 >
@@ -815,14 +815,14 @@ export default function Page() {
                           tier.featured ? "bg-primary" : "bg-teal"
                         }`}
                       />
-                      <span className="font-body text-sm text-slate-600 leading-relaxed">
+                      <span className="font-body text-sm text-slate-blue/70 leading-relaxed">
                         {f}
                       </span>
                     </li>
                   ))}
                 </ul>
                 {tier.register && (
-                  <p className="font-accent text-xs text-slate-400 italic mt-auto">
+                  <p className="font-accent text-xs text-slate-blue/40 italic mt-auto">
                     {tier.register}
                   </p>
                 )}
@@ -875,7 +875,7 @@ export default function Page() {
       </section>
 
       {/* ─── FINAL CTA ────────────────────────────────────────────────────── */}
-      <section className="py-20 bg-teal-dark">
+      <section className="py-20 bg-slate-blue">
         <div className="section-container max-w-4xl text-center">
           <h2 className="heading-xl text-white mb-4">
             Ready to Elevate Your Brand?

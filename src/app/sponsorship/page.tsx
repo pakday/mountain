@@ -162,7 +162,7 @@ export default function Page() {
               More Than a Logo — Real Business Impact
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-500 leading-relaxed">
+            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
               Stand out at Chamber events, grow your recognition in the
               community, and build your reputation as a generous community
               partner.
@@ -188,7 +188,7 @@ export default function Page() {
               />
             ))}
           </div>
-          <p className="font-body text-xs text-slate-400 text-center mt-6">
+          <p className="font-body text-xs text-slate-blue/40 text-center mt-6">
             *Dependent on sponsorship event.
           </p>
         </div>
@@ -213,7 +213,7 @@ export default function Page() {
                 Pick the Events Right for Your Business
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-600 leading-relaxed mb-8">
+              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
                 See our Calendar of Events to begin the process — let us know
                 what&rsquo;s right for your business. We&rsquo;ll take it from
                 there!
@@ -227,10 +227,10 @@ export default function Page() {
                     className="flex items-center justify-between gap-4 p-4 rounded-xl border border-light-gray bg-white hover:border-teal hover:shadow-sm transition-all group"
                   >
                     <div>
-                      <p className="font-body font-700 text-sm text-primary group-hover:text-teal-dark transition-colors">
+                      <p className="font-body font-700 text-sm text-primary group-hover:text-teal transition-colors">
                         {event.name}
                       </p>
-                      <p className="font-body text-xs text-slate-400 mt-0.5">
+                      <p className="font-body text-xs text-slate-blue/40 mt-0.5">
                         {event.detail}
                       </p>
                     </div>
@@ -293,7 +293,7 @@ export default function Page() {
             <p className="eyebrow mb-4">Simple Process</p>
             <h2 className="heading-l text-primary mb-5">How It Works</h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-500 leading-relaxed">
+            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
               Review the available opportunities and let us know what&rsquo;s
               right for your business. We&rsquo;ll take it from there!
             </p>
@@ -326,7 +326,7 @@ export default function Page() {
                 </div>
                 <h3 className="heading-xs text-primary mb-3">{item.title}</h3>
                 <p
-                  className="font-body text-sm text-slate-500 leading-relaxed"
+                  className="font-body text-sm text-slate-blue/60 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: item.description }}
                 />
               </div>

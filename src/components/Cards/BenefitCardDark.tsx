@@ -35,7 +35,7 @@ export default function BenefitCardDark({
       <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-teal/10 pointer-events-none" />
 
       {/* Icon */}
-      <div className="w-12 h-12 rounded-xl bg-yellow/15 flex items-center justify-center text-yellow group-hover:bg-yellow/25 transition-colors duration-300 relative z-10">
+      <div className="w-12 h-12 rounded-xl bg-yellow/10 flex items-center justify-center text-yellow group-hover:bg-yellow/20 transition-colors duration-300 relative z-10">
         {icon}
       </div>
 
