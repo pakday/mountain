@@ -22,6 +22,8 @@
   --color-yellow: #f7de32;
   --color-yellow-dark: #e5cc1a;
   --color-white: #ffffff;
+  /* Body text — deep navy-charcoal, ~12:1 on white (AAA) */
+  --color-ink: #1e2a3a;
 
   /* Fonts — Roboto Slab (headings) + Montserrat (all UI/body) */
   --font-heading: var(--font-roboto-slab), Georgia, serif;
@@ -169,7 +171,7 @@
 
   body {
     font-family: var(--font-body);
-    color: #1a1a2e;
+    color: #1e2a3a;
     background-color: #ffffff;
     line-height: var(--leading-normal);
     -webkit-font-smoothing: antialiased;

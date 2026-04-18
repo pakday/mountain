@@ -392,7 +392,7 @@ export default function Page() {
                 <h3 className="heading-xs text-primary font-semibold leading-snug">
                   {r.name}
                 </h3>
-                <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
+                <p className="font-body text-sm text-ink leading-relaxed flex-1">
                   {r.desc}
                 </p>
                 <span className="font-accent text-xs text-teal font-bold mt-1">
@@ -425,7 +425,7 @@ export default function Page() {
                 <h3 className="heading-xs text-primary font-semibold leading-snug">
                   {r.name}
                 </h3>
-                <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
+                <p className="font-body text-sm text-ink leading-relaxed flex-1">
                   {r.desc}
                 </p>
                 <span className="font-accent text-xs text-teal font-bold mt-1">
@@ -446,7 +446,7 @@ export default function Page() {
               Restaurant Takeout, Curbside &amp; Delivery
             </h2>
           </div>
-          <p className="font-body text-sm text-slate-blue/60 mb-10">
+          <p className="font-body text-sm text-ink mb-10">
             Chamber member restaurants offering takeout and delivery.{" "}
             <a
               href="https://www.curbsideutah.com"
@@ -467,7 +467,7 @@ export default function Page() {
                 <p className="font-body text-sm text-slate-blue font-semibold">
                   {r.phone}
                 </p>
-                <p className="font-body text-sm text-slate-blue/60 leading-snug">
+                <p className="font-body text-sm text-ink leading-snug">
                   {r.address}
                 </p>
                 {r.note && (
@@ -542,11 +542,11 @@ export default function Page() {
                           {t.price}
                         </span>
                       </div>
-                      <p className="font-body text-xs text-slate-blue/60 leading-relaxed">
+                      <p className="font-body text-xs text-ink leading-relaxed">
                         {t.services}
                       </p>
                       {t.note && (
-                        <p className="font-body text-xs text-slate-blue/40 italic leading-relaxed border-t border-light-gray pt-2 mt-1">
+                        <p className="font-body text-xs text-ink italic leading-relaxed border-t border-light-gray pt-2 mt-1">
                           {t.note}
                         </p>
                       )}

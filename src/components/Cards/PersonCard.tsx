@@ -38,7 +38,7 @@ export default function PersonCard({
       {company}
     </a>
   ) : company ? (
-    <p className="font-body text-sm text-slate-blue/60">{company}</p>
+    <p className="font-body text-sm text-ink">{company}</p>
   ) : null;
 
   if (variant === "officer") {

@@ -208,13 +208,13 @@ export default function Page() {
                 <br />
                 Community Heroes
               </h2>
-              <p className="font-body text-lg text-slate-blue/80 leading-relaxed mb-5">
+              <p className="font-body text-lg text-ink leading-relaxed mb-5">
                 Each year, the Mountain West Chamber of Commerce gathers
                 alongside community leaders, business members, and supporters to
                 honor the outstanding educators who shape the lives of students
                 in Riverton, Herriman, and Bluffdale.
               </p>
-              <p className="font-body text-lg text-slate-blue/80 leading-relaxed mb-10">
+              <p className="font-body text-lg text-ink leading-relaxed mb-10">
                 This special luncheon is a heartfelt celebration — an
                 opportunity to thank teachers for their dedication, passion, and
                 the extraordinary impact they have on our community's future.
@@ -250,7 +250,7 @@ export default function Page() {
                       <p className="font-heading font-semibold text-primary text-sm mb-1">
                         {item.label}
                       </p>
-                      <p className="font-body text-slate-blue/70 text-sm leading-snug">
+                      <p className="font-body text-ink text-sm leading-snug">
                         {item.desc}
                       </p>
                     </div>
@@ -385,7 +385,7 @@ export default function Page() {
             <h2 className="heading-xl font-heading text-primary mb-4">
               Register or Sponsor
             </h2>
-            <p className="font-body text-lg text-slate-blue/80 max-w-2xl mx-auto">
+            <p className="font-body text-lg text-ink max-w-2xl mx-auto">
               Join us in celebrating our amazing teachers or amplify your impact
               through sponsorship
             </p>
@@ -414,7 +414,7 @@ export default function Page() {
                 <h3 className="heading-m font-heading text-primary mb-3">
                   Register for Luncheon
                 </h3>
-                <p className="font-body text-slate-blue/80 mb-8 leading-relaxed">
+                <p className="font-body text-ink mb-8 leading-relaxed">
                   Secure your seat at the Annual Teacher Appreciation Luncheon.
                   Celebrate alongside educators, community leaders, and fellow
                   chamber members.
@@ -478,7 +478,7 @@ export default function Page() {
             <h2 className="heading-xl font-heading text-primary mb-4">
               Sponsor This Celebration
             </h2>
-            <p className="font-body text-lg text-slate-blue/80 max-w-2xl mx-auto">
+            <p className="font-body text-lg text-ink max-w-2xl mx-auto">
               Partner with the Mountain West Chamber to honor the educators
               making a difference in our community
             </p>
@@ -537,12 +537,12 @@ export default function Page() {
                 <h3 className="heading-m font-heading text-primary mb-4">
                   Appreciation Lunch Sponsor
                 </h3>
-                <p className="font-body text-slate-blue/80 leading-relaxed mb-6">
+                <p className="font-body text-ink leading-relaxed mb-6">
                   Sponsor the luncheon that brings teachers, community leaders,
                   and businesses together. A meaningful way to invest in local
                   education and show your commitment.
                 </p>
-                <ul className="space-y-2 mb-8 font-body text-sm text-slate-blue/70 flex-1">
+                <ul className="space-y-2 mb-8 font-body text-sm text-ink flex-1">
                   {[
                     "Event recognition",
                     "Name & logo in program",
@@ -567,7 +567,7 @@ export default function Page() {
             </div>
           </div>
 
-          <p className="text-center mt-10 font-body text-slate-blue/70">
+          <p className="text-center mt-10 font-body text-ink">
             Questions about sponsorship? Contact{" "}
             <a
               href="mailto:susan@mountainwestchamber.org"
@@ -595,7 +595,7 @@ export default function Page() {
               Teacher Appreciation —{" "}
               <span className="text-teal">An Amazing Celebration</span>
             </h2>
-            <p className="font-body text-lg text-slate-blue/80 max-w-2xl mx-auto">
+            <p className="font-body text-lg text-ink max-w-2xl mx-auto">
               Highlights and memories from past Teacher Appreciation events in
               our community
             </p>
@@ -681,7 +681,7 @@ export default function Page() {
                 <h3 className="heading-m font-heading text-primary mb-2">
                   Let Us Know
                 </h3>
-                <p className="font-body text-slate-blue/70 text-sm mb-7 leading-relaxed">
+                <p className="font-body text-ink text-sm mb-7 leading-relaxed">
                   We're happy to answer any questions about the event,
                   registration, or sponsorship.
                 </p>
@@ -694,7 +694,7 @@ export default function Page() {
                       <PhoneIcon />
                     </div>
                     <div>
-                      <p className="text-xs font-body text-slate-blue/40 uppercase tracking-wide mb-0.5">
+                      <p className="text-xs font-body text-ink uppercase tracking-wide mb-0.5">
                         Phone
                       </p>
                       <p className="font-heading text-primary font-semibold">
@@ -710,7 +710,7 @@ export default function Page() {
                       <MailIcon />
                     </div>
                     <div>
-                      <p className="text-xs font-body text-slate-blue/40 uppercase tracking-wide mb-0.5">
+                      <p className="text-xs font-body text-ink uppercase tracking-wide mb-0.5">
                         Email
                       </p>
                       <p className="font-heading text-primary font-semibold break-all">
@@ -723,13 +723,13 @@ export default function Page() {
                       <MapPinIcon />
                     </div>
                     <div>
-                      <p className="text-xs font-body text-slate-blue/40 uppercase tracking-wide mb-0.5">
+                      <p className="text-xs font-body text-ink uppercase tracking-wide mb-0.5">
                         Venue
                       </p>
                       <p className="font-heading text-primary font-semibold">
                         Herriman City Hall
                       </p>
-                      <p className="font-body text-slate-blue/70 text-sm">
+                      <p className="font-body text-ink text-sm">
                         5335 W. Main St., Herriman, UT 84096
                       </p>
                     </div>

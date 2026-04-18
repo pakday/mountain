@@ -146,7 +146,7 @@ export default function Page() {
                 <span className="text-slate-blue">Community Leaders</span>
               </h2>
               <div className="w-16 h-1 bg-yellow rounded-full mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-4">
+              <p className="font-body text-base text-ink leading-relaxed mb-4">
                 Since 1997, the Mountain West Chamber of Commerce has championed
                 education as a cornerstone of community growth. Our annual
                 scholarship program provides financial support to graduating
@@ -154,7 +154,7 @@ export default function Page() {
                 exceptional character, academic achievement, and community
                 involvement.
               </p>
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-ink leading-relaxed mb-8">
                 These scholarships are funded entirely through the generosity of
                 our business members and sponsors who participate in the Annual
                 Scholarship Golf Classic — proof that when businesses invest in
@@ -177,7 +177,7 @@ export default function Page() {
                       />
                     </svg>
                   </div>
-                  <span className="font-accent text-sm font-600 text-slate-blue/80">
+                  <span className="font-accent text-sm font-600 text-ink">
                     Academic Excellence
                   </span>
                 </div>
@@ -197,7 +197,7 @@ export default function Page() {
                       />
                     </svg>
                   </div>
-                  <span className="font-accent text-sm font-600 text-slate-blue/80">
+                  <span className="font-accent text-sm font-600 text-ink">
                     Community Impact
                   </span>
                 </div>
@@ -245,7 +245,7 @@ export default function Page() {
               Meet Our{" "}
               <span className="text-slate-blue">Scholarship Recipients</span>
             </h2>
-            <p className="font-body text-base text-slate-blue/60 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-body text-base text-ink max-w-2xl mx-auto leading-relaxed">
               Five exceptional students from across the southwest Salt Lake
               County school districts were selected to receive a $1,500
               scholarship this year.
@@ -297,12 +297,12 @@ export default function Page() {
                     >
                       {r.amount}
                     </span>
-                    <span className="font-accent text-xs text-slate-blue/40 uppercase tracking-wide font-600">
+                    <span className="font-accent text-xs text-ink uppercase tracking-wide font-600">
                       Scholarship Award
                     </span>
                   </div>
                   {/* Funded by note */}
-                  <p className="font-body text-xs text-slate-blue/40 mt-1 leading-relaxed">
+                  <p className="font-body text-xs text-ink mt-1 leading-relaxed">
                     Funded through the Annual Scholarship Golf Classic
                   </p>
                 </div>
@@ -323,7 +323,7 @@ export default function Page() {
               Celebrating Their{" "}
               <span className="text-slate-blue">Achievements</span>
             </h2>
-            <p className="font-body text-base text-slate-blue/60 max-w-xl mx-auto leading-relaxed">
+            <p className="font-body text-base text-ink max-w-xl mx-auto leading-relaxed">
               Chamber representatives personally visit each recipient's school
               to present the award — making the moment as memorable as possible.
             </p>
@@ -529,7 +529,7 @@ export default function Page() {
                   </span>
                 </div>
                 <h3 className="heading-sm text-primary mb-3">{item.title}</h3>
-                <p className="font-body text-sm text-slate-blue/60 leading-relaxed">
+                <p className="font-body text-sm text-ink leading-relaxed">
                   {item.desc}
                 </p>
               </div>

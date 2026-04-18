@@ -108,10 +108,10 @@ export default function FeaturedEventsCarousel() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <p className="font-accent text-xs text-slate-blue/60 tracking-widest uppercase">
+                  <p className="font-accent text-xs text-ink tracking-widest uppercase">
                     Event Date
                   </p>
-                  <p className="font-body text-sm font-semibold text-slate-blue/70">
+                  <p className="font-body text-sm font-semibold text-ink">
                     {event.date}
                   </p>
                 </div>
@@ -124,7 +124,7 @@ export default function FeaturedEventsCarousel() {
 
               {/* Description */}
               {event.description && (
-                <p className="font-body text-sm text-slate-blue/70 mb-4">
+                <p className="font-body text-sm text-ink mb-4">
                   {event.description}
                 </p>
               )}

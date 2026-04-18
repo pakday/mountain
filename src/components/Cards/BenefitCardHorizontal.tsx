@@ -38,7 +38,7 @@ export default function BenefitCardHorizontal({
       {/* Content */}
       <div className="flex flex-col gap-2 flex-1 min-w-0">
         <h3 className="heading-xs text-primary leading-snug">{title}</h3>
-        <p className="font-body text-sm text-slate-blue/60 leading-relaxed">
+        <p className="font-body text-sm text-ink leading-relaxed">
           {description}
         </p>
         {href && (

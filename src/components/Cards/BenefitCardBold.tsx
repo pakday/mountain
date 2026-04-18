@@ -43,7 +43,7 @@ export default function BenefitCardBold({
       <div className="w-8 h-0.5 bg-teal rounded-full" />
 
       {/* Description */}
-      <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
+      <p className="font-body text-sm text-ink leading-relaxed flex-1">
         {description}
       </p>
 

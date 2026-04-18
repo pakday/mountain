@@ -1303,7 +1303,7 @@ function MemberCard({ member }: { member: Member }) {
         </p>
       )}
       {member.contact && (
-        <p className="font-body text-xs text-slate-blue/60 mb-0.5">
+        <p className="font-body text-xs text-ink mb-0.5">
           {member.contact}
         </p>
       )}
@@ -1316,7 +1316,7 @@ function MemberCard({ member }: { member: Member }) {
         </a>
       )}
       {member.address && (
-        <p className="font-body text-xs text-slate-blue/40 leading-snug">
+        <p className="font-body text-xs text-ink leading-snug">
           {member.address}
         </p>
       )}
@@ -1384,7 +1384,7 @@ export default function Page() {
         <div className="section-container max-w-7xl">
           <div className="flex items-baseline gap-3 mb-5 flex-wrap">
             <p className="eyebrow">Member Categories A – M</p>
-            <span className="font-body text-xs text-slate-blue/40">
+            <span className="font-body text-xs text-ink">
               (Categories N–Z coming soon)
             </span>
           </div>

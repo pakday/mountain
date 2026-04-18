@@ -86,12 +86,12 @@ export default function MembershipTierCard({
             >
               {price}
             </span>
-            <span className="font-body text-slate-blue/40 text-sm pb-1">
+            <span className="font-body text-ink text-sm pb-1">
               {period}
             </span>
           </div>
           {description && (
-            <p className="font-body text-sm text-slate-blue/60 leading-relaxed mb-6">
+            <p className="font-body text-sm text-ink leading-relaxed mb-6">
               {description}
             </p>
           )}
@@ -113,7 +113,7 @@ export default function MembershipTierCard({
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  <span className="font-body text-sm text-slate-blue/70 leading-snug">
+                  <span className="font-body text-sm text-ink leading-snug">
                     {f}
                   </span>
                 </li>
@@ -164,7 +164,7 @@ export default function MembershipTierCard({
             >
               {price}
             </span>
-            <span className="font-body text-sm text-slate-blue/40">
+            <span className="font-body text-sm text-ink">
               {period}
             </span>
           </div>
@@ -174,7 +174,7 @@ export default function MembershipTierCard({
         <div className="section-divider" />
 
         {description && (
-          <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
+          <p className="font-body text-sm text-ink leading-relaxed flex-1">
             {description}
           </p>
         )}
@@ -196,7 +196,7 @@ export default function MembershipTierCard({
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="font-body text-sm text-slate-blue/70 leading-snug">
+                <span className="font-body text-sm text-ink leading-snug">
                   {f}
                 </span>
               </li>

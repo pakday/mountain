@@ -41,7 +41,7 @@ export default function Page() {
             <h2 className="heading-m text-primary mb-2">
               Event &amp; Sponsorship Opportunities
             </h2>
-            <p className="font-body text-slate-blue/70">
+            <p className="font-body text-ink">
               Review our calendared events and let us know if you'd like to be a
               sponsor. We'll take it from there!
             </p>
@@ -107,7 +107,7 @@ export default function Page() {
       <section className="py-16 bg-off-white">
         <div className="section-container text-center max-w-2xl">
           <h2 className="heading-m text-primary mb-3">Attend an Event</h2>
-          <p className="font-body text-slate-blue/70 mb-6">
+          <p className="font-body text-ink mb-6">
             Come experience the Chamber — build relationships, grow your
             business, and strengthen our community.
           </p>

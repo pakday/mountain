@@ -47,9 +47,9 @@ export default function ProgramCard({
 
       {/* Content */}
       <div className="p-6 flex flex-col gap-3">
-        {date && <p className="eyebrow text-slate-blue/40">{date}</p>}
+        {date && <p className="eyebrow text-ink">{date}</p>}
         <h3 className="heading-sm text-primary leading-snug">{title}</h3>
-        <p className="font-body text-sm text-slate-blue/60 leading-relaxed flex-1">
+        <p className="font-body text-sm text-ink leading-relaxed flex-1">
           {description}
         </p>
         <Link

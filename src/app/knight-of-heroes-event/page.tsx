@@ -345,14 +345,14 @@ export default function Page() {
                 <span className="text-slate-blue">of Our Community</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
+              <p className="font-body text-base text-ink leading-relaxed mb-5">
                 Each year, the Mountain West Chamber of Commerce hosts the{" "}
                 <strong>Knight of Heroes</strong> event to celebrate the
                 extraordinary men and women who serve our community — first
                 responders, healthcare workers, educators, and business leaders
                 who go above and beyond every single day.
               </p>
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-ink leading-relaxed mb-8">
                 The 2025 theme,{" "}
                 <em className="text-primary font-semibold">
                   Diamonds &amp; Denim
@@ -385,9 +385,7 @@ export default function Page() {
                     <p className="font-accent font-bold text-sm text-primary uppercase tracking-wide">
                       {label}
                     </p>
-                    <p className="font-body text-xs text-slate-blue/40 mt-1">
-                      {sub}
-                    </p>
+                    <p className="font-body text-xs text-ink mt-1">{sub}</p>
                   </div>
                 ))}
               </div>
@@ -494,7 +492,7 @@ export default function Page() {
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-stretch">
             {/* Holy Cross / CommonSpirit sponsor card */}
             <div className="card p-8 flex flex-col items-center gap-5 max-w-sm w-full text-center hover:shadow-lg transition-shadow duration-300">
-              <span className="eyebrow text-slate-blue/40">Title Sponsor</span>
+              <span className="eyebrow text-ink">Title Sponsor</span>
               <div className="relative w-56 h-20 flex items-center justify-center">
                 <Image
                   src="/Structure/Programs/knight-of-heroes-event/Holy+Cross+Logo.jpeg"
@@ -504,7 +502,7 @@ export default function Page() {
                   className="object-contain"
                 />
               </div>
-              <p className="font-body text-sm text-slate-blue/60 leading-relaxed">
+              <p className="font-body text-sm text-ink leading-relaxed">
                 CommonSpirit Health · Holy Cross Hospital Jordan Valley
               </p>
             </div>
@@ -530,7 +528,7 @@ export default function Page() {
                 <h3 className="heading-sm text-primary mb-2">
                   Become a Sponsor
                 </h3>
-                <p className="font-body text-sm text-slate-blue/60 mb-4">
+                <p className="font-body text-sm text-ink mb-4">
                   Beverage sponsors and prize drawing items are needed. Make an
                   impact while showcasing your brand to the community.
                 </p>
@@ -561,7 +559,7 @@ export default function Page() {
                 We Can Help
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-ink leading-relaxed mb-8">
                 Our team is happy to answer questions about tickets, hero
                 nominations, or sponsorships. Reach out to Susan Schilling
                 directly.
@@ -632,9 +630,11 @@ export default function Page() {
                   Susan Schilling
                 </h3>
                 <p className="eyebrow mb-3 mt-1">President, MWCC</p>
-                <p className="font-body text-sm text-slate-blue/60 leading-relaxed mb-4">
-                  {item.description}
+                <p className="font-body text-sm text-ink leading-relaxed mb-4">
+                  Contact Susan for sponsorship questions, event details, and
+                  membership support.
                 </p>
+                <p className="font-body text-sm text-ink leading-relaxed mb-4">
                   Mountain West Chamber of Commerce
                   <br />
                   Serving Riverton, Herriman &amp; Bluffdale
@@ -681,17 +681,17 @@ export default function Page() {
 
             {/* Caption */}
             <div>
-              <p className="eyebrow mb-3 text-slate-blue/40">Looking Back</p>
+              <p className="eyebrow mb-3 text-ink">Looking Back</p>
               <h3 className="heading-lg text-primary mb-4">
                 Dinner, Recognition &amp; Community
               </h3>
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
+              <p className="font-body text-base text-ink leading-relaxed mb-5">
                 In 2023, the Chamber gathered at Megaplex Events in South Jordan
                 to celebrate and honor the outstanding individuals making our
                 community exceptional. The evening featured dinner, a prize
                 drawing, and heartfelt recognition of local heroes.
               </p>
-              <ul className="font-body text-sm text-slate-blue/70 space-y-3 mb-8">
+              <ul className="font-body text-sm text-ink space-y-3 mb-8">
                 {[
                   "$500 table for 6 guests + a hero and their guest",
                   "$50/person or $80/couple tickets available",

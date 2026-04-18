@@ -343,7 +343,7 @@ export default function Page() {
                 <span className="text-teal">One Local Business at a Time</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-slate-blue/70 leading-relaxed mb-5">
+              <p className="font-body text-ink leading-relaxed mb-5">
                 We are adding a new maintenance-free, low-cost marketing program
                 that allows you to create a personalized experience for your
                 customers. By offering the{" "}
@@ -351,7 +351,7 @@ export default function Page() {
                 the GooseChase App, the Chamber is connecting more community
                 residents with our members.
               </p>
-              <p className="font-body text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-ink leading-relaxed mb-8">
                 Participants pay a{" "}
                 <strong className="text-primary">$50 per quarter</strong>{" "}
                 subscription and post a community experience in the
@@ -423,7 +423,7 @@ export default function Page() {
             <h2 className="heading-xl text-primary mb-4">
               Get Started in <span className="text-teal">3 Simple Steps</span>
             </h2>
-            <p className="font-body text-slate-blue/60 max-w-xl mx-auto">
+            <p className="font-body text-ink max-w-xl mx-auto">
               Turn notifications on — never miss a new offer! More local
               discounts are added every single week.
             </p>
@@ -496,7 +496,7 @@ export default function Page() {
                     <div className="font-heading text-primary text-4xl font-700">
                       $50
                     </div>
-                    <div className="font-body text-slate-blue/60 text-sm">
+                    <div className="font-body text-ink text-sm">
                       per quarter / per chamber member
                     </div>
                   </div>
@@ -515,7 +515,7 @@ export default function Page() {
                 Local Link <span className="text-teal">Passport Benefits</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-ink leading-relaxed mb-8">
                 Join the Local Link Discount Program to increase awareness of
                 your business and boost foot traffic. It&apos;s one of the most
                 cost-effective marketing tools available exclusively to Mountain
@@ -645,7 +645,7 @@ export default function Page() {
             <h2 className="heading-xl text-primary mb-4">
               Participating <span className="text-teal">Local Businesses</span>
             </h2>
-            <p className="font-body text-slate-blue/60 max-w-xl mx-auto">
+            <p className="font-body text-ink max-w-xl mx-auto">
               These amazing local businesses are already on the Local Link
               Passport. Visit them, complete their experiences, and earn your
               points toward monthly prizes!
@@ -680,7 +680,7 @@ export default function Page() {
             ))}
           </div>
 
-          <p className="text-center font-body text-slate-blue/40 text-sm mt-8">
+          <p className="text-center font-body text-ink text-sm mt-8">
             More businesses are added weekly. Turn on notifications in the
             GooseChase app to never miss a new offer!
           </p>
@@ -698,7 +698,7 @@ export default function Page() {
                 <span className="text-teal">Your Local Savings Hub</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-slate-blue/70 leading-relaxed mb-6">
+              <p className="font-body text-ink leading-relaxed mb-6">
                 GooseChase is a free mobile experience app that turns local
                 shopping into an adventure. Businesses post unique challenges
                 for you to complete — visit their store, try a product, snap a
@@ -725,7 +725,7 @@ export default function Page() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    <span className="font-body text-slate-blue/70 text-sm">
+                    <span className="font-body text-ink text-sm">
                       {item}
                     </span>
                   </li>
@@ -761,7 +761,7 @@ export default function Page() {
                     New Offer!
                   </span>
                 </div>
-                <p className="font-body text-xs text-slate-blue/70 leading-snug">
+                <p className="font-body text-xs text-ink leading-snug">
                   Costa Vida — Buy one, get one free burrito today!
                 </p>
               </div>

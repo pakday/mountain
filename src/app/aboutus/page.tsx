@@ -49,14 +49,14 @@ export default function Page() {
                 Benefiting &amp; Giving Back
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
+              <p className="font-body text-base text-ink leading-relaxed mb-5">
                 We live and work in these communities just like you, and we want
                 to work together to make them all stronger. If you&rsquo;re like
                 us, you want to be part of a successful business in a thriving
                 community — but it can be hard to know where to turn to find the
                 connections and resources you need.
               </p>
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-ink leading-relaxed mb-8">
                 At the Mountain West Chamber of Commerce, we get it. We&rsquo;ve
                 been working in Riverton, Herriman, and Bluffdale
                 since&nbsp;1997 to build bridges between businesses and the
@@ -116,7 +116,7 @@ export default function Page() {
               We Invest in Our Communities
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
+            <p className="font-body text-base text-ink leading-relaxed">
               Our community give-back events include an annual teacher
               appreciation lunch, honoring local civic heroes, sports
               activities, and supporting community events throughout the year.

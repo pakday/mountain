@@ -219,7 +219,7 @@ export default function Page() {
                 Practical Reads for Business Owners Who Want to Keep Moving
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed">
+              <p className="font-body text-base text-ink leading-relaxed">
                 These articles give you a strong starting point for marketing,
                 communication, and new technology adoption — straight from the
                 Chamber&rsquo;s member resource library.
@@ -266,7 +266,7 @@ export default function Page() {
               Problems
             </h2>
             <div className="section-divider mx-auto mb-6" />
-            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
+            <p className="font-body text-base text-ink leading-relaxed">
               From workforce and funding to exports, utilities, and compliance —
               these partners give members a stronger operating network across
               Utah.
@@ -343,7 +343,7 @@ export default function Page() {
                 Ribbon Cuttings, Events &amp; Community Moments
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/60 leading-relaxed">
+              <p className="font-body text-base text-ink leading-relaxed">
                 Ribbon cuttings, educational events, business openings, and
                 community-facing gatherings are how this Chamber builds trust
                 and visibility for its members.

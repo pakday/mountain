@@ -143,7 +143,7 @@ export default function Page() {
                 <p className="font-accent font-700 text-primary text-sm uppercase tracking-wide">
                   {item.label}
                 </p>
-                <p className="font-body text-xs text-slate-blue/60">
+                <p className="font-body text-xs text-ink">
                   {item.detail}
                 </p>
               </div>
@@ -161,7 +161,7 @@ export default function Page() {
               Choose Your Membership Level
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
+            <p className="font-body text-base text-ink leading-relaxed">
               All memberships run for one calendar year from your renewal date.
               Questions? Call us at{" "}
               <a
@@ -211,13 +211,13 @@ export default function Page() {
                 Together We Are Stronger
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
+              <p className="font-body text-base text-ink leading-relaxed mb-5">
                 For over 27 years, the Mountain West Chamber of Commerce has
                 connected businesses in Riverton, Herriman, and Bluffdale. Our
                 members help each other succeed through referrals, visibility,
                 and a community committed to growth.
               </p>
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-ink leading-relaxed mb-8">
                 Your renewal continues that impact — keeping your business in
                 front of thousands of local customers and decision-makers while
                 giving you access to events, education, and advocacy that
@@ -274,7 +274,7 @@ export default function Page() {
             ].map((item) => (
               <div key={item.q} className="py-6">
                 <h3 className="heading-2xs text-primary mb-2">{item.q}</h3>
-                <p className="font-body text-sm text-slate-blue/60 leading-relaxed">
+                <p className="font-body text-sm text-ink leading-relaxed">
                   {item.a}
                 </p>
               </div>

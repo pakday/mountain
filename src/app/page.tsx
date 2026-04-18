@@ -97,13 +97,13 @@ export default function HomePage() {
                 </span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
+              <p className="font-body text-base text-ink leading-relaxed mb-5">
                 We&rsquo;ve been working in Riverton, Herriman, and Bluffdale
                 since 1997 to build bridges between businesses and the
                 community. We understand what it takes to build a successful
                 business here — and we&rsquo;ve built the network to prove it.
               </p>
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-ink leading-relaxed mb-8">
                 At MWCC, we focus on networking, business education, and
                 political involvement within our cities — empowering members to
                 grow and give back through annual events, legislative
@@ -189,7 +189,7 @@ export default function HomePage() {
               Everything Your Business Needs to Thrive
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
+            <p className="font-body text-base text-ink leading-relaxed">
               Looking to grow your business, increase revenue, build lasting
               relationships, and give back to the community? Our membership
               opens the door to all of it.
@@ -426,7 +426,7 @@ export default function HomePage() {
               Make Your Business Life Easier
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-blue/60">
+            <p className="font-body text-base text-ink">
               Participate in the Chamber to find the answers, connections, and
               brand exposure you need for business success. Trying it is simple.
             </p>
@@ -526,7 +526,7 @@ export default function HomePage() {
                 We&rsquo;d Love to Hear from You
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-ink leading-relaxed mb-8">
                 The best way to experience what the Chamber has to offer is to
                 attend an event. Come out and see us soon! We&rsquo;re also
                 happy to answer any questions you may have.
@@ -560,12 +560,12 @@ export default function HomePage() {
                     <p className="font-accent font-700 text-sm text-primary mb-0.5">
                       Address
                     </p>
-                    <p className="font-body text-sm text-slate-blue/70">
+                    <p className="font-body text-sm text-ink">
                       4168 South 12600 South, Riverton, UT 84065
                       <br />
                       First Floor of First Utah Bank Bldg
                       <br />
-                      <span className="text-slate-blue/40">Office Hours Vary</span>
+                      <span className="text-ink">Office Hours Vary</span>
                     </p>
                   </div>
                 </div>
@@ -585,7 +585,7 @@ export default function HomePage() {
                     </p>
                     <a
                       href="tel:8012800595"
-                      className="font-body text-sm text-slate-blue/70 hover:text-primary transition-colors"
+                      className="font-body text-sm text-ink hover:text-primary transition-colors"
                     >
                       801-280-0595
                     </a>
@@ -608,7 +608,7 @@ export default function HomePage() {
                     </p>
                     <a
                       href="mailto:Info@mountainwestchamber.org"
-                      className="font-body text-sm text-slate-blue/70 hover:text-primary transition-colors"
+                      className="font-body text-sm text-ink hover:text-primary transition-colors"
                     >
                       Info@mountainwestchamber.org
                     </a>
@@ -627,7 +627,7 @@ export default function HomePage() {
                   <div>
                     <label
                       htmlFor="firstName"
-                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
+                      className="font-accent text-xs font-700 uppercase tracking-wide text-ink block mb-1.5"
                     >
                       First Name <span className="text-slate-blue">*</span>
                     </label>
@@ -642,7 +642,7 @@ export default function HomePage() {
                   <div>
                     <label
                       htmlFor="lastName"
-                      className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
+                      className="font-accent text-xs font-700 uppercase tracking-wide text-ink block mb-1.5"
                     >
                       Last Name <span className="text-slate-blue">*</span>
                     </label>
@@ -658,7 +658,7 @@ export default function HomePage() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
+                    className="font-accent text-xs font-700 uppercase tracking-wide text-ink block mb-1.5"
                   >
                     Phone
                   </label>
@@ -672,7 +672,7 @@ export default function HomePage() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
+                    className="font-accent text-xs font-700 uppercase tracking-wide text-ink block mb-1.5"
                   >
                     Email <span className="text-slate-blue">*</span>
                   </label>
@@ -687,7 +687,7 @@ export default function HomePage() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="font-accent text-xs font-700 uppercase tracking-wide text-slate-blue/70 block mb-1.5"
+                    className="font-accent text-xs font-700 uppercase tracking-wide text-ink block mb-1.5"
                   >
                     How Can We Help?
                   </label>
@@ -731,7 +731,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="section-container">
-          <p className="text-center font-body text-sm text-slate-blue/40 mt-8">
+          <p className="text-center font-body text-sm text-ink mt-8">
             Interested in becoming a sponsor?{" "}
             <Link
               href="/sponsorshipopps"

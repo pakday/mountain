@@ -125,12 +125,12 @@ export default function Page() {
                 <span className="text-slate-blue">Great Day on the Course</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-6">
+              <p className="font-body text-base text-ink leading-relaxed mb-6">
                 All proceeds above costs go directly to scholarships for local
                 high school students and support for educators. Prize drawing
                 tickets are also available for purchase on the day of the event.
               </p>
-              <p className="font-body text-sm font-600 italic text-slate-blue/60 mb-8">
+              <p className="font-body text-sm font-600 italic text-ink mb-8">
                 "A Great Time Will Be Had by All!"
               </p>
 
@@ -139,13 +139,13 @@ export default function Page() {
                 <h3 className="heading-sm text-primary mb-3 flex items-center gap-2">
                   <span className="text-teal">📍</span> Where
                 </h3>
-                <p className="font-body text-base text-slate-blue/80 font-600">
+                <p className="font-body text-base text-ink font-600">
                   Stonebridge Golf Course
                 </p>
-                <p className="font-body text-sm text-slate-blue/60">
+                <p className="font-body text-sm text-ink">
                   4415 W Links Dr.
                 </p>
-                <p className="font-body text-sm text-slate-blue/60">
+                <p className="font-body text-sm text-ink">
                   West Valley City, Utah
                 </p>
                 <a
@@ -218,7 +218,7 @@ export default function Page() {
                     <span className="font-accent text-sm font-700 text-slate-blue min-w-40">
                       {item.time}
                     </span>
-                    <span className="font-body text-base text-slate-blue/80">
+                    <span className="font-body text-base text-ink">
                       {item.label}
                     </span>
                   </div>
@@ -240,7 +240,7 @@ export default function Page() {
                 d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
               />
             </svg>
-            <p className="font-body text-sm text-slate-blue/70 leading-relaxed">
+            <p className="font-body text-sm text-ink leading-relaxed">
               <strong className="text-primary">Prize Drawing Tickets</strong>{" "}
               available for purchase on the day of the event. Driving Range &
               Cart included with all registrations.
@@ -339,7 +339,7 @@ export default function Page() {
                 Ready to <span className="text-slate-blue">Tee Off?</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-ink leading-relaxed mb-8">
                 Register today for the Annual Scholarship Golf Classic. Spots
                 are limited — secure your foursome now. All proceeds go to
                 scholarships for local high school students and support for

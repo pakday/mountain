@@ -89,11 +89,11 @@ function FeaturedCard({
           Featured
         </span>
         <h2 className="heading-s text-primary">{title}</h2>
-        <p className="font-body text-sm text-slate-blue/70 leading-relaxed">
+        <p className="font-body text-sm text-ink leading-relaxed">
           {excerpt}
         </p>
         <div className="flex items-center justify-between pt-2 border-t border-light-gray">
-          <span className="text-xs text-slate-blue/40">{date}</span>
+          <span className="text-xs text-ink">{date}</span>
           <Link href={postUrl} className="btn btn-primary btn-sm">
             Read Article
           </Link>
@@ -126,9 +126,9 @@ function BlogCard({
         />
       </div>
       <div className="p-6 flex flex-col gap-2 flex-1">
-        <span className="text-xs text-slate-blue/40">{date}</span>
+        <span className="text-xs text-ink">{date}</span>
         <h3 className="heading-xs text-primary leading-snug">{title}</h3>
-        <p className="font-body text-sm text-slate-blue/70 leading-relaxed flex-1">
+        <p className="font-body text-sm text-ink leading-relaxed flex-1">
           {excerpt}
         </p>
         <Link
@@ -154,7 +154,7 @@ export default function Page() {
             Mountain West Chamber
           </p>
           <h1 className="heading-xl text-primary mb-4">Blog</h1>
-          <p className="font-body text-base text-slate-blue/60 max-w-xl leading-relaxed">
+          <p className="font-body text-base text-ink max-w-xl leading-relaxed">
             Business tips, local ideas, and community news for Utah small
             businesses and Chamber members.
           </p>

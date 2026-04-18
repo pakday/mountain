@@ -157,7 +157,7 @@ export default function Page() {
             <p className="eyebrow mb-3">Our Leadership</p>
             <h2 className="heading-l text-primary mb-4">Chamber Officers</h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-blue/70 leading-relaxed">
+            <p className="font-body text-base text-ink leading-relaxed">
               These officers set the strategic direction for our chamber and
               serve as stewards of our community mission.
             </p>
@@ -196,7 +196,7 @@ export default function Page() {
                       {o.company}
                     </a>
                   ) : (
-                    <p className="font-body text-sm text-slate-blue/60">
+                    <p className="font-body text-sm text-ink">
                       {o.company}
                     </p>
                   )}
@@ -216,7 +216,7 @@ export default function Page() {
             <p className="eyebrow mb-3">Serving the Community</p>
             <h2 className="heading-l text-primary mb-4">Board Members</h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-blue/70 leading-relaxed">
+            <p className="font-body text-base text-ink leading-relaxed">
               Tap any member with a{" "}
               <span
                 className="inline-flex items-center justify-center w-4 h-4 bg-yellow rounded-full text-primary font-bold align-middle"
@@ -244,7 +244,7 @@ export default function Page() {
             Interested in Joining the Board?
           </h2>
           <div className="section-divider mx-auto mb-7" />
-          <p className="font-body text-base text-slate-blue/70 mb-8 leading-relaxed">
+          <p className="font-body text-base text-ink mb-8 leading-relaxed">
             We&rsquo;re always looking for passionate community leaders ready to
             make a difference. Reach out to learn more about board involvement.
           </p>

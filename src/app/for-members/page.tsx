@@ -141,7 +141,7 @@ export default function Page() {
             <h2 className="heading-l text-primary mb-4">
               Deals from Your Fellow Members
             </h2>
-            <p className="font-body text-slate-blue/70 max-w-2xl mx-auto text-base leading-relaxed">
+            <p className="font-body text-ink max-w-2xl mx-auto text-base leading-relaxed">
               These special offers are made possible by the businesses in our
               chamber community. Support local and take advantage of exclusive
               rates you won&apos;t find anywhere else.
@@ -175,7 +175,7 @@ export default function Page() {
                   ) : (
                     <div className="flex flex-col items-center justify-center w-full h-full rounded-lg bg-linear-to-br from-slate-blue/10 to-teal/10 gap-2">
                       <svg
-                        className="w-10 h-10 text-slate-blue/40"
+                        className="w-10 h-10 text-ink"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -187,7 +187,7 @@ export default function Page() {
                           d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                         />
                       </svg>
-                      <span className="font-heading font-bold text-slate-blue/60 text-sm text-center px-2">
+                      <span className="font-heading font-bold text-ink text-sm text-center px-2">
                         {b.company}
                       </span>
                     </div>
@@ -203,7 +203,7 @@ export default function Page() {
                   <h3 className="heading-xs text-primary mb-3 leading-snug">
                     {b.title}
                   </h3>
-                  <p className="font-body text-slate-blue/70 text-sm leading-relaxed flex-1">
+                  <p className="font-body text-ink text-sm leading-relaxed flex-1">
                     {b.description}
                   </p>
 

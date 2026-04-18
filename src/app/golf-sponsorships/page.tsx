@@ -215,7 +215,7 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
           {tier.benefits.map((b, i) => (
             <li
               key={i}
-              className="flex gap-2.5 text-slate-blue/70 font-body text-sm leading-snug"
+              className="flex gap-2.5 text-ink font-body text-sm leading-snug"
             >
               <span className="text-slate-blue">
                 <CheckIcon />
@@ -228,7 +228,7 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
         {/* Existing sponsors */}
         {tier.sponsors && tier.sponsors.length > 0 && (
           <div>
-            <p className="eyebrow text-slate-blue/40 mb-3">Current Sponsors</p>
+            <p className="eyebrow text-ink mb-3">Current Sponsors</p>
             <div className="flex flex-wrap gap-3 items-center">
               {tier.sponsors.map((s, i) => (
                 <div
@@ -250,7 +250,7 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
 
         {/* Note */}
         {tier.note && (
-          <p className="text-xs text-slate-blue/40 italic font-body">{tier.note}</p>
+          <p className="text-xs text-ink italic font-body">{tier.note}</p>
         )}
 
         <div className="mt-auto pt-2">
@@ -349,7 +349,7 @@ export default function Page() {
                 <div className="font-accent font-700 text-sm uppercase tracking-wider text-slate-blue mb-2">
                   {stat.label}
                 </div>
-                <p className="font-body text-sm text-slate-blue/60">{stat.desc}</p>
+                <p className="font-body text-sm text-ink">{stat.desc}</p>
               </div>
             ))}
           </div>
@@ -361,7 +361,7 @@ export default function Page() {
         <div className="section-container max-w-4xl text-center">
           <div className="section-divider mx-auto mb-6" />
           <h2 className="heading-l text-primary mb-4">Sponsorship Details</h2>
-          <p className="font-body text-base text-slate-blue/70 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-base text-ink leading-relaxed max-w-2xl mx-auto">
             The 144 players include local business owners and avid golfers. This
             is a fundraiser for the high school scholarship program. Choose the
             sponsorship level that fits your budget and marketing goals — each
@@ -437,7 +437,7 @@ export default function Page() {
           <h2 className="heading-xl text-primary mb-4">
             Ready to Become a Sponsor?
           </h2>
-          <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8 max-w-xl mx-auto">
+          <p className="font-body text-base text-ink leading-relaxed mb-8 max-w-xl mx-auto">
             Join leading local businesses in supporting youth scholarships while
             gaining invaluable brand exposure at one of the Southwest Valley's
             most attended business events.

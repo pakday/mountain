@@ -97,7 +97,7 @@ export default function BoardExpandGrid({
                   </a>
                 ) : (
                   <p
-                    className="font-body text-slate-blue/60"
+                    className="font-body text-ink"
                     style={{ fontSize: "0.78rem" }}
                   >
                     {m.company}
@@ -148,7 +148,7 @@ export default function BoardExpandGrid({
                   </div>
                   <button
                     onClick={() => setSelected(null)}
-                    className="shrink-0 mt-1 w-8 h-8 rounded-full border border-light-gray text-slate-blue/60 hover:text-primary hover:border-primary transition-colors flex items-center justify-center"
+                    className="shrink-0 mt-1 w-8 h-8 rounded-full border border-light-gray text-ink hover:text-primary hover:border-primary transition-colors flex items-center justify-center"
                     aria-label="Close bio"
                   >
                     <svg
@@ -164,7 +164,7 @@ export default function BoardExpandGrid({
 
                 <div className="h-px bg-light-gray mb-5" />
 
-                <p className="font-body text-slate-blue/80 leading-relaxed text-sm sm:text-base">
+                <p className="font-body text-ink leading-relaxed text-sm sm:text-base">
                   {selected.bio}
                 </p>
               </div>

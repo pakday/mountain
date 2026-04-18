@@ -133,12 +133,12 @@ export default function Page() {
                 Grow Your Business &amp; Your Community
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-5">
+              <p className="font-body text-base text-ink leading-relaxed mb-5">
                 Looking for a way to grow your business, increase your revenue,
                 build lasting relationships, and give back in meaningful ways?
                 The Mountain West Chamber of Commerce is here to help!
               </p>
-              <p className="font-body text-base text-slate-blue/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-ink leading-relaxed mb-8">
                 We&rsquo;re your bridge between businesses and the community in
                 Bluffdale, Herriman, and Riverton — offering a variety of
                 opportunities and resources that make a real difference.
@@ -174,7 +174,7 @@ export default function Page() {
               Everything You Need to Thrive
             </h2>
             <div className="section-divider mx-auto mb-5" />
-            <p className="font-body text-base text-slate-blue/60 leading-relaxed">
+            <p className="font-body text-base text-ink leading-relaxed">
               Our membership offers six powerful ways to grow your business and
               strengthen your community ties.
             </p>
