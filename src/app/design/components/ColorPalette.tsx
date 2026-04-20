@@ -15,7 +15,7 @@ export function ColorPalette() {
               <div className="text-sm font-bold text-[#0D3B66]">{item.hex}</div>
               <div className="text-xs text-[#3F6183] mt-0.5">{item.name}</div>
               <div className="mt-2 flex flex-wrap gap-1">
-                {item.usage.map((u) => (
+                {item.usage.map((u: string) => (
                   <span
                     key={u}
                     className="bg-black/10 text-[#0D3B66] text-xs px-1.5 py-0.5 rounded font-semibold"
