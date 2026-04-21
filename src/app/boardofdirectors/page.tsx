@@ -196,9 +196,7 @@ export default function Page() {
                       {o.company}
                     </a>
                   ) : (
-                    <p className="font-body text-sm text-ink">
-                      {o.company}
-                    </p>
+                    <p className="font-body text-sm text-ink">{o.company}</p>
                   )}
                 </div>
               </div>
@@ -217,14 +215,8 @@ export default function Page() {
             <h2 className="heading-l text-primary mb-4">Board Members</h2>
             <div className="section-divider mx-auto mb-5" />
             <p className="font-body text-base text-ink leading-relaxed">
-              Tap any member with a{" "}
-              <span
-                className="inline-flex items-center justify-center w-4 h-4 bg-yellow rounded-full text-primary font-bold align-middle"
-                style={{ fontSize: "0.55rem" }}
-              >
-                +
-              </span>{" "}
-              badge to read their story.
+              Click any card to learn more about each board member. Six
+              different card styles are shown below — pick your favourite.
             </p>
           </div>
 
