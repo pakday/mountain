@@ -574,8 +574,9 @@ export default function Page() {
             </h2>
             <div className="section-divider mx-auto mb-6" />
             <p className="font-body text-base text-ink leading-relaxed">
-              Join the Mountain West Chamber of Commerce's celebration of 25+
-              educators in our community. Teachers are the real superheroes!
+              Teachers are the real superheroes! Join the Mountain West Chamber
+              of Commerce in celebrating the dedicated educators of our
+              community.
             </p>
           </div>
 
@@ -595,18 +596,8 @@ export default function Page() {
                     {
                       icon: "📍",
                       title: "Location",
-                      detail: "Herriman City Hall · 5355 S Herriman Main St",
-                    },
-                    {
-                      icon: "🎓",
-                      title: "Purpose",
-                      detail: "Honoring 25+ educators in our community",
-                    },
-                    {
-                      icon: "🎁",
-                      title: "Gift Bags",
                       detail:
-                        "Teacher Gift Bag Donations also accepted — contact Susan Schilling",
+                        "Herriman City Hall · 5335 W. Main St., Herriman, UT 84096",
                     },
                   ].map((item) => (
                     <div key={item.title} className="flex items-start gap-4">

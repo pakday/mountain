@@ -2,17 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
+import ContactPerson from "@/components/ContactPerson";
 
 export const metadata: Metadata = {
-  title: "Golf Tournament 2025",
+  title: "Scholarship Golf Tournament 2025 — Mountain West Chamber",
   description:
-    "Join the Annual Scholarship Golf Classic at Stonebridge Golf Course. October 2, 2025.",
+    "Annual Scholarship Golf Classic at Stonebridge Golf Course. Thursday, October 2, 2025. 7:30 AM registration, 8:30 AM Shotgun Start. All proceeds go to scholarships.",
 };
+
+const BASE = "/Structure/Programs/golf-tournament";
 
 const agendaItems = [
   { time: "7:30 – 8:30 AM", label: "Check-In & Registration" },
   { time: "8:30 AM", label: "Shotgun Start" },
-  { time: "Midday", label: "BBQ Lunch with all the fixin's" },
+  { time: "Midday", label: "BBQ Lunch with all the fixin\u2019s" },
   { time: "~2:00 PM", label: "Awards Luncheon & Prize Drawing" },
 ];
 
@@ -21,49 +24,17 @@ export default function Page() {
     <>
       {/* ─── HERO ─── */}
       <PageHero
-        imageSrc="/Structure/Programs/golf-tournament/Green.jpeg"
+        imageSrc={`${BASE}/Green.jpeg`}
         imageAlt="Golf green at Stonebridge Golf Course"
         overlay="absolute inset-0 bg-linear-to-br from-primary/90 via-primary/70 to-slate-blue/60"
-        minHeight="65vh"
-        containerPadding="pb-28 pt-36"
         eyebrow="Mountain West Chamber of Commerce"
         title={
           <>
-            Scholarship
-            <br />
-            <span className="text-yellow">Golf Classic</span>{" "}
+            Scholarship <span className="text-yellow">Golf Classic</span>{" "}
             <span className="text-white">2025</span>
           </>
         }
-        description={
-          <>
-            Thursday, October 2, 2025 · 7:30 AM Registration · 8:30 AM Shotgun
-            Start
-            <br />
-            <span className="text-teal font-600">
-              Stonebridge Golf Course, West Valley City, UT
-            </span>
-          </>
-        }
-        aside={
-          <div className="flex flex-wrap gap-3 lg:flex-col lg:items-end">
-            {[
-              { icon: "📅", label: "October 2, 2025" },
-              { icon: "📍", label: "Stonebridge Golf Course" },
-              { icon: "🎓", label: "All Proceeds → Scholarships" },
-            ].map((b) => (
-              <div
-                key={b.label}
-                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2"
-              >
-                <span>{b.icon}</span>
-                <span className="font-accent text-white text-sm font-600">
-                  {b.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        }
+        description="Thursday, October 2, 2025 · 7:30 AM Registration · 8:30 AM Shotgun Start · Stonebridge Golf Course, West Valley City, UT"
         actions={
           <>
             <a
@@ -74,94 +45,111 @@ export default function Page() {
             >
               Register for Tournament
             </a>
-            <Link
-              href="/golf-sponsorships"
-              className="btn btn-outline-white btn-lg"
-            >
-              View Sponsorship Options
+            <Link href="/golf-sponsorships" className="btn btn-outline-white btn-lg">
+              Learn More on Sponsorship
             </Link>
           </>
         }
       />
 
-      {/* ─── EVENT HIGHLIGHTS STRIP ─── */}
-      <section className="bg-primary py-10">
-        <div className="section-container max-w-7xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden">
-            {[
-              { value: "144", label: "Golfers" },
-              { value: "18", label: "Holes" },
-              { value: "Drive & Cart", label: "Included" },
-              { value: "Awards", label: "Luncheon" },
-            ].map((s) => (
-              <div key={s.value} className="bg-primary px-6 py-8 text-center">
-                <div className="heading-l text-yellow mb-1">{s.value}</div>
-                <div className="eyebrow text-white/60">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── ABOUT + FLYERS ─── */}
-      <section className="py-20 bg-white">
-        <div className="section-container max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-14 items-start">
+      {/* ─── EVENT DETAILS + FLYERS ─── */}
+      <section className="py-(--section-xl) bg-off-white">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left: details */}
             <div>
-              <p className="eyebrow text-teal mb-3">Annual Event</p>
-              <h2 className="heading-2xl text-primary mb-4">
-                Please Join Us for a{" "}
-                <span className="text-slate-blue">Great Day on the Course</span>
+              <p className="eyebrow mb-3">Annual Event</p>
+              <h2 className="heading-l text-primary mb-5">
+                Please Join Us for Our Annual{" "}
+                <span className="text-yellow">&ldquo;Scholarship Golf Classic&rdquo;</span>
               </h2>
               <div className="section-divider mb-6" />
-              <p className="font-body text-base text-ink leading-relaxed mb-6">
-                All proceeds above costs go directly to scholarships for local
-                high school students and support for educators. Prize drawing
-                tickets are also available for purchase on the day of the event.
-              </p>
-              <p className="font-body text-sm font-600 italic text-ink mb-8">
-                "A Great Time Will Be Had by All!"
+              <p className="font-body text-ink leading-relaxed mb-8">
+                All proceeds above costs go to scholarships for local high school
+                students and to educators. Prize drawing tickets are also available
+                for purchase on the day of the event.
               </p>
 
-              {/* Where */}
-              <div className="bg-off-white rounded-2xl p-6 mb-6">
-                <h3 className="heading-sm text-primary mb-3 flex items-center gap-2">
-                  <span className="text-teal">📍</span> Where
-                </h3>
-                <p className="font-body text-base text-ink font-600">
-                  Stonebridge Golf Course
+              {/* Date / Time / Where block */}
+              <div className="bg-white rounded-2xl p-6 mb-6 shadow-sm ring-1 ring-black/5">
+                <div className="flex flex-col gap-5">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="text-primary">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-accent text-xs text-ink uppercase tracking-widest mb-0.5">Date</p>
+                      <p className="font-body text-ink font-600">Thursday, October 2, 2025</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="text-primary">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-accent text-xs text-ink uppercase tracking-widest mb-0.5">Time</p>
+                      <p className="font-body text-ink font-600">7:30 AM Registration · 8:30 AM Shotgun to 2:00 PM MDT</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="text-primary">
+                        <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-accent text-xs text-ink uppercase tracking-widest mb-0.5">Where</p>
+                      <p className="font-body text-ink font-600">Stonebridge Golf Course</p>
+                      <p className="font-body text-ink text-sm">4415 W Links Dr.<br />West Valley City, Utah</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Included note */}
+              <div className="border-l-4 border-teal bg-white rounded-r-2xl px-6 py-4 mb-6">
+                <p className="font-body text-ink text-sm leading-relaxed">
+                  <strong className="text-primary">Driving Range &amp; Cart included.</strong>{" "}
+                  Prize Drawing Tickets available for purchase. All proceeds go to scholarships for local high school students.
                 </p>
-                <p className="font-body text-sm text-ink">4415 W Links Dr.</p>
-                <p className="font-body text-sm text-ink">
-                  West Valley City, Utah
-                </p>
+              </div>
+
+              <p className="font-body text-ink font-600 italic mb-6">&ldquo;A Great Time Will Be Had by All!&rdquo;</p>
+
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://events.r20.constantcontact.com/register/addtocalendar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline btn-sm"
+                >
+                  + Add to Calendar
+                </a>
                 <a
                   href="https://maps.google.com/?q=4415+W+Links+Dr+West+Valley+City+UT"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-ghost btn-sm pl-0 text-teal mt-3 inline-flex"
+                  className="btn btn-ghost btn-sm text-primary"
                 >
-                  Get Driving Directions →
+                  Driving Directions →
                 </a>
               </div>
-
-              {/* Add to calendar */}
-              <a
-                href="https://lp.constantcontactpages.com/ev/reg/hya9mx9/lp/19b74e5b-e44c-4a6a-ac98-9e9e969b534a"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline inline-flex items-center gap-2"
-              >
-                <span>📅</span> Add to Calendar
-              </a>
             </div>
 
             {/* Right: flyers */}
             <div className="grid grid-cols-2 gap-4 self-start">
               <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-3/4">
                 <Image
-                  src="/Structure/Programs/golf-tournament/2025+Golf+Tournament+Flyer+-+front+side.jpg"
+                  src={`${BASE}/2025+Golf+Tournament+Flyer+-+front+side.jpg`}
                   alt="Golf Tournament Flyer Front"
                   fill
                   className="object-cover"
@@ -170,7 +158,7 @@ export default function Page() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-3/4">
                 <Image
-                  src="/Structure/Programs/golf-tournament/2025+Golf+Tournament+Flyer+-+back+side.jpg"
+                  src={`${BASE}/2025+Golf+Tournament+Flyer+-+back+side.jpg`}
                   alt="Golf Tournament Flyer Back"
                   fill
                   className="object-cover"
@@ -183,173 +171,71 @@ export default function Page() {
       </section>
 
       {/* ─── AGENDA ─── */}
-      <section className="py-20 bg-off-white">
-        <div className="section-container max-w-4xl">
-          <div className="text-center mb-12">
-            <p className="eyebrow text-teal mb-3">Day Of</p>
-            <h2 className="heading-l text-primary">Event Agenda</h2>
-          </div>
-          <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-8 top-0 bottom-0 w-px bg-teal/40 hidden md:block" />
-            <div className="flex flex-col gap-0">
-              {agendaItems.map((item, i) => (
-                <div
-                  key={i}
-                  className="relative flex items-start gap-6 md:pl-20 py-5 border-b border-light-gray last:border-0"
-                >
-                  {/* Dot */}
-                  <div className="hidden md:flex absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-teal items-center justify-center shadow-md">
-                    <div className="w-2 h-2 rounded-full bg-white" />
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 w-full">
-                    <span className="font-accent text-sm font-700 text-slate-blue min-w-40">
-                      {item.time}
-                    </span>
-                    <span className="font-body text-base text-ink">
-                      {item.label}
-                    </span>
-                  </div>
-                </div>
-              ))}
+      <section className="py-(--section-l) bg-white">
+        <div className="container">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="eyebrow mb-3">Day Of Event</p>
+              <h2 className="heading-l text-primary">Agenda</h2>
+              <div className="section-divider mx-auto mt-5" />
             </div>
-          </div>
-          <div className="mt-8 bg-white rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center gap-4 shadow-sm">
-            <svg
-              className="w-8 h-8 text-teal shrink-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={1.5}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
-              />
-            </svg>
-            <p className="font-body text-sm text-ink leading-relaxed">
-              <strong className="text-primary">Prize Drawing Tickets</strong>{" "}
-              available for purchase on the day of the event. Driving Range &
-              Cart included with all registrations.
-            </p>
+            <div className="relative">
+              {/* Vertical line */}
+              <div className="absolute left-8 top-0 bottom-0 w-px bg-teal/30 hidden md:block" />
+              <div className="flex flex-col gap-0">
+                {agendaItems.map((item, i) => (
+                  <div
+                    key={i}
+                    className="relative flex items-start gap-6 md:pl-20 py-5 border-b border-light-gray last:border-0"
+                  >
+                    <div className="hidden md:flex absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-teal items-center justify-center shadow">
+                      <div className="w-2 h-2 rounded-full bg-white" />
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 w-full">
+                      <span className="font-accent text-sm font-700 text-primary min-w-40">{item.time}</span>
+                      <span className="font-body text-base text-ink">{item.label}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ─── CONTACT / ORGANIZER ─── */}
-      <section className="py-20 bg-white">
-        <div className="section-container max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Contact card */}
-            <div className="bg-primary rounded-3xl p-10 text-white flex flex-col gap-6">
-              <div>
-                <p className="eyebrow text-teal mb-3">Questions?</p>
-                <h2 className="heading-l text-white mb-2">Get In Touch</h2>
-                <p className="font-body text-white/80 text-sm leading-relaxed">
-                  Reach out to Susan Schilling directly for questions about
-                  registration, sponsorships, or event details.
-                </p>
-              </div>
-              <div className="flex flex-col gap-4">
-                <a
-                  href="tel:801-280-0595"
-                  className="flex items-center gap-3 group"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-teal transition-colors duration-200">
-                    <svg
-                      className="w-5 h-5 text-teal group-hover:text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                      />
-                    </svg>
-                  </div>
-                  <span className="font-body text-white/90 text-sm">
-                    801-280-0595
-                  </span>
-                </a>
-                <a
-                  href="mailto:susan@mountainwestchamber.org"
-                  className="flex items-center gap-3 group"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-teal transition-colors duration-200">
-                    <svg
-                      className="w-5 h-5 text-teal group-hover:text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                  </div>
-                  <span className="font-body text-white/90 text-sm">
-                    susan@mountainwestchamber.org
-                  </span>
-                </a>
-              </div>
-              <div className="pt-2 border-t border-white/20 flex items-center gap-4">
-                <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-teal/60">
-                  <Image
-                    src="/Structure/Programs/golf-tournament/Susan+Schilling+Sq.jpg"
-                    alt="Susan Schilling"
-                    fill
-                    className="object-cover"
-                    sizes="56px"
-                  />
-                </div>
-                <div>
-                  <p className="font-accent font-700 text-sm text-white">
-                    Susan Schilling
-                  </p>
-                  <p className="font-body text-xs text-white/60">
-                    President, Mountain West Chamber
-                  </p>
-                </div>
-              </div>
-            </div>
+      {/* ─── CONTACT ─── */}
+      <ContactPerson
+        imageSrc={`${BASE}/Susan+Schilling+Sq.jpg`}
+        bgClass="bg-off-white"
+      />
 
-            {/* Register CTA */}
-            <div>
-              <p className="eyebrow text-teal mb-3">Join the Classic</p>
-              <h2 className="heading-xl text-primary mb-4">
-                Ready to <span className="text-slate-blue">Tee Off?</span>
-              </h2>
-              <div className="section-divider mb-6" />
-              <p className="font-body text-base text-ink leading-relaxed mb-8">
-                Register today for the Annual Scholarship Golf Classic. Spots
-                are limited — secure your foursome now. All proceeds go to
-                scholarships for local high school students and support for
-                educators in the Southwest Valley.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href="https://lp.constantcontactpages.com/ev/reg/hya9mx9/lp/19b74e5b-e44c-4a6a-ac98-9e9e969b534a"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-lg"
-                >
-                  Register for Tournament
-                </a>
-                <Link
-                  href="/golf-sponsorships"
-                  className="btn btn-outline btn-lg"
-                >
-                  Sponsorship Options
-                </Link>
-              </div>
-            </div>
+      {/* ─── CTA ─── */}
+      <section className="py-(--section-xl) bg-primary relative overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-5 pointer-events-none"
+          style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "32px 32px" }}
+        />
+        <div className="relative z-10 container text-center">
+          <p className="eyebrow text-teal mb-4">Together We Are Stronger</p>
+          <h2 className="heading-xl text-white mb-5">
+            All Proceeds Go to <span className="text-yellow">Scholarships</span>
+          </h2>
+          <p className="font-body text-white/75 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+            Thursday, October 2, 2025 · Stonebridge Golf Course · West Valley City, UT<br />
+            All proceeds above costs go to scholarships to local high school students and to educators.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="https://lp.constantcontactpages.com/ev/reg/hya9mx9/lp/19b74e5b-e44c-4a6a-ac98-9e9e969b534a"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-yellow btn-lg"
+            >
+              Register for Tournament
+            </a>
+            <Link href="/golf-sponsorships" className="btn btn-outline-white btn-lg">
+              Sponsorship Opportunities
+            </Link>
           </div>
         </div>
       </section>
