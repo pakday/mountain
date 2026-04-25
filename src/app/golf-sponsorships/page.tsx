@@ -4,17 +4,16 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Golf Sponsorships",
+  title: "Golf Sponsorships — Mountain West Chamber",
   description:
-    "Sponsor the Annual Scholarship Golf Tournament and support local students.",
+    "Sponsor the Annual Scholarship Golf Classic and support local high school students. Choose from seven sponsorship tiers from $150 to $2,500.",
 };
 
 interface SponsorTier {
   tier: string;
   price: string;
   icon: string;
-  color: string;
-  accentColor: string;
+  borderClass: string;
   badge?: string;
   benefits: string[];
   note?: string;
@@ -27,8 +26,7 @@ const sponsorTiers: SponsorTier[] = [
     tier: "Presenting Sponsor",
     price: "$2,500",
     icon: "/Structure/Programs/golf-sponsorships/Mountain_West_Chamber_Web_Presenter+Sponsor.png",
-    color: "bg-primary",
-    accentColor: "text-yellow",
+    borderClass: "border-yellow",
     badge: "Most Prestigious",
     benefits: [
       "Opportunity to speak during Awards Luncheon",
@@ -46,8 +44,7 @@ const sponsorTiers: SponsorTier[] = [
     tier: "Eagle Sponsor",
     price: "$1,800",
     icon: "/Structure/Programs/golf-sponsorships/Mountain_West_Chamber_Web_Eagle+Sponsor.png",
-    color: "bg-slate-blue",
-    accentColor: "text-teal",
+    borderClass: "border-teal",
     benefits: [
       "Company recognition during luncheon",
       "Company logo prominently displayed on promotional material, registration site, and day of event",
@@ -64,8 +61,7 @@ const sponsorTiers: SponsorTier[] = [
     tier: "Birdie Sponsor",
     price: "$1,400",
     icon: "/Structure/Programs/golf-sponsorships/Mountain_West_Chamber_Web_Birdie+Sponsor.png",
-    color: "bg-slate-blue",
-    accentColor: "text-yellow",
+    borderClass: "border-primary",
     benefits: [
       "One hole sponsor — See hole sponsor for details",
       "One spotlight post on social media",
@@ -90,8 +86,7 @@ const sponsorTiers: SponsorTier[] = [
     tier: "Hole Sponsor",
     price: "$600",
     icon: "/Structure/Programs/golf-sponsorships/Mountain_West_Chamber_Web_Hole_Sponsor.png",
-    color: "bg-primary",
-    accentColor: "text-teal",
+    borderClass: "border-teal",
     benefits: [
       "Signage with company logo on tee box",
       "Tee box access for company to promote themselves",
@@ -104,8 +99,7 @@ const sponsorTiers: SponsorTier[] = [
     tier: "Meal Sponsor",
     price: "$1,600",
     icon: "/Structure/Programs/golf-sponsorships/Mountain_West_Chamber_Web_Luncheon+Sponsor.png",
-    color: "bg-slate-blue",
-    accentColor: "text-yellow",
+    borderClass: "border-yellow",
     benefits: [
       "Company recognition during Awards Luncheon",
       "Company logo prominently displayed on promotional material, registration site, and day of event",
@@ -119,8 +113,7 @@ const sponsorTiers: SponsorTier[] = [
     tier: "Cart Sponsor",
     price: "$1,200",
     icon: "/Structure/Programs/golf-sponsorships/Mountain_West_Chamber_Web_Cart+Sponsor.png",
-    color: "bg-slate-blue",
-    accentColor: "text-yellow",
+    borderClass: "border-primary",
     benefits: [
       "Company name listed on registration website",
       "Company name and logo on all golf carts",
@@ -135,22 +128,21 @@ const sponsorTiers: SponsorTier[] = [
     tier: "Contest Sponsor",
     price: "$150",
     icon: "/Structure/Programs/golf-sponsorships/Mountain_West_Chamber_Web_Contest+Sponsor.png",
-    color: "bg-primary",
-    accentColor: "text-teal",
+    borderClass: "border-teal",
     benefits: [
       "Longest Drive Men & Women — signage on hole",
-      "Closest to the Pin Men & Women — signage on hole",
-      "Hole in One — signage on hole",
+      "and/or Closest to the Pin Men & Women — signage on hole",
+      "and/or Hole in One — signage on hole",
       "You get to announce awards to winners at luncheon",
     ],
     sponsors: [
       {
         src: "/Structure/Programs/golf-sponsorships/novel+expression+logo.png",
-        alt: "Novel Expressions",
+        alt: "Novel Expression",
       },
       {
         src: "/Structure/Programs/golf-sponsorships/True+Pros+HVAC.png",
-        alt: "True Pros Heating and Air",
+        alt: "True Pros HVAC",
       },
       {
         src: "/Structure/Programs/golf-sponsorships/Rex+Ind.+.jpg",
@@ -165,7 +157,7 @@ const sponsorTiers: SponsorTier[] = [
 function CheckIcon() {
   return (
     <svg
-      className="w-4 h-4 shrink-0 mt-0.5"
+      className="w-4 h-4 shrink-0 mt-0.5 text-teal"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -177,50 +169,41 @@ function CheckIcon() {
 }
 
 function SponsorCard({ tier }: { tier: SponsorTier }) {
-  const isFeatured = tier.badge != null;
   return (
-    <div
-      className={`relative flex flex-col rounded-2xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl`}
-    >
+    <div className="relative flex flex-col bg-white rounded-2xl shadow-md border-t-4 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style={{ borderTopColor: tier.borderClass === "border-yellow" ? "#F7DE32" : tier.borderClass === "border-teal" ? "#5DCAD1" : "#0D3B66" }}>
+
       {/* Badge */}
-      {isFeatured && (
-        <div className="absolute top-4 right-4 z-10 bg-yellow text-primary font-accent text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow">
+      {tier.badge && (
+        <div className="absolute top-4 right-4 bg-yellow text-primary font-accent text-xs font-700 uppercase tracking-widest px-3 py-1 rounded-full shadow">
           {tier.badge}
         </div>
       )}
 
-      {/* Header */}
-      <div className={`${tier.color} px-7 pt-8 pb-6 flex flex-col gap-4`}>
-        <div className="flex items-center gap-4">
-          <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
-            <Image
-              src={tier.icon}
-              alt={tier.tier}
-              width={36}
-              height={36}
-              className="object-contain"
-            />
-          </div>
-          <div>
-            <p className="eyebrow text-white/60 mb-0.5">{tier.tier}</p>
-            <p className={`heading-lg ${tier.accentColor} font-800`}>
-              {tier.price}
-            </p>
-          </div>
+      {/* Card header */}
+      <div className="px-6 pt-6 pb-5 flex items-center gap-4 border-b border-light-gray">
+        <div className="w-14 h-14 bg-off-white rounded-xl flex items-center justify-center shrink-0 overflow-hidden">
+          <Image
+            src={tier.icon}
+            alt={tier.tier}
+            width={44}
+            height={44}
+            className="object-contain"
+          />
+        </div>
+        <div>
+          <p className="eyebrow mb-0.5">{tier.tier}</p>
+          <p className="font-heading text-primary text-3xl font-700 leading-none">
+            {tier.price}
+          </p>
         </div>
       </div>
 
-      {/* Body */}
-      <div className="bg-white flex-1 px-7 py-6 flex flex-col gap-5">
+      {/* Benefits */}
+      <div className="flex-1 px-6 py-5 flex flex-col gap-5">
         <ul className="flex flex-col gap-2.5">
           {tier.benefits.map((b, i) => (
-            <li
-              key={i}
-              className="flex gap-2.5 text-ink font-body text-sm leading-snug"
-            >
-              <span className="text-slate-blue">
-                <CheckIcon />
-              </span>
+            <li key={i} className="flex gap-2.5 text-ink font-body text-sm leading-snug">
+              <CheckIcon />
               {b}
             </li>
           ))}
@@ -240,7 +223,7 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
                     src={s.src}
                     alt={s.alt}
                     fill
-                    className="object-contain p-1"
+                    className="object-contain p-1.5"
                     sizes="112px"
                   />
                 </div>
@@ -249,9 +232,9 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
           </div>
         )}
 
-        {/* Note */}
+        {/* Registration note */}
         {tier.note && (
-          <p className="text-xs text-ink italic font-body">{tier.note}</p>
+          <p className="text-xs text-ink/60 italic font-body">{tier.note}</p>
         )}
 
         <div className="mt-auto pt-2">
@@ -259,9 +242,9 @@ function SponsorCard({ tier }: { tier: SponsorTier }) {
             href={tier.registerUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={`btn w-full justify-center ${isFeatured ? "btn-yellow" : "btn-primary"}`}
+            className="btn btn-primary w-full justify-center"
           >
-            Register Now
+            Register
           </a>
         </div>
       </div>
@@ -277,15 +260,13 @@ export default function Page() {
         imageSrc="/Structure/Programs/golf-sponsorships/unsplash-image-uy5ZEqUOscs.jpg"
         imageAlt="Golf tournament"
         overlay="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/80 to-slate-blue/60"
-        minHeight="60vh"
-        containerPadding="pb-24 pt-32"
         eyebrow="Mountain West Chamber of Commerce"
         title={
           <>
             Golf <span className="text-yellow">Sponsorships</span>
           </>
         }
-        description="Make a lasting impact — sponsor the Annual Scholarship Golf Classic and align your brand with a community fundraiser supporting local high school students."
+        description="How do you want to sponsor?"
         actions={
           <>
             <a
@@ -296,72 +277,34 @@ export default function Page() {
             >
               Register to Sponsor
             </a>
-            <Link
-              href="/golf-tournament"
-              className="btn btn-outline-white btn-lg"
-            >
+            <Link href="/golf-tournament" className="btn btn-outline-white btn-lg">
               View Tournament Info
             </Link>
           </>
         }
       />
 
-      {/* ─── INTRO BANNER ─── */}
-      <section className="bg-light-gray py-14">
-        <div className="section-container max-w-7xl">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            {[
-              {
-                value: "144",
-                label: "Golfers Each Year",
-                desc: "Local business owners & avid golfers",
-              },
-              {
-                value: "7",
-                label: "Sponsorship Tiers",
-                desc: "Options from $150 to $2,500",
-              },
-              {
-                value: "100%",
-                label: "Goes to Scholarships",
-                desc: "All proceeds fund high school students",
-              },
-            ].map((stat) => (
-              <div
-                key={stat.value}
-                className="bg-white rounded-2xl p-8 shadow-sm"
-              >
-                <div className="heading-xl text-primary font-800 mb-1">
-                  {stat.value}
-                </div>
-                <div className="font-accent font-700 text-sm uppercase tracking-wider text-slate-blue mb-2">
-                  {stat.label}
-                </div>
-                <p className="font-body text-sm text-ink">{stat.desc}</p>
-              </div>
-            ))}
+      {/* ─── SPONSORSHIP DETAILS ─── */}
+      <section className="py-(--section-l) bg-off-white">
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="eyebrow mb-3">Sponsorship Details</p>
+            <h2 className="heading-l text-primary mb-5">Support Local Students</h2>
+            <div className="section-divider mx-auto mb-6" />
+            <p className="font-body text-ink leading-relaxed">
+              The 144 players include local business owners and avid golfers.
+              This is a fundraiser for the high school scholarship program.
+              Choose the sponsorship level that fits your goals — each tier
+              offers unique brand visibility and recognition.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* ─── DETAILS CALLOUT ─── */}
-      <section className="py-16 bg-white">
-        <div className="section-container max-w-4xl text-center">
-          <div className="section-divider mx-auto mb-6" />
-          <h2 className="heading-l text-primary mb-4">Sponsorship Details</h2>
-          <p className="font-body text-base text-ink leading-relaxed max-w-2xl mx-auto">
-            The 144 players include local business owners and avid golfers. This
-            is a fundraiser for the high school scholarship program. Choose the
-            sponsorship level that fits your budget and marketing goals — each
-            tier offers unique brand visibility and recognition opportunities.
-          </p>
-        </div>
-      </section>
-
-      {/* ─── SPONSORSHIP TIERS GRID ─── */}
-      <section className="py-16 bg-off-white">
-        <div className="section-container max-w-7xl">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+      {/* ─── SPONSORSHIP TIERS ─── */}
+      <section className="py-(--section-l) bg-white">
+        <div className="container">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
             {sponsorTiers.map((tier) => (
               <SponsorCard key={tier.tier} tier={tier} />
             ))}
@@ -369,78 +312,37 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ─── CURRENT SPONSORS BANNER ─── */}
-      <section className="py-16 bg-primary">
-        <div className="section-container max-w-7xl text-center">
-          <p className="eyebrow text-teal mb-3">Thank You</p>
-          <h2 className="heading-l text-white mb-10">Our Event Sponsors</h2>
-          <div className="flex flex-wrap justify-center gap-6 items-center">
-            {[
-              {
-                src: "/Structure/Programs/golf-sponsorships/21_AFCULogos_Horizontal-stacked_white-scaled.jpg",
-                alt: "America First Credit Union",
-              },
-              {
-                src: "/Structure/Programs/golf-sponsorships/BroomheadFH-logo-final1+copy.jpg",
-                alt: "Broomhead Funeral Home",
-              },
-              {
-                src: "/Structure/Programs/golf-sponsorships/Canyon_View_Logo_Stacked_RG_1000x450.jpg",
-                alt: "Canyon View Credit Union",
-              },
-              {
-                src: "/Structure/Programs/golf-sponsorships/JEF_Color(horizontal).png",
-                alt: "Jordan Education Foundation",
-              },
-              {
-                src: "/Structure/Programs/golf-sponsorships/TJ+Olson+SF+Logo.jpg",
-                alt: "State Farm - T.J. Olson",
-              },
-              {
-                src: "/Structure/Programs/golf-sponsorships/uccu_logo.png",
-                alt: "Utah Community Credit Union",
-              },
-            ].map((s) => (
-              <div
-                key={s.alt}
-                className="relative h-16 w-36 bg-white/10 rounded-xl overflow-hidden"
-              >
-                <Image
-                  src={s.src}
-                  alt={s.alt}
-                  fill
-                  className="object-contain p-2"
-                  sizes="144px"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ─── CTA ─── */}
-      <section className="py-20 bg-white">
-        <div className="section-container max-w-3xl text-center">
-          <div className="section-divider mx-auto mb-6" />
-          <h2 className="heading-xl text-primary mb-4">
-            Ready to Become a Sponsor?
+      <section className="py-(--section-xl) bg-primary relative overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-5 pointer-events-none"
+          style={{
+            backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)",
+            backgroundSize: "32px 32px",
+          }}
+        />
+        <div className="relative z-10 container text-center">
+          <p className="eyebrow text-teal mb-4">Together We Are Stronger</p>
+          <h2 className="heading-xl text-white mb-5">
+            Ready to Become a{" "}
+            <span className="text-yellow">Sponsor?</span>
           </h2>
-          <p className="font-body text-base text-ink leading-relaxed mb-8 max-w-xl mx-auto">
+          <p className="font-body text-white/75 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
             Join leading local businesses in supporting youth scholarships while
-            gaining invaluable brand exposure at one of the Southwest Valley's
+            gaining valuable brand exposure at one of the Southwest Valley&apos;s
             most attended business events.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap justify-center gap-4">
             <a
               href="https://lp.constantcontactpages.com/ev/reg/hya9mx9/lp/19b74e5b-e44c-4a6a-ac98-9e9e969b534a"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary btn-lg"
+              className="btn btn-yellow btn-lg"
             >
               Register to Sponsor
             </a>
-            <Link href="/contactus" className="btn btn-outline btn-lg">
-              Contact Us
+            <Link href="/contactus" className="btn btn-outline-white btn-lg">
+              Contact the Chamber
             </Link>
           </div>
         </div>
