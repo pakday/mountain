@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
       },
     ],
+    contentDispositionType: "inline",
   },
   async headers() {
     return [
