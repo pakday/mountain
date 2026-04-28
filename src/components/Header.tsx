@@ -15,8 +15,12 @@ const navItems: NavItem[] = [
     label: "About Us",
     children: [
       { label: "Our Story", href: "/aboutus" },
+      { label: "Meet The Staff", href: "/meet-the-staff" },
       { label: "Board of Directors", href: "/boardofdirectors" },
       { label: "Utah Strong", href: "/utah-strong" },
+      { label: "Get Involved", href: "/get-involved" },
+      { label: "Visitor & Relocation Info", href: "/visitor-relocation-info" },
+      { label: "Supporting Chambers", href: "/supporting-chambers" },
       { label: "Contact Us", href: "/contactus" },
     ],
   },
@@ -25,20 +29,40 @@ const navItems: NavItem[] = [
     children: [
       { label: "Why Become a Member?", href: "/why-become-a-member" },
       { label: "Member Directory", href: "/members" },
-      { label: "Sponsorship Opportunities", href: "/sponsorship" },
+      { label: "Sponsorship Opportunities", href: "/sponsorshipopps" },
       { label: "Renewals", href: "/renew" },
+      { label: "Ribbon Cuttings", href: "/ribbon-cuttings" },
     ],
   },
-
+  {
+    label: "Member Resources",
+    children: [
+      { label: "Member Discounts", href: "/for-members" },
+      { label: "Annual Report", href: "/annual-report" },
+      { label: "Membership Training", href: "/membership-training" },
+      { label: "Job Board", href: "/job-board" },
+      { label: "Chamber News", href: "/blogarticles" },
+      { label: "Renew", href: "/renew" },
+    ],
+  },
+  {
+    label: "Get Involved",
+    children: [
+      { label: "Board of Directors", href: "/boardofdirectors" },
+      { label: "Committees", href: "/committees" },
+      { label: "Sponsorship", href: "/sponsorship" },
+      { label: "Programs", href: "/programs" },
+    ],
+  },
   {
     label: "Programs",
     children: [
       { label: "Golf Sponsorships", href: "/golf-sponsorships" },
       { label: "Golf Tournament", href: "/golf-tournament" },
-      { label: "Knight of Heroes Event", href: "/knight-of-heroes-event" },
       { label: "Local Link Discount", href: "/local-linkdiscounts" },
-      { label: "Scholarship Recipients", href: "/scholarship-recipients" },
+      { label: "Knight of Heroes Event", href: "/knight-of-heroes-event" },
       { label: "Sponsorship Opportunities", href: "/sponsorshipopps" },
+      { label: "Scholarship Recipients", href: "/scholarship-recipients" },
       {
         label: "Teacher Appreciation Event",
         href: "/teacher-appreciation-event",
@@ -47,19 +71,7 @@ const navItems: NavItem[] = [
   },
   {
     label: "Calendar & Events",
-    children: [
-      { label: "Calendar", href: "/calendar" },
-      { label: "Blog", href: "/blogarticles" },
-    ],
-  },
-  {
-    label: "Member Resources",
-    children: [
-      { label: "Member Discounts", href: "/for-members" },
-      { label: "Member Resources", href: "/join-us" },
-      { label: "Renew", href: "/renew" },
-      { label: "Design", href: "/design" },
-    ],
+    href: "/calendar",
   },
 ];
 
