@@ -185,12 +185,15 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5 mb-8">
               {[
-                { label: "About the Chamber", href: "/aboutus" },
-                { label: "Why Join?", href: "/why-become-a-member" },
+                { label: "Become a Member", href: "/becomeamember" },
+                { label: "About Us", href: "/aboutus" },
+                { label: "Sponsorship", href: "/sponsorship" },
+                { label: "Attend An Event", href: "/calendar" },
                 { label: "Member Directory", href: "/members" },
-                { label: "Calendar & Events", href: "/calendar" },
-                { label: "Blog", href: "/blogarticles" },
+                { label: "Resources", href: "/for-members" },
                 { label: "Contact Us", href: "/contactus" },
+                { label: "Blog", href: "/blogarticles" },
+                { label: "Board of Directors", href: "/boardofdirectors" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
