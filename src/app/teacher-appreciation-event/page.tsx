@@ -29,6 +29,23 @@ export default function Page() {
           </>
         }
         description='"Teachers are the real superheroes!"'
+        aside={
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative w-64 xl:w-72 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+              <Image
+                src={`${BASE}/1.png`}
+                alt="Teacher Appreciation Luncheon — May 1, 2025 event flyer"
+                width={800}
+                height={1036}
+                className="object-cover w-full"
+                priority
+              />
+              <div className="absolute bottom-4 left-4 bg-yellow text-primary font-heading font-700 text-sm px-4 py-1.5 rounded-full shadow-md">
+                May 1 · 2025
+              </div>
+            </div>
+          </div>
+        }
         actions={
           <>
             <a
@@ -221,6 +238,93 @@ export default function Page() {
                 >
                   View Sponsorship Options
                 </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── WONDER WOMAN SPONSOR ─── */}
+      <section className="py-(--section-l) bg-white">
+        <div className="container">
+          <div className="text-center mb-10">
+            <p className="eyebrow mb-3">Featured Sponsor</p>
+            <h2 className="heading-m text-primary mb-4">
+              Wonder Woman <span className="text-yellow">Sponsor</span>
+            </h2>
+            <div className="section-divider mx-auto mb-6" />
+            <p className="font-body text-ink leading-relaxed max-w-xl mx-auto">
+              A huge thank you to our Wonder Woman Sponsor for making this
+              annual celebration of our educators possible.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="bg-off-white rounded-2xl p-10 shadow-sm ring-1 ring-black/5 max-w-sm w-full flex items-center justify-center">
+              <Image
+                src={`${BASE}/BowcuttFlooringAmerica.jpg`}
+                alt="Bowcutt's Flooring America — Wonder Woman Sponsor"
+                width={600}
+                height={200}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── SPONSORSHIP PACKAGES ─── */}
+      <section className="py-(--section-l) bg-off-white">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Sponsorship packages flyer */}
+            <div className="flex justify-center">
+              <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/10 max-w-md w-full">
+                <Image
+                  src={`${BASE}/2.png`}
+                  alt="Teacher Appreciation Luncheon sponsorship packages — Wonder Woman $1500, Superman $1000, Batman $500, Captain Marvel $300"
+                  width={900}
+                  height={1170}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+            {/* Right: Sponsorship info */}
+            <div>
+              <p className="eyebrow mb-3">Become a Sponsor</p>
+              <h2 className="heading-l text-primary mb-5">
+                Sponsorship <span className="text-yellow">Packages</span>
+              </h2>
+              <div className="section-divider mb-6" />
+              <p className="font-body text-ink leading-relaxed mb-6">
+                Support our community educators and gain valuable exposure for
+                your business. Choose the level that works best for you — from
+                Wonder Woman to Captain Marvel, every sponsor helps make this
+                event a success.
+              </p>
+              <p className="font-body text-ink leading-relaxed mb-2">
+                <strong>Teacher Gift Bag Donations</strong> are also needed.
+                Your company will be recognized at the lunch and in the gift
+                bags.
+              </p>
+              <p className="font-body text-ink text-sm mb-8">
+                Sponsorship deadline: <strong>April 20</strong> for printed
+                materials.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://lp.constantcontactpages.com/ev/reg/n9px8c4/lp/f4685d27-abef-4a3a-a435-e7f0fd36b7b0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Register to Sponsor
+                </a>
+                <a
+                  href="mailto:susan@mountainwestchamber.org?subject=Teacher Appreciation Sponsorship"
+                  className="btn btn-outline btn-sm"
+                >
+                  Contact Susan
+                </a>
               </div>
             </div>
           </div>
