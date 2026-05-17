@@ -41,7 +41,7 @@ const navItems: NavItem[] = [
       { label: "Annual Report", href: "/annual-report" },
       { label: "Membership Training", href: "/membership-training" },
       { label: "Job Board", href: "/job-board" },
-      { label: "Chamber News", href: "/blogarticles" },
+      { label: "Chamber News", href: "/chamber-news" },
       { label: "Renew", href: "/renew" },
     ],
   },
@@ -71,7 +71,10 @@ const navItems: NavItem[] = [
   },
   {
     label: "Calendar & Events",
-    href: "/calendar",
+    children: [
+      { label: "Events Calendar", href: "/calendar" },
+      { label: "Blog", href: "/blogarticles" },
+    ],
   },
 ];
 
