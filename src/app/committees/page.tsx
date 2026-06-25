@@ -93,6 +93,20 @@ const committees = [
       />
     ),
   },
+  {
+    title: "Resident Committee",
+    description:
+      "A dedicated space for residents of Riverton, Herriman, and Bluffdale to engage with the Chamber — share feedback, connect with local businesses, and get involved in the community.",
+    meets: "Monthly",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M3 12l2-3m0 0l7-4 7 4M5 9v10a1 1 0 001 1h12a1 1 0 001-1V9m-9 3v6m0 0v6m0-6h6m-6 0H9"
+      />
+    ),
+  },
 ];
 
 export default function Page() {

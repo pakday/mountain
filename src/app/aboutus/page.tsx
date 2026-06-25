@@ -107,6 +107,54 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ── Executive Leadership ── */}
+      <section className="py-20 bg-white">
+        <div className="section-container">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <p className="eyebrow mb-4">Leadership</p>
+            <h2 className="heading-l text-primary mb-5">Executive Team</h2>
+            <div className="section-divider mx-auto mb-5" />
+            <p className="font-body text-base text-ink leading-relaxed">
+              Our leadership team is dedicated to advancing the mission of the
+              Mountain West Chamber of Commerce and supporting the growth of our
+              community.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-off-white rounded-2xl p-12 border-t-4 border-teal flex flex-col md:flex-row gap-10 items-center">
+              <div className="flex-shrink-0">
+                <div className="relative w-40 h-40 rounded-xl overflow-hidden ring-4 ring-teal/15">
+                  <Image
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80"
+                    alt="Heather - Executive Director"
+                    fill
+                    className="object-cover object-center"
+                    quality={90}
+                  />
+                </div>
+              </div>
+              <div className="flex-1">
+                <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+                  Executive Director
+                </span>
+                <h3 className="heading-m text-primary mb-3">Heather</h3>
+                <p className="font-body text-base text-ink leading-relaxed mb-4">
+                  Heather leads the Mountain West Chamber of Commerce with a
+                  passion for connecting businesses and strengthening our
+                  communities. Her vision guides our strategic initiatives,
+                  community events, and member support programs across Riverton,
+                  Herriman, and Bluffdale.
+                </p>
+                <Link href="/contactus" className="btn btn-primary">
+                  Get in Touch
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Give Back Events ── */}
       <section className="py-20 bg-off-white">
         <div className="section-container">

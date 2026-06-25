@@ -23,6 +23,14 @@ const officers = [
     accent: "border-yellow",
   },
   {
+    name: "Heather",
+    company: "Mountain West Chamber of Commerce",
+    role: "Executive Director",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80",
+    accent: "border-teal",
+  },
+  {
     name: "Gabe Garcia",
     company: "Utah Community Credit Union",
     companyUrl: "https://www.uccu.com",

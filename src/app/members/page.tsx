@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import MemberSearchBar from "@/components/MemberSearchBar";
 
 export const metadata: Metadata = {
   title: "Member Directory",
@@ -1303,9 +1304,7 @@ function MemberCard({ member }: { member: Member }) {
         </p>
       )}
       {member.contact && (
-        <p className="font-body text-xs text-ink mb-0.5">
-          {member.contact}
-        </p>
+        <p className="font-body text-xs text-ink mb-0.5">{member.contact}</p>
       )}
       {member.phone && (
         <a
@@ -1378,6 +1377,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <MemberSearchBar />
 
       {/* ── Category index ── */}
       <section className="bg-off-white border-b border-light-gray py-10">
