@@ -15,6 +15,11 @@ export type ProgramCardProps = {
    * (used on the Join Us / blog resource cards).
    */
   date?: string;
+  /**
+   * When true, hides the CTA button and shows a "See you next year." notice
+   * for programs whose current-year edition has already passed.
+   */
+  isPast?: boolean;
 };
 
 export default function ProgramCard({
@@ -25,6 +30,7 @@ export default function ProgramCard({
   href,
   linkLabel = "Learn More →",
   date,
+  isPast = false,
 }: ProgramCardProps) {
   return (
     <div className="card overflow-hidden group hover:shadow-xl transition-shadow duration-300">
@@ -43,6 +49,11 @@ export default function ProgramCard({
             {eyebrow}
           </span>
         )}
+        {isPast && (
+          <span className="absolute top-4 right-4 bg-ink/70 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">
+            Past Event
+          </span>
+        )}
       </div>
 
       {/* Content */}
@@ -52,12 +63,18 @@ export default function ProgramCard({
         <p className="font-body text-sm text-ink leading-relaxed flex-1">
           {description}
         </p>
-        <Link
-          href={href}
-          className="btn btn-ghost btn-sm self-start mt-2 pl-0 text-teal font-700"
-        >
-          {linkLabel}
-        </Link>
+        {isPast ? (
+          <p className="font-body text-sm text-ink/50 italic mt-2">
+            See you next year.
+          </p>
+        ) : (
+          <Link
+            href={href}
+            className="btn btn-ghost btn-sm self-start mt-2 pl-0 text-teal font-700"
+          >
+            {linkLabel}
+          </Link>
+        )}
       </div>
     </div>
   );

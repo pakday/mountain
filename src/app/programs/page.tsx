@@ -12,13 +12,14 @@ export const metadata: Metadata = {
 const programs = [
   {
     eyebrow: "Annual Event",
-    title: "Scholarship Golf Classic",
+    title: "Scholarship Golf Classic 2026",
     description:
-      "Our flagship fundraiser. All proceeds above costs go to scholarships for local high school students. Join us every fall at Stonebridge Golf Course.",
+      "Our flagship fundraiser. All proceeds above costs go to scholarships for local high school students. Join us this fall at Stonebridge Golf Course — register or become a sponsor.",
     imageSrc:
       "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800&q=75",
-    href: "/golf-tournament",
-    linkLabel: "Event Details →",
+    href: "/golf-classic",
+    linkLabel: "Event Details & Sponsorships →",
+    isPast: false,
   },
   {
     eyebrow: "Annual Gala",
@@ -29,6 +30,7 @@ const programs = [
       "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&q=75",
     href: "/knight-of-heroes-event",
     linkLabel: "Event Details →",
+    isPast: true,
   },
   {
     eyebrow: "Education",
@@ -39,6 +41,7 @@ const programs = [
       "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=800&q=75",
     href: "/teacher-appreciation-event",
     linkLabel: "Learn More →",
+    isPast: true,
   },
   {
     eyebrow: "Scholarships",
@@ -49,6 +52,7 @@ const programs = [
       "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=75",
     href: "/scholarship-recipients",
     linkLabel: "See Recipients →",
+    isPast: false,
   },
   {
     eyebrow: "Sponsorship",
@@ -59,6 +63,7 @@ const programs = [
       "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=75",
     href: "/sponsorshipopps",
     linkLabel: "View Opportunities →",
+    isPast: false,
   },
   {
     eyebrow: "Member Savings",
@@ -69,6 +74,7 @@ const programs = [
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=75",
     href: "/local-linkdiscounts",
     linkLabel: "Browse Discounts →",
+    isPast: false,
   },
 ];
 
@@ -89,8 +95,8 @@ export default function Page() {
         description="From scholarship fundraisers to community galas, every Chamber program is designed to invest in our people, honor our heroes, and strengthen local business."
         actions={
           <>
-            <Link href="/golf-tournament" className="btn btn-yellow btn-lg">
-              Golf Classic 2025
+            <Link href="/golf-classic" className="btn btn-yellow btn-lg">
+              Golf Classic 2026
             </Link>
             <Link href="/sponsorshipopps" className="btn btn-outline-white">
               Sponsorship Opportunities
@@ -125,6 +131,7 @@ export default function Page() {
                 imageSrc={p.imageSrc}
                 href={p.href}
                 linkLabel={p.linkLabel}
+                isPast={p.isPast}
               />
             ))}
           </div>

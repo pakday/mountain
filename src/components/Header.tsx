@@ -42,6 +42,7 @@ const navItems: NavItem[] = [
       { label: "Membership Training", href: "/membership-training" },
       { label: "Job Board", href: "/job-board" },
       { label: "Chamber News", href: "/chamber-news" },
+      { label: "Member Speaks", href: "/member-speaks" },
       { label: "Renew", href: "/renew" },
     ],
   },
@@ -57,8 +58,8 @@ const navItems: NavItem[] = [
   {
     label: "Programs",
     children: [
-      { label: "Golf Sponsorships", href: "/golf-sponsorships" },
-      { label: "Golf Tournament", href: "/golf-tournament" },
+      { label: "Residency", href: "/residency" },
+      { label: "Golf Classic 2026", href: "/golf-classic" },
       { label: "Local Link Discount", href: "/local-linkdiscounts" },
       { label: "Knight of Heroes Event", href: "/knight-of-heroes-event" },
       { label: "Sponsorship Opportunities", href: "/sponsorshipopps" },
@@ -67,6 +68,7 @@ const navItems: NavItem[] = [
         label: "Teacher Appreciation Event",
         href: "/teacher-appreciation-event",
       },
+      { label: "Volunteer", href: "/volunteer" },
     ],
   },
   {
@@ -74,6 +76,7 @@ const navItems: NavItem[] = [
     children: [
       { label: "Events Calendar", href: "/calendar" },
       { label: "Blog", href: "/blogarticles" },
+      { label: "Event Photos", href: "/event-photos" },
     ],
   },
 ];
